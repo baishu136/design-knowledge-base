@@ -3,7 +3,7 @@
 状态：passed。
 
 - json_files_parsed：`94`
-- indexed_resources：`149`
+- indexed_resources：`150`
 - cherry-studio_text_snapshot_files_checked：`9949`
 - cherry-studio-app_text_snapshot_files_checked：`3703`
 - droiddeck_text_snapshot_files_checked：`2112`
@@ -13,6 +13,7 @@
 - parameter_evidence_bindings：`35`
 - example_harness：`{"result": "passed", "scope": "scroll controller cancellation, replacement, disposal, missing DOM, moving target and one-frame boundary; loader clock cap, reset, wrap and phase", "visual_runtime": false}`
 - droiddeck_example_harness：`{"result": "passed", "scope": "DroidDeck adapted single-edge spring: convergence at multiple simulated timesteps, velocity retention, latest target, disabled motion, dt cap and scale, critical damping reference", "visual_runtime": false}`
+- skill_behavior：`{"result": "passed", "tests_run": 9, "scope": "read-only discovery, project/platform filters, bounded output, provenance, inherited dark tokens, explicit path precedence, portable local config and path boundary"}`
 
 ## 审计边界
 

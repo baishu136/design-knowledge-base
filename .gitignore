@@ -8,3 +8,4 @@ Thumbs.db
 .env.*
 source-repositories/
 *.zip
+skills/*/config.local.json

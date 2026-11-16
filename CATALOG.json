@@ -5486,6 +5486,40 @@
       ]
     },
     {
+      "id": "knowledge-base.skill.design-knowledge-base",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "design-knowledge-base Skill",
+      "description": "按需定位、检索、解析资源和设计Token，按来源规格迁移实现",
+      "keywords": [
+        "skill",
+        "技能",
+        "检索",
+        "动画",
+        "design",
+        "knowledge",
+        "tokens"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "skills/design-knowledge-base/SKILL.md",
+      "spec_path": null,
+      "example_paths": [
+        "skills/design-knowledge-base/scripts/kb.py",
+        "skills/design-knowledge-base/agents/openai.yaml"
+      ],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "original-reimplementation"
+      ],
+      "documents": [
+        "skills/design-knowledge-base/SKILL.md"
+      ]
+    },
+    {
       "id": "schema.animation",
       "project": "shared",
       "resource_type": "schema",

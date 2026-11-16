@@ -40,3 +40,9 @@ python design-knowledge-base/tools/validate.py
 ```
 
 上述命令从本工作区根目录执行，或对脚本使用绝对路径。不得把acquire.py当作日常更新按钮：它下载新快照且不执行差异审查。
+
+## 配套 Skill
+
+[design-knowledge-base Skill](skills/design-knowledge-base/SKILL.md)提供按需定位、检索、ID解析和Token过滤。可将skills/design-knowledge-base整个目录复制到本机Codex技能目录，按Skill中的路径优先级绑定已有知识库。公开副本不包含本机config.local.json。
+
+安装后可用 `$design-knowledge-base` 调用。例如：“使用 `$design-knowledge-base`，为Android项目查找可复用的焦点动画，读取规格、许可和验证范围后实现。”技能不会因为被调用而自动执行原项目或发布远端变更。

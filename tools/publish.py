@@ -47,6 +47,12 @@ python design-knowledge-base/tools/validate.py
 ```
 
 上述命令从本工作区根目录执行，或对脚本使用绝对路径。不得把acquire.py当作日常更新按钮：它下载新快照且不执行差异审查。
+
+## 配套 Skill
+
+[design-knowledge-base Skill](skills/design-knowledge-base/SKILL.md)提供按需定位、检索、ID解析和Token过滤。可将skills/design-knowledge-base整个目录复制到本机Codex技能目录，按Skill中的路径优先级绑定已有知识库。公开副本不包含本机config.local.json。
+
+安装后可用 `$design-knowledge-base` 调用。例如：“使用 `$design-knowledge-base`，为Android项目查找可复用的焦点动画，读取规格、许可和验证范围后实现。”技能不会因为被调用而自动执行原项目或发布远端变更。
 ''')
 write('AGENTS.md','''# Agent检索与调用协议
 
@@ -98,6 +104,8 @@ write('MAINTENANCE.md','''# 持续更新流程
 ## 当前结构
 
 author.py为本轮人工分析内容的可重放作者数据；build.py为通用写入与候选扫描；publish.py为索引/文档模板；validate.py为结构、路径、参数证据与来源完整性检查。每次修改生成文件，先核对对应作者入口。未来可将author数据拆为每项目文件，但不得把不同项目的规则合并。
+
+技能源文件位于skills/design-knowledge-base，安装副本位于用户自己的Codex技能目录。更新技能代码后同步安装副本，保留本机config.local.json；它不随Git分发。运行python tools/check-skill.py验证跨目录检索、路径优先级与主题继承，不需要联网或运行上游项目。
 
 ## 快照获取说明
 
@@ -289,6 +297,13 @@ validate.py执行这些Schema所使用关键词的标准库子集校验（type/r
 
 write('CHANGELOG.md','''# 变更记录
 
+## 2026-11-16 — v0.3 配套 Skill
+
+- 新增design-knowledge-base Skill与UI元数据，支持自动匹配和显式调用。
+- 提供只读定位、平台/项目/类型检索、稳定ID解析和Token过滤；保留来源、许可与验证状态。
+- 本机配置与公开技能分开，显式无效路径不悄悄回退，目录迁移可重新绑定。
+- 增加Skill行为测试与全局导航，保留已有项目资料及资源ID。
+
 ## 2026-11-16 — v0.2 DroidDeck
 
 - 新增DroidDeck 0.7.1 / f65e7a3d436b独立资料：7个组件、9个动画，保留GPL-3.0及不可直接迁移的运行时边界。
@@ -342,6 +357,7 @@ for f in sorted((ROOT/'shared').rglob('*.md')):
     rel=f.relative_to(ROOT).as_posix();add(rel[:-3].replace('/','.'),'shared','shared-pattern',f.stem,'跨项目分析；参数仍归原项目',rel)
 for name in ['README.md','AGENTS.md','MAINTENANCE.md','EXECUTION-REPORT.md','VALIDATION.md','CHANGELOG.md','schemas/README.md']:
     add('knowledge-base.'+name[:-3].replace('/','.'),'shared','guide',name,'知识库使用、维护与验证范围',name,verification=['inferred'])
+add('knowledge-base.skill.design-knowledge-base','shared','guide','design-knowledge-base Skill','按需定位、检索、解析资源和设计Token，按来源规格迁移实现','skills/design-knowledge-base/SKILL.md',examples=['skills/design-knowledge-base/scripts/kb.py','skills/design-knowledge-base/agents/openai.yaml'],verification=['original-reimplementation'],keywords=['skill','技能','检索','动画','design','knowledge','tokens'])
 for f in sorted((ROOT/'schemas').glob('*.schema.json')):
     rel=f.relative_to(ROOT).as_posix();add('schema.'+f.name.split('.')[0],'shared','schema',f.name,'结构化数据约束',rel,rel,verification=['unverified'])
 for name in ['validation-results.json','references-build-summary.json']:
@@ -379,6 +395,8 @@ Token数量包含主题分项与原始CSS声明，不等于独立语义角色数
 ## 可维护资产
 
 根入口README→CATALOG/AGENTS→项目overview→spec→examples→source-reference/source-map；生成工具与schemas可持续复核固定来源。原始源码独立保存，未修改或执行安装脚本；根LICENSE文本随各项目资料保存，摘录和改编许可证保留在各文件头。
+
+配套Skill位于skills/design-knowledge-base，支持本机绑定和按需检索；它是知识库使用工具，不改变原项目验证状态。行为检查见tools/check-skill.py，语法/frontmatter检查使用Codex skill-creator的quick_validate.py。
 
 具体剩余任务在各项目BACKLOG；核心资产已交付，不宣称完整设计历史、所有依赖默认值、所有动画类型与设备行为均已分析。
 ''')

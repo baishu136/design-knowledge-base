@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计知识库"
+  short_description: "按需检索开源项目的设计语言、组件、手势与动画规格，并追溯实现来源"
+  default_prompt: "使用 $design-knowledge-base，为当前平台查找可复用的组件或动画，读取规格、来源和许可证后给出迁移方案。"

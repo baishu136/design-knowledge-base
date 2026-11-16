@@ -164,6 +164,9 @@ checks['example_harness']=json.loads(runtime.stdout) if runtime.returncode==0 el
 droid_runtime=subprocess.run(['node',str(ROOT/'tools/check-droiddeck.mjs')],capture_output=True,text=True)
 check(droid_runtime.returncode==0,'DroidDeck example harness failed: '+droid_runtime.stderr)
 checks['droiddeck_example_harness']=json.loads(droid_runtime.stdout) if droid_runtime.returncode==0 else droid_runtime.stdout
+skill_runtime=subprocess.run([sys.executable,'-X','utf8',str(ROOT/'tools/check-skill.py')],capture_output=True,text=True,encoding='utf-8')
+check(skill_runtime.returncode==0,'Skill behavior checks failed: '+skill_runtime.stderr)
+checks['skill_behavior']=json.loads(skill_runtime.stdout) if skill_runtime.returncode==0 else skill_runtime.stdout
 for f in ROOT.glob('projects/*/animations/*/spec.json'):check(load(f)['runtime_verified'] is False,'Unexpected original app runtime claim '+str(f))
 for f in ROOT.glob('projects/*/animations/*/examples/example.json'):
     ex=load(f);check(not ex['visual_runtime_verified'],'Unexpected visual runtime claim '+str(f))

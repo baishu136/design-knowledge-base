@@ -28,4 +28,6 @@ Token数量包含主题分项与原始CSS声明，不等于独立语义角色数
 
 根入口README→CATALOG/AGENTS→项目overview→spec→examples→source-reference/source-map；生成工具与schemas可持续复核固定来源。原始源码独立保存，未修改或执行安装脚本；根LICENSE文本随各项目资料保存，摘录和改编许可证保留在各文件头。
 
+配套Skill位于skills/design-knowledge-base，支持本机绑定和按需检索；它是知识库使用工具，不改变原项目验证状态。行为检查见tools/check-skill.py，语法/frontmatter检查使用Codex skill-creator的quick_validate.py。
+
 具体剩余任务在各项目BACKLOG；核心资产已交付，不宣称完整设计历史、所有依赖默认值、所有动画类型与设备行为均已分析。
