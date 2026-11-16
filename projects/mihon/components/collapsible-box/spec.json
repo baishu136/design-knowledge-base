@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.component.collapsible-box",
+  "name": "CollapsibleBox",
+  "project": "mihon",
+  "purpose": "设置/说明组的渐进披露",
+  "structure": "Column→可点击Row(Text+Spacer+Icon)→AnimatedVisibility(content)",
+  "parameters": "标题行px24dp/py12dp；header=bodyMedium+SemiBold",
+  "states": "内部remember expanded初始false；箭头直接替换并无旋转插值",
+  "api": "heading:String，content:@Composable；无对外expanded/onChange",
+  "behavior": "AnimatedVisibility默认参数，本轮不填依赖默认时长",
+  "migration": "抽象expanded Boolean；如要外部控制，应改编为受控组件并标注adapted",
+  "minimal_usage": "CollapsibleBox(heading=\"More\") { Text(\"Details\") }",
+  "not_applicable": "必须跨页面持久化展开状态而不另设状态提升",
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt",
+      "symbol": "fun CollapsibleBox",
+      "line": 26,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "f5aaba1abd9fe7a9e62937d147f8820b443291018453631ea4f21ec43340a884",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt#L26"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "license": "Apache-2.0"
+}

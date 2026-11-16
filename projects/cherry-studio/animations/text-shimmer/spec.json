@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.text-shimmer",
+  "name": "文字流光等待态",
+  "project": "cherry-studio",
+  "category": "loading",
+  "effect": "前景色渐变背景在裁成文字的区域移动，连续3秒循环。",
+  "applicable": "短等待文案",
+  "not_applicable": "长篇可读正文或低功耗界面持续常驻",
+  "trigger": "animation-shimmer class attached",
+  "start_state": {
+    "backgroundPosition": "200% 0"
+  },
+  "end_state": {
+    "backgroundPosition": "-200% 0"
+  },
+  "timing": {
+    "duration_ms": 3000,
+    "delay_ms": null,
+    "easing": {
+      "name": "linear"
+    },
+    "repeat": "infinite",
+    "spring": null
+  },
+  "properties": {
+    "background_size": "200% 100%",
+    "background_clip": "text",
+    "color": "transparent"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "backgroundPosition": "200% 0"
+    },
+    "to": {
+      "backgroundPosition": "-200% 0"
+    }
+  },
+  "synchronization": "渐变中间foreground、两端foreground25%透明混合；移动background-position而非文字几何。will-change声明提示优化，并不保证GPU复合。",
+  "interruption": "类移除停止CSS动画；再次附加通常重启。没有自定义相位保存。",
+  "gesture": null,
+  "accessibility": "CSS基础类没有通用reduce-motion覆盖；PlaceholderShimmerText消费者另加motion-reduce:!animate-none。SessionItem/FileTree等其他消费者需分别检查，不能泛化为全部覆盖或全部缺失。forced-colors/打印未实测。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "src/renderer/assets/styles/animation.css",
+      "symbol": "@keyframes animation-shimmer",
+      "line": 236,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "a961f2f4d0a048c53c2d546d0f65e3d9e5063b6eafcc5f8aadfa622f9b66ff10",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/assets/styles/animation.css#L236"
+    },
+    {
+      "path": "src/renderer/components/chat/messages/blocks/PlaceholderShimmerText.tsx",
+      "symbol": "export function PlaceholderShimmerText",
+      "line": 3,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "b60bbf296a1e5a8f32f16bd43e7a2dd37421783d8dbbeed8c5f5ca8929df5bfe",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/messages/blocks/PlaceholderShimmerText.tsx#L3"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "background-position/clip:text可能逐帧paint；长文本或多行大量实例比小图标旋转更昂贵。没有基准数据。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

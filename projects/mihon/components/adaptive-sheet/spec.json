@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.component.adaptive-sheet",
+  "name": "AdaptiveSheet",
+  "project": "mihon",
+  "purpose": "手机底部面板/平板居中面板",
+  "structure": "Dialog包装→全屏Box→Surface→content",
+  "parameters": "maxWidth460dp；extraLarge形状；surfaceContainerHigh；平板垂直padding16dp",
+  "states": "open、dragging、settling、dismissed；无hover状态定义",
+  "api": "isTabletUi、enableImplicitDismiss、onDismissRequest、modifier、content",
+  "behavior": "见adaptive-sheet动画；平板关闭直接回调",
+  "migration": "把两种呈现规则和dismiss生命周期分离；Insets由目标平台负责",
+  "minimal_usage": "AdaptiveSheet(isTabletUi=false, enableImplicitDismiss=true, onDismissRequest={ open=false }) { Text(\"Options\") }",
+  "not_applicable": "精确多档高度控制",
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "symbol": "fun AdaptiveSheet",
+      "line": 53,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "35349c44ce5570d79c6311391069f6b8a39ba187fece72490867d3c08590ad5a",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt#L53"
+    }
+  ],
+  "related_resources": [
+    "mihon.animation.adaptive-sheet"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.example.loader-clock",
+  "project": "cherry-studio-app",
+  "name": "Shader时钟与周期数值模型",
+  "animation_id": "cherry-studio-app.animation.foil-loader",
+  "entry_file": "clock.mjs",
+  "files": [
+    "clock.mjs"
+  ],
+  "classification": "adapted",
+  "license": "AGPL-3.0",
+  "upstream_commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+  "scope": "Shader时钟与周期数值模型",
+  "differences": "没有渲染Shader；额外限制负delta为0，不代表原文件有该条件",
+  "requirements": "Node标准ES module，无第三方依赖；由tools/check-examples.mjs执行，或import advanceClock/phaseAt",
+  "verification": [
+    "adapted",
+    "runtime-verified"
+  ],
+  "runtime_scope": "Node numeric/lifecycle harness only; no visual verification",
+  "visual_runtime_verified": false
+}

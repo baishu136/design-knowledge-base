@@ -1,0 +1,2038 @@
+{
+  "scope": "full snapshot supported text extensions; lexical hits are candidates, not confirmed animations",
+  "patterns": {
+    "timing-spring": "withTiming|withSpring|tween\\(|spring\\(|TweenSpec|animateTo\\(|withDecay",
+    "presence-layout": "AnimatedVisibility|AnimatedContent|Crossfade|animateContentSize|AnimatePresence|motion\\.|layoutId|LayoutAnimation|FadeIn|FadeOut",
+    "gesture-scroll": "Gesture\\.|anchoredDraggable|pointerInput|requestAnimationFrame|scrollTo\\(|useAnimatedScrollHandler|useMotionValue",
+    "css-rendering": "@keyframes|transition:|animation:|animate-|RuntimeShader|Shader|Canvas|Skia|BlurView|backdrop-filter|graphicsLayer",
+    "accessibility-motion": "useReducedMotion|ReduceMotion|prefers-reduced-motion|MotionDurationScale|ANIMATOR_DURATION_SCALE"
+  },
+  "hits": [
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/AdaptiveSheet.kt",
+      "line": 36,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "fadeIn(animationSpec = tween(220, delayMillis = 90)) togetherWith",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/AdaptiveSheet.kt",
+      "line": 37,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "fadeOut(animationSpec = tween(90))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/Banners.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/Banners.kt",
+      "line": 73,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/Banners.kt",
+      "line": 86,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/Banners.kt",
+      "line": 100,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/TabbedDialog.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.animateContentSize",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/components/TabbedDialog.kt",
+      "line": 75,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "modifier = Modifier.animateContentSize(),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/download/DownloadQueueList.kt",
+      "line": 40,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.ui.graphics.graphicsLayer",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/download/DownloadQueueList.kt",
+      "line": 270,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": ".graphicsLayer { translationY = correction }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 81,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 214,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 242,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 244,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "enter = expandVertically(animationSpec = tween(delayMillis = 300)),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaBottomActionMenu.kt",
+      "line": 245,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "exit = shrinkVertically(animationSpec = tween()),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaInfoHeader.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.animateContentSize",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaInfoHeader.kt",
+      "line": 285,
+      "categories": [
+        "timing-spring",
+        "presence-layout"
+      ],
+      "text": ".animateContentSize(animationSpec = spring())",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaNotesDisplay.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.animateContentSize",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaNotesDisplay.kt",
+      "line": 40,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "alpha.animateTo(targetValue = 1f, animationSpec = FADE_TIME)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/manga/components/MangaNotesDisplay.kt",
+      "line": 54,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": ".then(if (contentUpdatedOnce) Modifier.animateContentSize() else Modifier)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/onboarding/OnboardingScreen.kt",
+      "line": 4,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/onboarding/OnboardingScreen.kt",
+      "line": 20,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.materialSharedAxisX",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/onboarding/OnboardingScreen.kt",
+      "line": 21,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.rememberSlideDistance",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/onboarding/OnboardingScreen.kt",
+      "line": 76,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedContent(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/PreferenceItem.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/PreferenceItem.kt",
+      "line": 50,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/screen/about/AboutScreen.kt",
+      "line": 5,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/screen/about/AboutScreen.kt",
+      "line": 118,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(visible = isCheckingUpdates) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/screen/SettingsSearchScreen.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.Crossfade",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/screen/SettingsSearchScreen.kt",
+      "line": 175,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "Crossfade(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/widget/BasePreferenceWidget.kt",
+      "line": 113,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animation = tween(durationMillis = 200),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/more/settings/widget/BasePreferenceWidget.kt",
+      "line": 121,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "tween(200)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 83,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 109,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 144,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderBottomBar.kt",
+      "line": 10,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.ui.input.pointer.pointerInput",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderBottomBar.kt",
+      "line": 34,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".pointerInput(Unit) {},",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ChapterTransition.kt",
+      "line": 48,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/DisplayRefreshHost.kt",
+      "line": 3,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.foundation.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/DisplayRefreshHost.kt",
+      "line": 81,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Canvas(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderContentOverlay.kt",
+      "line": 5,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.foundation.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderContentOverlay.kt",
+      "line": 12,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.ui.graphics.graphicsLayer",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderContentOverlay.kt",
+      "line": 27,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Canvas(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderContentOverlay.kt",
+      "line": 30,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": ".graphicsLayer {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderContentOverlay.kt",
+      "line": 39,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Canvas(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderError.kt",
+      "line": 16,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.ui.input.pointer.pointerInput",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderError.kt",
+      "line": 58,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "internal fun Modifier.reportPress(onPressChange: (Boolean) -> Unit) = pointerInput(onPressChange) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 7,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.foundation.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 33,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 36,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "enter = fadeIn(tween(FADE_DURATION)),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 37,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "exit = fadeOut(tween(FADE_DURATION)),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/ReaderNavigationOverlay.kt",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Canvas(modifier = Modifier.fillMaxSize()) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/track/TrackerSearch.kt",
+      "line": 4,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/track/TrackerSearch.kt",
+      "line": 167,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/track/TrackInfoDialogHome.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.animateContentSize",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/track/TrackInfoDialogHome.kt",
+      "line": 84,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": ".animateContentSize()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 4,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 5,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContentTransitionScope",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 17,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.materialSharedAxisX",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 18,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.rememberSlideDistance",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 59,
+      "categories": [
+        "presence-layout",
+        "css-rendering"
+      ],
+      "text": "transition: AnimatedContentTransitionScope<Screen>.() -> ContentTransform,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "line": 63,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedContent(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/data/coil/ImageDecoder.kt",
+      "line": 7,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import coil3.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/data/coil/ImageDecoder.kt",
+      "line": 47,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "override fun draw(canvas: Canvas) {}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/data/coil/ImageDecoder.kt",
+      "line": 60,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "override fun draw(canvas: Canvas) {}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/browse/source/browse/BrowseSourceScreen.kt",
+      "line": 27,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.ui.input.pointer.pointerInput",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/browse/source/browse/BrowseSourceScreen.kt",
+      "line": 133,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".pointerInput(Unit) {},",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/home/HomeScreen.kt",
+      "line": 4,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/home/HomeScreen.kt",
+      "line": 49,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.materialFadeThroughIn",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/home/HomeScreen.kt",
+      "line": 50,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import soup.compose.material.motion.animation.materialFadeThroughOut",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/home/HomeScreen.kt",
+      "line": 113,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedContent(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/ReaderActivity.kt",
+      "line": 56,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.ui.input.pointer.pointerInput",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/ReaderActivity.kt",
+      "line": 226,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".pointerInput(Unit) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 9,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import eu.kanade.tachiyomi.ui.reader.viewer.webgpu.WebGpuShader",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 10,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import eu.kanade.tachiyomi.ui.reader.viewer.webgpu.WebGpuShaders",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 235,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val imageFilters: Preference<List<WebGpuShader>> = preferenceStore.getObjectFromString(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 238,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::serialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 239,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::deserialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 243,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val tileFilters: Preference<List<WebGpuShader>> = preferenceStore.getObjectFromString(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 246,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::serialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 247,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::deserialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 251,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val upscaler: Preference<List<WebGpuShader>> = preferenceStore.getObjectFromString(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 254,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::serialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 255,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::deserialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 259,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val downscaler: Preference<List<WebGpuShader>> = preferenceStore.getObjectFromString(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 262,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::serialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/setting/ReaderPreferences.kt",
+      "line": 263,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders::deserialize,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/pager/PagerPageTracker.kt",
+      "line": 140,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun onTransitionSelected(transition: ChapterTransition) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/pager/PagerTransitionHolder.kt",
+      "line": 20,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/ReaderTransitionPage.kt",
+      "line": 28,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/ReaderTransitionView.kt",
+      "line": 28,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/ReaderTransitionView.kt",
+      "line": 53,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/TransitionDownloadState.kt",
+      "line": 26,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "transition: ChapterTransition,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/Viewer.kt",
+      "line": 9,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.ui.input.pointer.pointerInput",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/Viewer.kt",
+      "line": 59,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "fun Modifier.mouseWheelPaging(viewer: Viewer): Modifier = pointerInput(viewer) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/ReaderChromePages.kt",
+      "line": 161,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private val transition: ChapterTransition? = when {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/ReaderChromePages.kt",
+      "line": 198,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private suspend fun isDownloaded(transition: ChapterTransition): Boolean {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuSettings.kt",
+      "line": 12,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val imageFilters: List<WebGpuShader>,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuSettings.kt",
+      "line": 13,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val tileFilters: List<WebGpuShader>,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuSettings.kt",
+      "line": 15,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val upscaler: WebGpuShader?,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuSettings.kt",
+      "line": 17,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val downscaler: WebGpuShader?,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 18,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "* A user's shader: [file] in [WebGpuShaders.dir], shown as [name], with [values] for the `//!PARAM`s",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 21,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "data class WebGpuShader(val file: String, val name: String, val values: Map<String, Float> = emptyMap())",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 24,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "object WebGpuShaders {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 36,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun serialize(shaders: List<WebGpuShader>): String = shaders.joinToString(\"\\n\") { shader ->",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 41,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun deserialize(text: String): List<WebGpuShader> = text.lineSequence()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShader(fields[0], fields[1], values)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 56,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun setValue(pref: Preference<List<WebGpuShader>>, shader: WebGpuShader, param: String, value: Float?) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 70,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun applyValues(filter: ImageFilterWgsl, shader: WebGpuShader) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 89,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "pref: Preference<List<WebGpuShader>>,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 110,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val shader = WebGpuShader(\"${UUID.randomUUID()}.wgsl\", name.replace(Regex(\"\"\"[\\t\\r\\n]\"\"\"), \" \"))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 129,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun remove(context: Context, pref: Preference<List<WebGpuShader>>, shader: WebGpuShader) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 140,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "suspend fun prune(context: Context, prefs: List<Preference<List<WebGpuShader>>>) =",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 159,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun load(context: Context, shader: WebGpuShader): ImageFilterWgsl =",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 162,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun loadSampler(context: Context, shader: WebGpuShader): Sampler =",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuShaders.kt",
+      "line": 166,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "suspend fun params(context: Context, shader: WebGpuShader): List<ImageFilterWgsl.Param> =",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 963,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun update(shader: WebGpuShader?) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 971,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders.loadSampler(activity, it)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 987,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private var loaded: List<Pair<WebGpuShader, ImageFilterWgsl>> = emptyList()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 989,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun update(shaders: List<WebGpuShader>) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 996,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders.applyValues(filter, shader)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 1012,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private suspend fun load(shaders: List<WebGpuShader>) = withContext(Dispatchers.IO) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 1015,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "shader to WebGpuShaders.load(activity, shader)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 1613,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "page.animateTo(targetX = toX, targetY = toY, targetScale = toScale)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 1957,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "page.animateTo(targetX = x, targetY = page.y)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewer.kt",
+      "line": 1977,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "page.animateTo(targetX = x, targetY = page.y)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 281,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders.prune(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 298,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "ShaderList(MR.strings.pref_image_filters, viewModel.preferences.imageFilters)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 299,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "ShaderList(MR.strings.pref_tile_filters, viewModel.preferences.tileFilters)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 310,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "/** Imports into [pref] - see [WebGpuShaders.import]. Shows its own errors. */",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 312,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun rememberShaderPicker(pref: Preference<List<WebGpuShader>>, sampler: Boolean): () -> Unit {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 317,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val pickShader = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 321,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "WebGpuShaders.import(context, uri, pref, sampler)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 354,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "pickShader.launch(arrayOf(\"*/*\"))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 362,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun SamplerItem(labelRes: StringResource, defaultName: String, pref: Preference<List<WebGpuShader>>) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 365,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val pick = rememberShaderPicker(pref, sampler = true)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 384,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "IconButton(onClick = { WebGpuShaders.remove(context, pref, it) }) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 395,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun ShaderList(labelRes: StringResource, pref: Preference<List<WebGpuShader>>) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 398,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val pick = rememberShaderPicker(pref, sampler = false)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 415,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "value = WebGpuShaders.params(context, shader)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 452,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "onClick = { WebGpuShaders.remove(context, pref, shader) },",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 460,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "if (expanded) ShaderParams(pref, shader, params)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 480,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun ShaderParams(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 481,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "pref: Preference<List<WebGpuShader>>,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 482,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "shader: WebGpuShader,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webgpu/WebGpuViewerSettings.kt",
+      "line": 492,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun set(new: Float?) = WebGpuShaders.setValue(pref, shader, param.name, new?.takeIf { it != param.default })",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webtoon/WebtoonPageTracker.kt",
+      "line": 104,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun onTransitionSelected(transition: ChapterTransition) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webtoon/WebtoonStripImageView.kt",
+      "line": 5,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import android.graphics.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webtoon/WebtoonStripImageView.kt",
+      "line": 92,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "override fun onDraw(canvas: Canvas) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/ui/reader/viewer/webtoon/WebtoonTransitionHolder.kt",
+      "line": 39,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "fun bind(transition: ChapterTransition) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/util/system/AnimationExtensions.kt",
+      "line": 8,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "* @see Settings.Global.ANIMATOR_DURATION_SCALE",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/eu/kanade/tachiyomi/util/system/AnimationExtensions.kt",
+      "line": 11,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "get() = Settings.Global.getFloat(this.contentResolver, Settings.Global.ANIMATOR_DURATION_SCALE, 1f)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 4,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContentTransitionScope",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 50,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedContent(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 75,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "private fun AnimatedContentTransitionScope<YearMonth>.getAnimation(): ContentTransform {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 79,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animationSpec = tween(durationMillis = MONTH_YEAR_CHANGE_ANIMATION_DURATION),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 81,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animationSpec = tween(durationMillis = MONTH_YEAR_CHANGE_ANIMATION_DURATION),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 84,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animationSpec = tween(durationMillis = MONTH_YEAR_CHANGE_ANIMATION_DURATION),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "app/src/main/java/mihon/feature/upcoming/components/calendar/CalendarHeader.kt",
+      "line": 86,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animationSpec = tween(durationMillis = MONTH_YEAR_CHANGE_ANIMATION_DURATION),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "core/common/src/main/kotlin/tachiyomi/core/common/util/system/ImageUtil.kt",
+      "line": 17,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.core.graphics.applyCanvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "core/common/src/main/kotlin/tachiyomi/core/common/util/system/ImageUtil.kt",
+      "line": 128,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "half.applyCanvas {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "core/common/src/main/kotlin/tachiyomi/core/common/util/system/ImageUtil.kt",
+      "line": 161,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "result.applyCanvas {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "domain/src/main/java/tachiyomi/domain/chapter/service/ChapterRecognition.kt",
+      "line": 218,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "chapterNumbers.fillBetween(run, older.value, minOf(newer.value, floor(older.value) + 1))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "domain/src/main/java/tachiyomi/domain/chapter/service/ChapterRecognition.kt",
+      "line": 224,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "chapterNumbers.fillBetween(run, older.value, floor(older.value) + 1)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "domain/src/main/java/tachiyomi/domain/chapter/service/ChapterRecognition.kt",
+      "line": 266,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "private fun Array<RecognizedNumber?>.fillBetween(run: IntRange, lower: Double, upper: Double) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 11,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "import androidx.compose.foundation.gestures.anchoredDraggable",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 114,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "val anchoredDraggableState = rememberSaveable(saver = AnchoredDraggableState.Saver()) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 118,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "state = anchoredDraggableState,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 123,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "if (anchoredDraggableState.settledValue == 0) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 124,
+      "categories": [
+        "timing-spring",
+        "gesture-scroll"
+      ],
+      "text": "scope.launch { anchoredDraggableState.animateTo(1) }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 140,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "anchoredDraggableState.updateAnchors(anchors)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 155,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "remember(anchoredDraggableState) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 156,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "anchoredDraggableState.preUpPostDownNestedScrollConnection {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 157,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "scope.launch { anchoredDraggableState.settle(sheetAnimationSpec) }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 169,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "anchoredDraggableState.offset",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 175,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".anchoredDraggable(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 176,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "state = anchoredDraggableState,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 187,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "enabled = enableImplicitDismiss && anchoredDraggableState.targetValue == 0,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 194,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "LaunchedEffect(anchoredDraggableState) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 195,
+      "categories": [
+        "timing-spring",
+        "gesture-scroll"
+      ],
+      "text": "scope.launch { anchoredDraggableState.animateTo(0) }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 196,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "snapshotFlow { anchoredDraggableState.settledValue }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "line": 44,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedContent(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "line": 60,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "animation = tween(2000, easing = LinearEasing),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import androidx.compose.animation.AnimatedVisibility",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt",
+      "line": 56,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "AnimatedVisibility(visible = expanded) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 36,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import androidx.compose.ui.graphics.graphicsLayer",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 183,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "position.scrollTo(position.proportionAt(offsetY))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 198,
+      "categories": [
+        "timing-spring",
+        "presence-layout"
+      ],
+      "text": "alpha.animateTo(0f, animationSpec = ImmediateFadeOutAnimationSpec)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 200,
+      "categories": [
+        "timing-spring",
+        "presence-layout"
+      ],
+      "text": "alpha.animateTo(0f, animationSpec = ImmediateFadeOutAnimationSpec)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 254,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": ".graphicsLayer { this.alpha = alpha.value }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 314,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "suspend fun scrollTo(proportion: Float) = scrollToOffset((proportion * scrollRange).roundToInt())",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 485,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "private val ImmediateFadeOutAnimationSpec = tween<Float>(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 28,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import androidx.compose.animation.core.TweenSpec",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 64,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "if (spec != null) animateTo(target, spec) else snapTo(target)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 112,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "private val DefaultIncomingSpec = TweenSpec<Dp>(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 117,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "private val DefaultOutgoingSpec = TweenSpec<Dp>(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 122,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "private val HoveredOutgoingSpec = TweenSpec<Dp>(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    }
+  ]
+}

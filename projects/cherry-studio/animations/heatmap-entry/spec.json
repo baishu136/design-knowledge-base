@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.heatmap-entry",
+  "name": "用量格子入场",
+  "project": "cherry-studio",
+  "category": "entrance",
+  "effect": "格子从.7倍透明进入至正常尺寸。",
+  "applicable": "稀疏统计格子的首次出现",
+  "not_applicable": "每次hover或每次数据轮询重播全部格子",
+  "trigger": "animation-usage-heatmap-cell-enter class attached",
+  "start_state": {
+    "scale": 0.7,
+    "opacity": 0
+  },
+  "end_state": {
+    "scale": 1,
+    "opacity": 1
+  },
+  "timing": {
+    "duration_ms": 520,
+    "delay_ms": null,
+    "easing": {
+      "cubic": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "scale": [
+      0.7,
+      1
+    ],
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "scale": 0.7,
+      "opacity": 0
+    },
+    "to": {
+      "scale": 1,
+      "opacity": 1
+    }
+  },
+  "synchronization": "本条提取CSS基础轨道。调用点可能额外设置animationDelay；本轮没有将业务错峰公式确认为项目全局规范。",
+  "interruption": "由CSS生命周期控制，非弹簧；重加类是否重播取决于DOM/浏览器样式刷新。",
+  "gesture": null,
+  "accessibility": "prefers-reduced-motion时transform:none/animation:none。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "src/renderer/assets/styles/animation.css",
+      "symbol": "@keyframes animation-usage-heatmap-cell-enter",
+      "line": 97,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "a961f2f4d0a048c53c2d546d0f65e3d9e5063b6eafcc5f8aadfa622f9b66ff10",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/assets/styles/animation.css#L97"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "单格transform/opacity较轻，大量独立格子仍可能提高图层与调度成本；逐个will-change不是免费优化。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

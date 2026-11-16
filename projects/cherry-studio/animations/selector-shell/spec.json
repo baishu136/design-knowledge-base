@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.selector-shell",
+  "name": "方向感知选择浮层",
+  "project": "cherry-studio",
+  "category": "presence",
+  "effect": "按浮层所在侧偏移半rem并从.95放大，外层同步fade；关闭缩小。",
+  "applicable": "model/provider选择器壳的出现",
+  "not_applicable": "不同side改为同一方向而破坏触发点空间关系",
+  "trigger": "data-selector-shell-content的data-state和data-side",
+  "start_state": {
+    "scale": 0.95,
+    "offset": "±.5rem",
+    "alpha": 0
+  },
+  "end_state": {
+    "scale": 1,
+    "offset": 0,
+    "alpha": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "open": 150,
+      "close": 120
+    },
+    "delay_ms": null,
+    "easing": {
+      "outer_open": "ease-out",
+      "panel_open_cubic": [
+        0.16,
+        1,
+        0.3,
+        1
+      ],
+      "close": "ease-in"
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "scale": [
+      0.95,
+      1
+    ],
+    "translate": "side maps to enter-x/y",
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "scale": 0.95,
+      "offset": "±.5rem",
+      "alpha": 0
+    },
+    "to": {
+      "scale": 1,
+      "offset": 0,
+      "alpha": 1
+    }
+  },
+  "synchronization": "外层只负责透明度，直接子.animation-selector-shell-panel负责translate/scale，避免不同animation覆盖同一个transform。transform-origin用Radix Popover计算变量。",
+  "interruption": "CSS data-state切换；SelectorShell声明destroy/lazy-keep两种挂载策略并用useExitPresence保留退出。lazy-keep仅建议高频列表，具体快速连击/焦点恢复未运行。",
+  "gesture": null,
+  "accessibility": "prefers-reduced-motion下外层/面板同时animation:none及transform:none；键盘导航由选择组件负责。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "src/renderer/assets/styles/animation.css",
+      "symbol": "@keyframes animation-selector-shell-panel-enter",
+      "line": 170,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "a961f2f4d0a048c53c2d546d0f65e3d9e5063b6eafcc5f8aadfa622f9b66ff10",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/assets/styles/animation.css#L170"
+    },
+    {
+      "path": "src/renderer/components/SelectorShell.tsx",
+      "symbol": "const SELECTOR_CONTENT_POSITION_CLASS",
+      "line": 41,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "194ca590020e2773db664903eb5990adfc93fdcefa61e287f19b66634b821c64",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/SelectorShell.tsx#L41"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "transform/opacity为主；避免把尺寸计算放入每帧JS，锚点定位仍有布局测量。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

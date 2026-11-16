@@ -1,0 +1,15 @@
+/* Adapted from https://github.com/CherryHQ/cherry-studio @ c3263227592ad14313da2b4153bf88502c466454
+ * src/renderer/assets/styles/animation.css; Cherry Studio contributors; AGPL-3.0.
+ * Modified: bottom placement only, local names, no Radix position origin. */
+@keyframes selector-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes selector-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes panel-in { from { transform: translateY(-.5rem) scale(.95); } to { transform: translateY(0) scale(1); } }
+@keyframes panel-out { from { transform: scale(1); } to { transform: scale(.95); } }
+.selector[data-state="open"] { animation: selector-in 150ms ease-out both; }
+.selector[data-state="closed"] { animation: selector-out 120ms ease-in both; }
+.selector-panel { transform-origin: top center; }
+.selector[data-state="open"] > .selector-panel { animation: panel-in 150ms cubic-bezier(.16,1,.3,1) both; }
+.selector[data-state="closed"] > .selector-panel { animation: panel-out 120ms ease-in both; }
+@media (prefers-reduced-motion: reduce) {
+  .selector, .selector-panel { animation: none !important; transform: none; }
+}

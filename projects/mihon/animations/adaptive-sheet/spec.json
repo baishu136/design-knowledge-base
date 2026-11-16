@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.adaptive-sheet",
+  "name": "自适应面板锚点进出",
+  "project": "mihon",
+  "category": "gesture-sheet",
+  "effect": "手机从全高隐藏锚点滑至0；平板透明度0→1。",
+  "applicable": "带长内容与嵌套滚动的自适应选项面板",
+  "not_applicable": "需要三档吸附点或能保证退出完成后卸载的场景，应另加状态机",
+  "trigger": "进入组合；返回/背景点击；纵向拖拽释放",
+  "start_state": {
+    "phone_offset": "containerHeight",
+    "tablet_alpha": 0
+  },
+  "end_state": {
+    "phone_offset": 0,
+    "tablet_alpha": 1
+  },
+  "timing": {
+    "duration_ms": 350,
+    "delay_ms": null,
+    "easing": {
+      "name": "tween default",
+      "parameters": null
+    },
+    "spring": null,
+    "repeat": false
+  },
+  "properties": {
+    "translateY": [
+      "containerHeight",
+      0
+    ],
+    "opacity": [
+      0,
+      1
+    ],
+    "dismiss_threshold_dp": 56
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "phone_offset": "containerHeight",
+      "tablet_alpha": 0
+    },
+    "to": {
+      "phone_offset": 0,
+      "tablet_alpha": 1
+    }
+  },
+  "synchronization": "AnchoredDraggableState 初始1，容器测量后建0@0与1@height两个锚点；LaunchedEffect animateTo(0)。nested scroll 在向上预滚动/向下后滚动消费位移，fling settle 使用 sheetAnimationSpec。平板 animateFloatAsState 只驱动 alpha。",
+  "interruption": "手机 observe settledValue，drop首值后只有到1才通知；协程随组合离开取消。平板关闭回调立即执行，没有等待 alpha=0 的门闩。",
+  "gesture": "UserInput delta→dispatchRawDelta；释放后settle；56dp位置阈值。速度阈值来自依赖，未知。",
+  "accessibility": "BackHandler 及系统 Dialog 由包装层参与；本文件未显式读取减少动态效果。依赖/系统动画比例未验证。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "symbol": "fun AdaptiveSheet",
+      "line": 53,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "35349c44ce5570d79c6311391069f6b8a39ba187fece72490867d3c08590ad5a",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt#L53"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "手机 offset 在布局 placement 阶段更新；可避免每帧重测整个内容，但仍需处理位置更新。大内容组合和嵌套滚动成本取决于内容。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.component.bottom-sheet",
+  "name": "CherryUI BottomSheet",
+  "project": "cherry-studio-app",
+  "purpose": "统一移动面板壳",
+  "structure": "BottomSheetProvider→ModalBottomSheet→header/body/footer",
+  "parameters": "maxWidth720；topRadius32；topInset12；sizes compact/medium/large/full",
+  "states": "closed/open/resizable/keyboard；dismissible决定关闭能力和handle",
+  "api": "open,onClose；height/size/sizes互斥联合；title,footer,avoidKeyboard,onSizeChange",
+  "behavior": "保留native position；close回调去重；多档键盘不更改snap points",
+  "migration": "保留互斥尺寸API和safe-area模型；换框架需换native provider",
+  "minimal_usage": "<BottomSheet open={open} onClose={close} size=\"medium\" title=\"Options\">{content}</BottomSheet>",
+  "not_applicable": "直接复制到DOM却假定native动画参数仍有效",
+  "sources": [
+    {
+      "path": "packages/ui/src/components/bottom-sheet/bottom-sheet.tsx",
+      "symbol": "export function BottomSheet(props",
+      "line": 113,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "8e7b9252db415e9877b1d0c8198d4b56c7c2fbfcbd557034d7cc3ad2ddc917c2",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/bottom-sheet/bottom-sheet.tsx#L113"
+    }
+  ],
+  "related_resources": [
+    "cherry-studio-app.animation.native-bottom-sheet"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "license": "AGPL-3.0"
+}

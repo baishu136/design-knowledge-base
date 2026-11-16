@@ -1,0 +1,179 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "mihon",
+    "name": "mihon",
+    "description": "以书库与沉浸阅读为中心：Material 语义配色、多套主题和 AMOLED 覆盖；内容密集的列表/网格与可隐藏阅读工具栏共存。阅读器仍包含 Android View 路径，不能将项目整体视为纯 Compose。",
+    "repository": "https://github.com/mihonapp/mihon",
+    "branch": "main",
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "version": "0.21.3",
+    "analysis_date": "2026-11-16",
+    "platforms": [
+      "Android"
+    ],
+    "stack": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Material3 Expressive",
+      "Voyager",
+      "Android Views"
+    ],
+    "source_directories": {
+      "ui": [
+        "presentation-core/src/main/java/tachiyomi/presentation/core/components",
+        "app/src/main/java/eu/kanade/presentation/",
+        "app/src/main/java/eu/kanade/tachiyomi/ui/reader"
+      ],
+      "themes": [
+        "presentation-core/src/main/res/values",
+        "presentation-core/src/main/res/values-night",
+        "app/src/main/java/eu/kanade/presentation/theme"
+      ],
+      "motion": [
+        "presentation-core/src/main/java/tachiyomi/presentation/core/components",
+        "app/src/main/java/eu/kanade/presentation/util/Navigator.kt"
+      ]
+    },
+    "source_snapshot": "source-repositories/mihon",
+    "license": "Apache-2.0",
+    "coverage": {
+      "status": "core-system-and-selected-high-value-resources",
+      "scanned_text_files": 1188,
+      "discovery_hits": 202,
+      "components": 4,
+      "animations": 6,
+      "original_app_runtime": false
+    },
+    "design_features": "以书库与沉浸阅读为中心：Material 语义配色、多套主题和 AMOLED 覆盖；内容密集的列表/网格与可隐藏阅读工具栏共存。阅读器仍包含 Android View 路径，不能将项目整体视为纯 Compose。",
+    "verification": [
+      "source-verified"
+    ],
+    "runtime_verified": false,
+    "not_portable": [
+      "业务状态容器、私有模块路径与平台导航不能整体复制",
+      "第三方组件的未追溯默认动效不能当作项目 Token"
+    ],
+    "backlog": "BACKLOG.md"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cherry-studio-app",
+    "name": "cherry-studio-app",
+    "description": "移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。",
+    "repository": "https://github.com/CherryHQ/cherry-studio-app",
+    "branch": "main",
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "version": "0.5.5",
+    "analysis_date": "2026-11-16",
+    "platforms": [
+      "iOS",
+      "Android"
+    ],
+    "stack": [
+      "TypeScript",
+      "React Native 0.88.1",
+      "Expo 58",
+      "Reanimated 4.7.1",
+      "Gesture Handler",
+      "Skia",
+      "Uniwind"
+    ],
+    "source_directories": {
+      "ui": [
+        "packages/ui/src/components",
+        "src/frontend/components",
+        "src/frontend/features"
+      ],
+      "themes": [
+        "packages/design-tokens/src/styles",
+        "src/frontend/styles/global.css"
+      ],
+      "motion": [
+        "packages/ui/src/motion.ts",
+        "packages/ui/src/components/menu",
+        "packages/ui/src/components/loading"
+      ]
+    },
+    "source_snapshot": "source-repositories/cherry-studio-app-e6d157d2ea60",
+    "license": "AGPL-3.0",
+    "coverage": {
+      "status": "core-system-and-selected-high-value-resources",
+      "scanned_text_files": 3703,
+      "discovery_hits": 534,
+      "components": 5,
+      "animations": 6,
+      "original_app_runtime": false
+    },
+    "design_features": "移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。",
+    "verification": [
+      "source-verified"
+    ],
+    "runtime_verified": false,
+    "not_portable": [
+      "业务状态容器、私有模块路径与平台导航不能整体复制",
+      "第三方组件的未追溯默认动效不能当作项目 Token"
+    ],
+    "backlog": "BACKLOG.md"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cherry-studio",
+    "name": "cherry-studio",
+    "description": "内容优先的多栏AI工作台：中性应用外壳、表面色分层、可调整导航与资源栏；共享Shadcn语义桥接内部cs-* providers，支持运行时主题输入。",
+    "repository": "https://github.com/CherryHQ/cherry-studio",
+    "branch": "main",
+    "commit": "c3263227592ad14313da2b4153bf88502c466454",
+    "version": "2.2.2",
+    "analysis_date": "2026-11-16",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "stack": [
+      "TypeScript",
+      "React 19",
+      "Electron 45",
+      "Tailwind CSS 4",
+      "Radix UI",
+      "Motion React"
+    ],
+    "source_directories": {
+      "ui": [
+        "packages/ui/src/components",
+        "src/renderer/components",
+        "src/renderer/pages"
+      ],
+      "themes": [
+        "packages/ui/src/styles",
+        "src/renderer/components/ThemeProvider.tsx"
+      ],
+      "motion": [
+        "src/renderer/assets/styles/animation.css",
+        "src/renderer/components/chat/shell",
+        "src/renderer/components/chat/messages/list/useSmoothScrollAnimation.ts"
+      ]
+    },
+    "source_snapshot": "source-repositories/cherry-studio-c3263227592a",
+    "license": "AGPL-3.0",
+    "coverage": {
+      "status": "core-system-and-selected-high-value-resources",
+      "scanned_text_files": 9949,
+      "discovery_hits": 1130,
+      "components": 4,
+      "animations": 7,
+      "original_app_runtime": false
+    },
+    "design_features": "内容优先的多栏AI工作台：中性应用外壳、表面色分层、可调整导航与资源栏；共享Shadcn语义桥接内部cs-* providers，支持运行时主题输入。",
+    "verification": [
+      "source-verified"
+    ],
+    "runtime_verified": false,
+    "not_portable": [
+      "业务状态容器、私有模块路径与平台导航不能整体复制",
+      "第三方组件的未追溯默认动效不能当作项目 Token"
+    ],
+    "backlog": "BACKLOG.md"
+  }
+]

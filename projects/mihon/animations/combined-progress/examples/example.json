@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.example.rotating-progress",
+  "project": "mihon",
+  "name": "确定进度持续旋转",
+  "animation_id": "mihon.animation.combined-progress",
+  "entry_file": "RotatingProgress.kt",
+  "files": [
+    "RotatingProgress.kt"
+  ],
+  "classification": "adapted",
+  "license": "Apache-2.0",
+  "upstream_commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+  "scope": "确定进度持续旋转",
+  "differences": "不含未知态交叉淡入；加入显式reducedMotion",
+  "requirements": "Compose animation/runtime/ui与Material3；MaterialTheme内调用RotatingProgress(.5f,false)",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

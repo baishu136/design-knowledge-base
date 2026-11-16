@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.example.menu-surface",
+  "project": "cherry-studio-app",
+  "name": "菜单内容透明度和变换",
+  "animation_id": "cherry-studio-app.animation.menu-panel",
+  "entry_file": "MenuSurface.tsx",
+  "files": [
+    "MenuSurface.tsx"
+  ],
+  "classification": "adapted",
+  "license": "AGPL-3.0",
+  "upstream_commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+  "scope": "菜单内容透明度和变换",
+  "differences": "不含测量/宽高/blur/portal/focus；只复现内容轨道",
+  "requirements": "已有React Native/Reanimated4开发客户端，正确配置worklets；MenuSurface open={open}包内容",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

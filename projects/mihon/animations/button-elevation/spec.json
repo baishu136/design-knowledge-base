@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.button-elevation",
+  "name": "交互驱动的按钮高度过渡",
+  "project": "mihon",
+  "category": "feedback",
+  "effect": "根据press/hover/focus/drag改变 elevation；并非缩放。",
+  "applicable": "有层次阴影的按钮",
+  "not_applicable": "扁平工具栏中的所有按钮统一抬高",
+  "trigger": "Interaction流的前后态",
+  "start_state": {
+    "elevation": "from interaction target"
+  },
+  "end_state": {
+    "elevation": "to interaction target"
+  },
+  "timing": {
+    "duration_ms": {
+      "incoming": 120,
+      "press_or_focus_outgoing": 150,
+      "hover_outgoing": 120
+    },
+    "delay_ms": null,
+    "easing": {
+      "incoming": "FastOutSlowInEasing (依赖数值未追溯)",
+      "outgoing_cubic": [
+        0.4,
+        0,
+        0.6,
+        1
+      ]
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "elevation_dp": "由ButtonElevation状态决定，工具函数不固定端点"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "elevation": "from interaction target"
+    },
+    "to": {
+      "elevation": "to interaction target"
+    }
+  },
+  "synchronization": "animateElevation 根据 to 优先、否则 from 选 TweenSpec；两者都无时 snapTo。默认交互进入120ms、离开150ms，hover离开120ms。原文件是Compose M3复制代码且保留AOSP版权。",
+  "interruption": "Animatable.animateTo 的协程取消与新目标协作；不能建立每次press排队的时间轴。",
+  "gesture": null,
+  "accessibility": "同时处理FocusInteraction；disabled/未知态snap，无局部Reduce Motion判断。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "symbol": "animateElevation",
+      "line": 50,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "d4fe0fbd14017fa7c0d194907eafcab364c08cea3d41962e2cb448c1bf3c7423",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt#L50"
+    },
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Button.kt",
+      "symbol": "val animatable = remember",
+      "line": 283,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "539113660b42de5588e15668d6a6548a6c271b1058b6ad7889993648d0c42544",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Button.kt#L283"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "阴影高度改变可能增加渲染负担；不是单纯transform，需目标设备实测。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.fast-scroller",
+  "name": "快滚条显隐与拖动",
+  "project": "mihon",
+  "category": "scroll",
+  "effect": "滚动显现、停留2秒、按平台时长淡出。",
+  "applicable": "超长书库列表/网格",
+  "not_applicable": "不能估算总滚动范围的无界内容或仅靠细条提供唯一导航",
+  "trigger": "scrolled SharedFlow；拖动thumb",
+  "start_state": {
+    "alpha": 0
+  },
+  "end_state": {
+    "scrolling_alpha": 1,
+    "idle_alpha": 0
+  },
+  "timing": {
+    "duration_ms": null,
+    "duration_source": "ViewConfiguration.getScrollBarFadeDuration()",
+    "delay_ms": 2000,
+    "sample_ms": 100,
+    "easing": {
+      "name": "tween default",
+      "parameters": null
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "opacity": [
+      1,
+      0
+    ],
+    "thumb_length_dp": 48,
+    "thumb_thickness_dp": 12,
+    "radius_dp": 6
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "alpha": 0
+    },
+    "to": {
+      "scrolling_alpha": 1,
+      "idle_alpha": 0
+    }
+  },
+  "synchronization": "DROP_OLDEST 容量1事件流经sample(.1.seconds)，collectLatest 取消上次等待/淡出；允许显示时snapTo(1)，delay(2.seconds) 后animateTo(0)。graphicsLayer读取alpha，placement更新thumb位置。",
+  "interruption": "collectLatest 用新事件替换旧淡出任务；remember Animatable 保留当前值。LaunchedEffect 离开组合时取消。",
+  "gesture": "拖动累计delta并coerceIn轨道；scrollTo对应比例；释放后显隐仍由事件流管理。",
+  "accessibility": "源码设置 systemGestureExclusion 仅在必要时启用；thumb拖动键盘与无障碍替代路径仍需专项审查。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "symbol": "val alpha = remember",
+      "line": 189,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "21b4e988204433df5a0d838bc22722a238d7a5f3e89638533207ee244b61a03b",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt#L189"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "在placement读取scroll state的注释和代码可确认；sample限制事件处理，不表示以10FPS绘制。拖动scrollTo可能触发Lazy内容加载。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

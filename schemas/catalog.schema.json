@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_on",
+    "projects",
+    "resources"
+  ],
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "project",
+          "resource_type",
+          "name",
+          "description",
+          "keywords",
+          "platforms",
+          "original_stack",
+          "doc_path",
+          "spec_path",
+          "example_paths",
+          "related_resource_ids",
+          "license",
+          "verification",
+          "documents"
+        ],
+        "properties": {
+          "resource_type": {
+            "enum": [
+              "project",
+              "design-language",
+              "component",
+              "animation",
+              "example",
+              "architecture",
+              "interaction",
+              "reference",
+              "shared-pattern",
+              "guide",
+              "schema"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "doc_path": {
+            "type": "string"
+          },
+          "spec_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "example_paths": {
+            "type": "array"
+          },
+          "related_resource_ids": {
+            "type": "array"
+          },
+          "verification": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "repository",
+    "branch",
+    "commit",
+    "version",
+    "platforms",
+    "stack",
+    "source_directories",
+    "source_snapshot",
+    "license",
+    "coverage",
+    "verification"
+  ],
+  "properties": {
+    "commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "status",
+        "components",
+        "animations",
+        "scanned_text_files",
+        "discovery_hits",
+        "original_app_runtime"
+      ]
+    }
+  }
+}

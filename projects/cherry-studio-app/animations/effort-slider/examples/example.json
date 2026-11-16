@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.example.snap-marker",
+  "project": "cherry-studio-app",
+  "name": "离散滑杆的程序化吸附",
+  "animation_id": "cherry-studio-app.animation.effort-slider",
+  "entry_file": "SnapMarker.tsx",
+  "files": [
+    "SnapMarker.tsx"
+  ],
+  "classification": "adapted",
+  "license": "AGPL-3.0",
+  "upstream_commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+  "scope": "离散滑杆的程序化吸附",
+  "differences": "不含拖拽磁吸与完整slider语义；#666为示例局部中性占位，非上游Token",
+  "requirements": "已有React Native/Reanimated4宿主；SnapMarker index={2} count={5} travel={180}",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

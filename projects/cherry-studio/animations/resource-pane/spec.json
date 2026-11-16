@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.resource-pane",
+  "name": "资源栏宽度展开",
+  "project": "cherry-studio",
+  "category": "layout",
+  "effect": "侧栏width0→目标宽并淡入，拖动时即时跟随。",
+  "applicable": "桌面主从面板",
+  "not_applicable": "大量复杂子树每帧全布局或手势期间仍加缓动",
+  "trigger": "open Boolean；isResizing",
+  "start_state": {
+    "width": 0,
+    "opacity": 0
+  },
+  "end_state": {
+    "width": "resolvedWidth",
+    "opacity": 1
+  },
+  "timing": {
+    "duration_ms": 300,
+    "delay_ms": null,
+    "easing": {
+      "name": "Motion easeInOut",
+      "parameters": null
+    },
+    "while_resizing_ms": 0,
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "width": "0 ↔ var(--assistants-width)/override",
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "width": 0,
+      "opacity": 0
+    },
+    "to": {
+      "width": "resolvedWidth",
+      "opacity": 1
+    }
+  },
+  "synchronization": "AnimatePresence initial=false；motion.div animate依据open。hasOpened让首次打开后的children继续保留；closed态width0/opacity0而不是每次重挂载。isResizing直接transition duration0。",
+  "interruption": "Motion新目标接管当前值；React保留树维持列表状态。关闭inert/aria-hidden即刻变化，不等待视觉结束。",
+  "gesture": null,
+  "accessibility": "有键盘splitter props；本组件未直接useReducedMotion，本轮不保证宿主全局覆盖。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "src/renderer/components/chat/shell/PageSidebar.tsx",
+      "symbol": "export function PageSidebar",
+      "line": 28,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "c6a11f92c3c78f1140f8d4971c3d2d69d0631f3fc20287ebd3518ae94ab3f77f",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/shell/PageSidebar.tsx#L28"
+    },
+    {
+      "path": "src/renderer/components/chat/shell/paneLayout.ts",
+      "symbol": "export const CHAT_SHELL_TRANSITION",
+      "line": 5,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "6a394be7f89217be48144b40d298496a835f62de32e37f26e268ea5135002cdd",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/shell/paneLayout.ts#L5"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "width动画必须重排相邻主内容，文本折行/虚拟列表测量可能昂贵；暂停复杂编辑器resize工作或缩短过渡是目标项目优化建议，非原实现已完成。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

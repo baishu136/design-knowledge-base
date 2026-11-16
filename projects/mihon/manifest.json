@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon",
+  "name": "mihon",
+  "description": "以书库与沉浸阅读为中心：Material 语义配色、多套主题和 AMOLED 覆盖；内容密集的列表/网格与可隐藏阅读工具栏共存。阅读器仍包含 Android View 路径，不能将项目整体视为纯 Compose。",
+  "repository": "https://github.com/mihonapp/mihon",
+  "branch": "main",
+  "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+  "version": "0.21.3",
+  "analysis_date": "2026-11-16",
+  "platforms": [
+    "Android"
+  ],
+  "stack": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "source_directories": {
+    "ui": [
+      "presentation-core/src/main/java/tachiyomi/presentation/core/components",
+      "app/src/main/java/eu/kanade/presentation/",
+      "app/src/main/java/eu/kanade/tachiyomi/ui/reader"
+    ],
+    "themes": [
+      "presentation-core/src/main/res/values",
+      "presentation-core/src/main/res/values-night",
+      "app/src/main/java/eu/kanade/presentation/theme"
+    ],
+    "motion": [
+      "presentation-core/src/main/java/tachiyomi/presentation/core/components",
+      "app/src/main/java/eu/kanade/presentation/util/Navigator.kt"
+    ]
+  },
+  "source_snapshot": "source-repositories/mihon",
+  "license": "Apache-2.0",
+  "coverage": {
+    "status": "core-system-and-selected-high-value-resources",
+    "scanned_text_files": 1188,
+    "discovery_hits": 202,
+    "components": 4,
+    "animations": 6,
+    "original_app_runtime": false
+  },
+  "design_features": "以书库与沉浸阅读为中心：Material 语义配色、多套主题和 AMOLED 覆盖；内容密集的列表/网格与可隐藏阅读工具栏共存。阅读器仍包含 Android View 路径，不能将项目整体视为纯 Compose。",
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "not_portable": [
+    "业务状态容器、私有模块路径与平台导航不能整体复制",
+    "第三方组件的未追溯默认动效不能当作项目 Token"
+  ],
+  "backlog": "BACKLOG.md"
+}

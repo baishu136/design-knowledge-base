@@ -1,0 +1,5355 @@
+{
+  "scope": "full snapshot supported text extensions; lexical hits are candidates, not confirmed animations",
+  "patterns": {
+    "timing-spring": "withTiming|withSpring|tween\\(|spring\\(|TweenSpec|animateTo\\(|withDecay",
+    "presence-layout": "AnimatedVisibility|AnimatedContent|Crossfade|animateContentSize|AnimatePresence|motion\\.|layoutId|LayoutAnimation|FadeIn|FadeOut",
+    "gesture-scroll": "Gesture\\.|anchoredDraggable|pointerInput|requestAnimationFrame|scrollTo\\(|useAnimatedScrollHandler|useMotionValue",
+    "css-rendering": "@keyframes|transition:|animation:|animate-|RuntimeShader|Shader|Canvas|Skia|BlurView|backdrop-filter|graphicsLayer",
+    "accessibility-motion": "useReducedMotion|ReduceMotion|prefers-reduced-motion|MotionDurationScale|ANIMATOR_DURATION_SCALE"
+  },
+  "hits": [
+    {
+      "path": ".rnstorybook/stories/messages/messageFixtures.ts",
+      "line": 177,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "'  requestAnimationFrame(loop);',",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": ".rnstorybook/stories/messages/messageFixtures.ts",
+      "line": 506,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "inputPreview: createTextPreview('requestAnimationFrame(loop);'.repeat(400)),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": ".rnstorybook/stories/messages/messageFixtures.ts",
+      "line": 520,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "input: { filename: 'game.js', content: 'requestAnimationFrame(loop);'.repeat(4_000) },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 124,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "// Minimal Skia surface for components that render under test (AnimatedText):",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 135,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Canvas: inert('SkiaCanvas'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 136,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Circle: inert('SkiaCircle'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 137,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Group: inert('SkiaGroup'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 138,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Line: inert('SkiaLine'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 139,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Text: inert('SkiaText'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 140,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "BlurMask: inert('SkiaBlurMask'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 141,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Rect: inert('SkiaRect'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 142,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "RoundedRect: inert('SkiaRoundedRect'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 143,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Shader: inert('SkiaShader'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 144,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "ImageShader: inert('SkiaImageShader'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 145,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Path: inert('SkiaPath'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 146,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Mask: inert('SkiaMask'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 155,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia: {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "jest.setup.ts",
+      "line": 201,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "// Gesture.* 返回任意链式调用都指向自身的构建器。",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 16,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "guard observingMotion, motion.isAccelerometerAvailable, !motion.isAccelerometerActive else { return }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 17,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "motion.accelerometerUpdateInterval = 0.05",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 18,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "motion.startAccelerometerUpdates(to: .main) { [weak self] data, _ in",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 47,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "self.motion.stopAccelerometerUpdates()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 51,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "OnAppEntersBackground { self.motion.stopAccelerometerUpdates() }",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/diagnostics/ios/DiagnosticsModule.swift",
+      "line": 73,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "self.motion.stopAccelerometerUpdates()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/androidTest/java/expo/modules/pdftextextractor/ImageTextRecognition.test.kt",
+      "line": 4,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import android.graphics.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/androidTest/java/expo/modules/pdftextextractor/ImageTextRecognition.test.kt",
+      "line": 14,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private fun image(width: Int, height: Int, format: Bitmap.CompressFormat, draw: (Canvas) -> Unit): File {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/androidTest/java/expo/modules/pdftextextractor/ImageTextRecognition.test.kt",
+      "line": 18,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "draw(Canvas(bitmap))",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/androidTest/java/expo/modules/pdftextextractor/PdfPageOcr.test.kt",
+      "line": 4,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import android.graphics.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/androidTest/java/expo/modules/pdftextextractor/PdfPageOcr.test.kt",
+      "line": 37,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "val canvas = Canvas(scan)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/main/java/expo/modules/pdftextextractor/ImageTextRecognition.kt",
+      "line": 5,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import android.graphics.Canvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "modules/pdf-text-extractor/android/src/main/java/expo/modules/pdftextextractor/ImageTextRecognition.kt",
+      "line": 64,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "if (bitmap.hasAlpha()) Canvas(bitmap).drawColor(Color.WHITE, PorterDuff.Mode.DST_OVER)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/design-tokens/scripts/check-app-theme.ts",
+      "line": 35,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "'Skia fallback inks for the frame where CSS variables are not yet resolved',",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/card-stack/card-stack.tsx",
+      "line": 43,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Exclusive(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/card-stack/card-stack.tsx",
+      "line": 44,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Fling()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/card-stack/card-stack.tsx",
+      "line": 51,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Fling()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer-editor.test.tsx",
+      "line": 26,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer-editor.test.tsx",
+      "line": 51,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (target: number, config: { duration: number }) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer-expansion.test.tsx",
+      "line": 37,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer-expansion.test.tsx",
+      "line": 49,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (target: number, _config: unknown, complete?: (finished: boolean) => void) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer-native-patch.test.ts",
+      "line": 103,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "?.split('override fun scrollTo(')[0];",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer.test.tsx",
+      "line": 72,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer.test.tsx",
+      "line": 77,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => false,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/__tests__/composer.test.tsx",
+      "line": 84,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.fn((value: number) => value),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/__tests__/composer-collapsible.test.tsx",
+      "line": 17,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion.value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/__tests__/composer-collapsible.test.tsx",
+      "line": 24,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (...args: unknown[]) => mockWithTiming(...(args as [number])),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-collapsible.tsx",
+      "line": 5,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-collapsible.tsx",
+      "line": 7,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-collapsible.tsx",
+      "line": 33,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const isReducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-collapsible.tsx",
+      "line": 61,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "height.set(withTiming(nextHeight, settleMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-collapsible.tsx",
+      "line": 62,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "opacity.set(withTiming(nextOpacity, settleMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-editor.tsx",
+      "line": 16,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-editor.tsx",
+      "line": 21,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-editor.tsx",
+      "line": 40,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-editor.tsx",
+      "line": 107,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "activeProgress.set(withTiming(target ? 1 : 0, activeTransitionMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-editor.tsx",
+      "line": 109,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(target ? naturalFieldHeight.get() : restingInputHeight, activeTransitionMotion),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-expansion.tsx",
+      "line": 17,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-expansion.tsx",
+      "line": 22,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-expansion.tsx",
+      "line": 90,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "// A second action reverses the current motion. Keep the screen isolated until",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-expansion.tsx",
+      "line": 95,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-expansion.tsx",
+      "line": 97,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "{ duration: duration.base, easing: easing.settle, reduceMotion: ReduceMotion.System },",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-popover.tsx",
+      "line": 86,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const frameId = requestAnimationFrame(finishClose);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-popover.tsx",
+      "line": 160,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const frameId = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/composer-popover.tsx",
+      "line": 257,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "focusFrame.current = requestAnimationFrame(() =>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/morph-menu/__tests__/morph-menu.test.tsx",
+      "line": 119,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/composer/components/morph-menu/__tests__/morph-menu.test.tsx",
+      "line": 139,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number, _config: unknown, callback?: (finished: boolean) => void) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-crop-canvas.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { Canvas, Group, Image as SkiaImage, useImage } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-crop-canvas.tsx",
+      "line": 31,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "export function ImageCropCanvas({",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-crop-canvas.tsx",
+      "line": 92,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Canvas accessible={false} style={StyleSheet.absoluteFill}>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-crop-canvas.tsx",
+      "line": 95,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<SkiaImage",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-crop-canvas.tsx",
+      "line": 105,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "</Canvas>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-editor.tsx",
+      "line": 18,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { ImageCropCanvas } from './image-crop-canvas';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/image-editor/image-editor.tsx",
+      "line": 185,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<ImageCropCanvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/__tests__/input.test.tsx",
+      "line": 60,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/__tests__/input.test.tsx",
+      "line": 63,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/input.tsx",
+      "line": 15,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/input.tsx",
+      "line": 19,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/input.tsx",
+      "line": 37,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/input/input.tsx",
+      "line": 218,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "visibilityProgress.set(withTiming(nextVisibility ? 1 : 0, visibilityIconMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/__tests__/image-generation-loader.test.tsx",
+      "line": 55,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/__tests__/image-generation-loader.test.tsx",
+      "line": 57,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "withRepeat: (animation: unknown) => animation,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/__tests__/image-generation-loader.test.tsx",
+      "line": 58,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: unknown) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/dot-matrix-base.tsx",
+      "line": 8,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/dot-matrix-base.tsx",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/dot-matrix-base.tsx",
+      "line": 68,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/dot-matrix-base.tsx",
+      "line": 81,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withRepeat(withTiming(1, { duration: cycleDurationMs, easing: easing.linear }), -1, false),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader-effect.ts",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { Skia, type SkRuntimeEffect } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader-effect.ts",
+      "line": 73,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const effect = Skia.RuntimeEffect.Make(IMAGE_GENERATION_LOADER_SKSL);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { Canvas, Rect, Shader, Skia } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 7,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 46,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const initialReducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 69,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "() => Skia.Color(surfaceColorValue ?? '#f5f5f5'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 96,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Canvas style={StyleSheet.absoluteFill}>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 98,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Shader source={foilEffect} uniforms={uniforms} />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 100,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "</Canvas>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/spinner/spinner-control/spinner-control.android.tsx",
+      "line": 3,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import { useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/loading/spinner/spinner-control/spinner-control.android.tsx",
+      "line": 17,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/markdown-text/__tests__/markdown-native-patch.test.ts",
+      "line": 67,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "expect(patch).toContain('+@interface ENRMCodeBlockCanvasView : UIView');",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/__tests__/menu-content.test.tsx",
+      "line": 33,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => false,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/__tests__/menu-content.test.tsx",
+      "line": 43,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/__tests__/menu-overlay.test.tsx",
+      "line": 56,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(global, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/__tests__/menu-overlay.test.tsx",
+      "line": 168,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(global, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/__tests__/use-menu-state.test.tsx",
+      "line": 28,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(global, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/context-menu/__tests__/context-menu.android.test.tsx",
+      "line": 141,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "mockFailGesture.mockClear();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-motion.ts",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "// The composer add menu and context menus share one expanding-panel motion.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-overlay.tsx",
+      "line": 102,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "focusFrame.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-overlay.tsx",
+      "line": 192,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const frame = requestAnimationFrame(visible ? onShow : onDismiss);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "line": 5,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "line": 7,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "line": 15,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const isReducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "line": 29,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "progress.set(isReducedMotion ? 1 : withTiming(1, menuOpenMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "line": 33,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(0, isReducedMotion ? { duration: 0 } : menuCloseMotion, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-state.ts",
+      "line": 39,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "focusFrame.current = requestAnimationFrame(() => focusMenuTarget(triggerRef.current));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/__tests__/message-part.test.tsx",
+      "line": 104,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/__tests__/message-part.test.tsx",
+      "line": 106,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => false,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/__tests__/message-part.test.tsx",
+      "line": 109,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-disclosure.tsx",
+      "line": 5,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-disclosure.tsx",
+      "line": 8,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-disclosure.tsx",
+      "line": 32,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-disclosure.tsx",
+      "line": 181,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "rotation.set(withTiming(isOpen ? 90 : 0, disclosureIconMotion));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-pending.tsx",
+      "line": 3,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import Animated, { type CSSAnimationProperties, useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/message-part/components/message-part-pending.tsx",
+      "line": 33,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const initialReducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/scroll-to-bottom-button/__tests__/scroll-to-bottom-button.test.tsx",
+      "line": 50,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/scroll-to-bottom-button/components/scroll-to-bottom-button.tsx",
+      "line": 3,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import Animated, { type SharedValue, useAnimatedStyle, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/scroll-to-bottom-button/components/scroll-to-bottom-button.tsx",
+      "line": 40,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "() => ({ transform: [{ scale: withTiming(isAtBottom ? 0.8 : 1, visibilityMotion) }] }),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/__tests__/shimmer-text.test.tsx",
+      "line": 11,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "(animation: unknown, _numberOfReps?: number, _reverse?: boolean) => animation,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/__tests__/shimmer-text.test.tsx",
+      "line": 73,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/__tests__/shimmer-text.test.tsx",
+      "line": 75,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "withRepeat: (animation: unknown, numberOfReps?: number, reverse?: boolean) =>",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/__tests__/shimmer-text.test.tsx",
+      "line": 77,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: unknown, config?: unknown) => mockWithTiming(value, config),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/shimmer-text.tsx",
+      "line": 8,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/shimmer-text.tsx",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/shimmer-text.tsx",
+      "line": 42,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/shimmer-text/shimmer-text.tsx",
+      "line": 55,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.set(withRepeat(withTiming(textWidth, shimmerTextMotion), -1, false));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios-fallback.test.tsx",
+      "line": 32,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.fn((value: number) => value),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios-fallback.test.tsx",
+      "line": 101,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "const { withTiming } = jest.requireMock('react-native-reanimated') as {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios-fallback.test.tsx",
+      "line": 102,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.Mock;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios-fallback.test.tsx",
+      "line": 104,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "expect(withTiming).toHaveBeenLastCalledWith(3, {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 39,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.fn((value: number) => value),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 100,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "const { withTiming } = jest.requireMock('react-native-reanimated') as {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 101,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.Mock;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 124,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "expect(withTiming).toHaveBeenLastCalledWith(153, {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 136,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "const { withTiming } = jest.requireMock('react-native-reanimated') as {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 137,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: jest.Mock;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/__tests__/tabs.ios.test.tsx",
+      "line": 171,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "expect(withTiming).toHaveBeenLastCalledWith(93, {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/tabs.ios.tsx",
+      "line": 4,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/tabs/tabs.ios.tsx",
+      "line": 52,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(indicatorX, {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/__tests__/text-animation.test.tsx",
+      "line": 48,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/__tests__/text-animation.test.tsx",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "withDelay: (_delay: number, animation: number) => animation,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/__tests__/text-animation.test.tsx",
+      "line": 51,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring: (value: number, config?: unknown) => mockWithSpring(value, config),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/__tests__/text-animation.test.tsx",
+      "line": 52,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number, config?: unknown) => mockWithTiming(value, config),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 6,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 9,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 10,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 113,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const isStill = useReducedMotion() || !isEnabled;",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 344,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.set(withSpring(0, spring.settle));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 348,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(1, { duration: motionDuration.fast, easing: easing.settle }),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 357,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.set(withSpring(-enterFrom, spring.settle));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 358,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "opacity.set(withTiming(0, { duration: EXIT_FADE_DURATION, easing: easing.settle }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/toast/__tests__/toast.test.tsx",
+      "line": 26,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "jest.mock('react-native-reanimated', () => ({ useReducedMotion: () => true }));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/toast/toast.tsx",
+      "line": 10,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import { useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "packages/ui/src/components/toast/toast.tsx",
+      "line": 23,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "scripts/__tests__/skiaCompilerMemory.test.ts",
+      "line": 10,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "// Guards the compilation graph behind upstream Skia #4272. Compiler peak memory",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "scripts/__tests__/skiaCompilerMemory.test.ts",
+      "line": 12,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "describe('Skia compiler memory patch', () => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/(drawer)/(main)/_layout.tsx",
+      "line": 23,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "animation: canDockSidebar ? ('none' as const) : undefined,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/(drawer)/(main)/drawings/_layout.tsx",
+      "line": 24,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "options={{ animation: 'none', headerShown: false, presentation: 'transparentModal' }}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/(drawer)/(main)/plugins/_layout.tsx",
+      "line": 20,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Stack.Screen name=\"mcp/oauth-callback\" options={{ animation: 'none', headerShown: false }} />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/(drawer)/(main)/plugins/_layout.tsx",
+      "line": 23,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "options={{ animation: 'none', headerShown: false }}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/_layout.tsx",
+      "line": 166,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "animation: 'fade_from_bottom',",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/_layout.tsx",
+      "line": 184,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Stack.Screen name=\"uu-remote/callback\" options={{ headerShown: false, animation: 'none' }} />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/app/_layout.tsx",
+      "line": 191,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "animation: 'none',",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/ai/agent/runtime/pi/__tests__/PiDurableRuntime.test.ts",
+      "line": 127,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "// A caller captured waiting -> active before promotion. Withdrawal must not use it.",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/core/application/Application.ts",
+      "line": 24,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private transition: Promise<unknown> = Promise.resolve();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/core/lifecycle/BaseService.ts",
+      "line": 284,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "private enqueueActivationTransition<T>(transition: () => Promise<T>): Promise<T> {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 53,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "export function generateOrderKeyBetween(before: string | null, after: string | null): string {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 54,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateKeyBetween(before, after);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 57,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "export function generateOrderKeySequenceBetween(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 66,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateNKeysBetween(before, after, count);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 181,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateOrderKeyBetween(null, smallest);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 185,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateOrderKeyBetween(largest, null);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 191,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateOrderKeyBetween(predecessor, anchorKey);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 196,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateOrderKeyBetween(anchorKey, successor);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/data/services/utils/orderKey.ts",
+      "line": 212,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "return generateOrderKeySequenceBetween(before, after, count);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/backgroundActivity/__tests__/androidBackgroundNativePatch.test.ts",
+      "line": 32,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "expect(promotion.indexOf('detachFinishedResult();')).toBeGreaterThan(-1);",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/backgroundActivity/__tests__/androidBackgroundNativePatch.test.ts",
+      "line": 33,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "expect(promotion.indexOf('detachFinishedResult();')).toBeLessThan(",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/backgroundActivity/__tests__/androidBackgroundNativePatch.test.ts",
+      "line": 34,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "promotion.indexOf('ServiceCompat.startForeground('),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/backgroundActivity/__tests__/androidBackgroundNativePatch.test.ts",
+      "line": 37,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "const deferred = promotion.indexOf('else if (foreground && !anchorOngoing && !isAppVisible())');",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/backgroundActivity/__tests__/androidBackgroundNativePatch.test.ts",
+      "line": 39,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "expect(deferred).toBeLessThan(promotion.indexOf('detachFinishedResult();'));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { ImageFormat, Skia } from '@shopify/react-native-skia';",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 11,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia: {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 41,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "getCanvas: () => canvas,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 48,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "jest.mocked(Skia.Data.fromURI).mockResolvedValue(data as never);",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 49,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "jest.mocked(Skia.Image.MakeImageFromEncoded).mockReturnValue(image as never);",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "jest.mocked(Skia.Surface.Make).mockReturnValue(surface as never);",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 59,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "expect(Skia.Surface.Make).toHaveBeenCalledWith(450, 640);",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 87,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "expect(Skia.Surface.Make).not.toHaveBeenCalled();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 94,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "jest.mocked(Skia.Data.fromURI).mockImplementation(async () => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/__tests__/renderEditedImage.test.ts",
+      "line": 101,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "expect(Skia.Surface.Make).not.toHaveBeenCalled();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { FilterMode, ImageFormat, MipmapMode, Skia } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 23,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const data = keep(await Skia.Data.fromURI(uri));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 25,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const decoded = Skia.Image.MakeImageFromEncoded(data);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const surface = Skia.Surface.Make(right - originX, bottom - originY);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 53,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const canvas = surface.getCanvas();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 58,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(0, 0, image.width(), image.height()),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/backend/services/file/renderEditedImage.ts",
+      "line": 59,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(0, 0, image.width(), image.height()),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/__tests__/prepareImageExport.test.ts",
+      "line": 45,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia: {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/__tests__/prepareImageExport.test.ts",
+      "line": 68,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "getCanvas: () => ({",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 6,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 49,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const data = keep(await Skia.Data.fromURI(source.uri));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const image = Skia.Image.MakeImageFromEncoded(data);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 68,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const surface = Skia.Surface.Make(image.width(), outputHeight);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 71,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const canvas = surface.getCanvas();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 75,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const paint = keep(Skia.Paint());",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 77,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "paint.setColor(Skia.Color(signature.background));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 79,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(0, 0, style.referenceWidth, (outputHeight - image.height()) / scale),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 82,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "paint.setColor(Skia.Color(signature.brandColor));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 83,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "canvas.drawRect(Skia.XYWHRect(0, 0, style.referenceWidth, style.ruleHeight), paint);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 89,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const logoData = keep(Skia.Data.fromBase64(signature.logoDataUrl.split(',')[1]));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 90,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const logo = Skia.Image.MakeImageFromEncoded(logoData);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 96,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(0, 0, logo.width(), logo.height()),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 97,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 107,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const qrCodeData = keep(Skia.Data.fromBase64(signature.qrCodeDataUrl.split(',')[1]));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 108,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const qrCode = Skia.Image.MakeImageFromEncoded(qrCodeData);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 114,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(0, 0, qrCode.width(), qrCode.height()),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 115,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia.XYWHRect(columns.qrCodeX, centerY(style.qrCodeSize), style.qrCodeSize, style.qrCodeSize),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 171,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const color = Skia.Color(signature.foreground);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 175,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const builder = Skia.ParagraphBuilder.Make({",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/fileExport/prepareImageExport.ts",
+      "line": 190,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "// Skia's native ParagraphBuilder omits dispose even though its TS interface declares it.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/header/MainHeader/MainHeaderView/MainHeaderView.android.tsx",
+      "line": 3,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/header/MainHeader/MainHeaderView/MainHeaderView.android.tsx",
+      "line": 55,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/header/MainHeader/MainHeaderView/MainHeaderView.android.tsx",
+      "line": 56,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "blurMethod=\"dimezisBlurViewSdk31Plus\"",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/header/MainHeader/MainHeaderView/MainHeaderView.ios.tsx",
+      "line": 3,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/header/MainHeader/MainHeaderView/MainHeaderView.ios.tsx",
+      "line": 120,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/observability/__tests__/StartupInteractiveMarker.test.tsx",
+      "line": 22,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(globalThis, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/observability/StartupInteractiveMarker.tsx",
+      "line": 35,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const first = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/observability/StartupInteractiveMarker.tsx",
+      "line": 36,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "second = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/__tests__/useFilePaneTransition.test.tsx",
+      "line": 15,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => mockReducedMotion,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/__tests__/useFilePaneTransition.test.tsx",
+      "line": 31,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (target: number, config: unknown, complete?: (finished: boolean) => void) =>",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/useFilePaneTransition.ts",
+      "line": 6,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/useFilePaneTransition.ts",
+      "line": 8,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/useFilePaneTransition.ts",
+      "line": 24,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const isReducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/pane/useFilePaneTransition.ts",
+      "line": 81,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/__tests__/SidebarSelectionProvider.test.tsx",
+      "line": 47,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/__tests__/SidebarSelectionProvider.test.tsx",
+      "line": 49,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/__tests__/SidebarConversationList.test.tsx",
+      "line": 131,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeIn: transition,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/__tests__/SidebarConversationList.test.tsx",
+      "line": 132,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeOut: transition,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/__tests__/SidebarConversationList.test.tsx",
+      "line": 134,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/__tests__/SidebarConversationList.test.tsx",
+      "line": 138,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarBranchScrollView.tsx",
+      "line": 15,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "useAnimatedScrollHandler,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarBranchScrollView.tsx",
+      "line": 59,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "measureFrame.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarBranchScrollView.tsx",
+      "line": 119,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const handleScroll = useAnimatedScrollHandler((event) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 19,
+      "categories": [
+        "presence-layout",
+        "accessibility-motion"
+      ],
+      "text": "import Animated, { FadeIn, FadeOut, LinearTransition, ReduceMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 81,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": ".reduceMotion(ReduceMotion.System);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 82,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "const selectionEntrance = FadeIn.duration(duration.fast)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 84,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": ".reduceMotion(ReduceMotion.System);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 85,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "const rowExit = FadeOut.duration(duration.fast)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 87,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": ".reduceMotion(ReduceMotion.System);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 656,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "{(renderCanvas) => renderCanvas(<View className=\"min-w-0\">{footer}</View>)}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 721,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "{(renderCanvas) => (",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 740,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "renderCanvas(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 857,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const renderRow = (renderCanvas: (content: ReactNode) => ReactNode) => (",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 881,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "renderCanvas(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 930,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "{(renderCanvas) => (",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 933,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "renderRow(renderCanvas)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarConversationList.tsx",
+      "line": 936,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "{renderRow(renderCanvas)}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarFade/SidebarFade.ios.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarFade/SidebarFade.ios.tsx",
+      "line": 25,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarSessionBranch.tsx",
+      "line": 63,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "children: (renderCanvas: (content: ReactNode) => ReactNode) => ReactNode;",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarTitle.tsx",
+      "line": 7,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarTitle.tsx",
+      "line": 10,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarTitle.tsx",
+      "line": 57,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/components/SidebarTitle.tsx",
+      "line": 66,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(-lap, { duration: (lap / lapSpeed) * 1000, easing: easing.linear }, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/SidebarSelectionProvider.tsx",
+      "line": 16,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/SidebarSelectionProvider.tsx",
+      "line": 19,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/SidebarSelectionProvider.tsx",
+      "line": 67,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(isSelecting ? 1 : 0, {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/sidebar/SidebarSelectionProvider.tsx",
+      "line": 70,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/__tests__/StartupRouteReadyReporter.test.tsx",
+      "line": 56,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(globalThis, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 8,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 10,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 13,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 60,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 81,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(1, {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 84,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 101,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(STARTUP_EXIT_LOGO_SCALE, {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 104,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 110,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 115,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "reduceMotion: ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/StartupCover.tsx",
+      "line": 123,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/useStartupLifecycle.ts",
+      "line": 61,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "pendingFramesRef.current.first = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/useStartupLifecycle.ts",
+      "line": 63,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "pendingFramesRef.current.second = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/useStartupReadyAfterFrames.ts",
+      "line": 34,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "pendingFramesRef.current.first = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/appShell/startup/useStartupReadyAfterFrames.ts",
+      "line": 36,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "pendingFramesRef.current.second = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 9,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 60,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(1, undefined, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 66,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 67,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.value = withTiming(0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 72,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pinch = Gesture.Pinch()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 82,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(next);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 90,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pan = Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 102,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const doubleTap = Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 119,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(DOUBLE_TAP_SCALE);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 121,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(targetX);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 122,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.value = withTiming(targetY);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 128,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const gesture = Gesture.Race(doubleTap, Gesture.Simultaneous(pinch, pan));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/components/__tests__/ComposerMenu.test.tsx",
+      "line": 104,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "let requestAnimationFrameSpy: jest.SpyInstance;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/components/__tests__/ComposerMenu.test.tsx",
+      "line": 111,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy = jest",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/components/__tests__/ComposerMenu.test.tsx",
+      "line": 112,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".spyOn(global, 'requestAnimationFrame')",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/components/__tests__/ComposerMenu.test.tsx",
+      "line": 132,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy.mockRestore();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/components/ComposerMenu.tsx",
+      "line": 36,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "* layout and keyboard motion. It grows upward within the available space,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/hooks/__tests__/useComposerPresentation.test.tsx",
+      "line": 32,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "let requestAnimationFrameSpy: jest.SpyInstance;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/hooks/__tests__/useComposerPresentation.test.tsx",
+      "line": 42,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy = jest",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/hooks/__tests__/useComposerPresentation.test.tsx",
+      "line": 43,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".spyOn(global, 'requestAnimationFrame')",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/hooks/__tests__/useComposerPresentation.test.tsx",
+      "line": 67,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy.mockRestore();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Composer/hooks/useComposerPresentation.ts",
+      "line": 128,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/__tests__/chatKeyboardAndroid.test.ts",
+      "line": 153,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".spyOn(globalThis, 'requestAnimationFrame')",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/__tests__/MessageList.test.tsx",
+      "line": 266,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "let requestAnimationFrameSpy: jest.SpyInstance;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/__tests__/MessageList.test.tsx",
+      "line": 310,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy = jest",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/__tests__/MessageList.test.tsx",
+      "line": 311,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".spyOn(global, 'requestAnimationFrame')",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/__tests__/MessageList.test.tsx",
+      "line": 331,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy.mockRestore();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/useMessageListScrollController.ts",
+      "line": 103,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "stickFrameRef.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/useMessageListScrollController.ts",
+      "line": 252,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "sendFrameRef.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/useMessageListScrollController.ts",
+      "line": 309,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "readyFrameRef.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/list/useMessageListScrollController.ts",
+      "line": 474,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "resizeFrameRef.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/parts/CompactionAnchorPart.tsx",
+      "line": 4,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import { useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Message/parts/CompactionAnchorPart.tsx",
+      "line": 13,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/__tests__/ModelPickerFastScroller.test.tsx",
+      "line": 62,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeOut: { duration: () => ({ reduceMotion: () => undefined }) },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/__tests__/ModelPickerFastScroller.test.tsx",
+      "line": 63,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/__tests__/ModelPickerFastScroller.test.tsx",
+      "line": 75,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "useAnimatedScrollHandler: (handlers: ScrollHandlers) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerBackdrop.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerBackdrop.tsx",
+      "line": 17,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerBackdrop.tsx",
+      "line": 18,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "blurMethod=\"dimezisBlurViewSdk31Plus\"",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 14,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeOut,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 15,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 17,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "useAnimatedScrollHandler,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 35,
+      "categories": [
+        "presence-layout",
+        "accessibility-motion"
+      ],
+      "text": "const providerPreviewExit = FadeOut.duration(120).reduceMotion(ReduceMotion.System);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 81,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const scrollGesture = useMemo(() => Gesture.Native().disallowInterruption(true), []);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 85,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const hold = Gesture.LongPress()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 92,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const tap = Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 124,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "return Gesture.Simultaneous(hold, tap);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 137,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const handleScroll = useAnimatedScrollHandler({",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerFastScroller.tsx",
+      "line": 183,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "scrollRef.current?.scrollTo({ animated: false, y: nextOffset });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerList.tsx",
+      "line": 119,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const frame = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/ModelPicker/components/ModelPickerList.tsx",
+      "line": 213,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "navigationFrameRef.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Selection/__tests__/SelectionToolbar.test.tsx",
+      "line": 20,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeInDown: { duration: () => undefined },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Selection/__tests__/SelectionToolbar.test.tsx",
+      "line": 21,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "FadeOutDown: { duration: () => undefined },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Selection/SelectionToolbar/InlineSelectionToolbar.tsx",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import Animated, { FadeInDown, FadeOutDown } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Selection/SelectionToolbar/InlineSelectionToolbar.tsx",
+      "line": 29,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "entering={FadeInDown.duration(180)}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/components/Selection/SelectionToolbar/InlineSelectionToolbar.tsx",
+      "line": 30,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "exiting={FadeOutDown.duration(140)}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortBackdrop/ChatInputEffortBackdrop.ios.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortBackdrop/ChatInputEffortBackdrop.ios.tsx",
+      "line": 29,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView intensity={blurIntensity} style={StyleSheet.absoluteFill} tint={blurTint} />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 20,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 23,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 72,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 114,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(0, { duration: closeDurationMs, easing: easing.settle }, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 179,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const closeFrame = requestAnimationFrame(close);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/components/ChatInputEffortOverlay.tsx",
+      "line": 197,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(1, { duration: openDurationMs, easing: easing.settle }),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/components/EffortSlider.tsx",
+      "line": 5,
+      "categories": [
+        "timing-spring",
+        "accessibility-motion"
+      ],
+      "text": "import { useReducedMotion, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/components/EffortSlider.tsx",
+      "line": 50,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/components/EffortSlider.tsx",
+      "line": 94,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "position.set(reducedMotion ? target : withTiming(target, effortSliderSnapTiming));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+      "line": 3,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import { runOnJS, type SharedValue, useSharedValue, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+      "line": 24,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "gesture: ReturnType<typeof Gesture.Pan>;",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+      "line": 64,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "return Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+      "line": 84,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "position.value = withTiming(targetFraction, effortSliderSnapTiming);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/__tests__/ChatWorkspace.test.tsx",
+      "line": 380,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "let requestAnimationFrameSpy: jest.SpyInstance;",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/__tests__/ChatWorkspace.test.tsx",
+      "line": 398,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy = jest",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/__tests__/ChatWorkspace.test.tsx",
+      "line": 399,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": ".spyOn(global, 'requestAnimationFrame')",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/__tests__/ChatWorkspace.test.tsx",
+      "line": 408,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrameSpy.mockRestore();",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 59,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => false,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 68,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring: (...args: Parameters<typeof finishAtOnce>) => mockWithSpring(...args),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 69,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (...args: Parameters<typeof finishAtOnce>) => mockWithTiming(...args),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 239,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await act(() => new Promise(requestAnimationFrame));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 267,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await act(() => new Promise(requestAnimationFrame));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/ExpandedAnswer.test.tsx",
+      "line": 300,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await act(() => new Promise(requestAnimationFrame));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/__tests__/MessageAnswerCards.test.tsx",
+      "line": 28,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "jest.mock('react-native-reanimated', () => ({ useReducedMotion: () => false }));",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ChatInitialRenderCover.tsx",
+      "line": 3,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import Animated, { Easing, FadeOut } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ChatInitialRenderCover.tsx",
+      "line": 24,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "exiting={FadeOut.duration(180).easing(Easing.out(Easing.cubic))}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 39,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 41,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 42,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 83,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "* header fades and the composer dims under it, and nothing re-lays out mid-motion.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 171,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reduceMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 214,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "// throughout so its content never re-lays out mid-motion.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 282,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "? withSpring(0, spring.settle, done)",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 283,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": ": withTiming(0, { duration: duration.fast, easing: easing.settle }, done),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 293,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const frame = requestAnimationFrame(onClosed);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 328,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(1, { duration: ms, easing: easing.settle }, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 336,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "if (width) pagerRef.current?.scrollTo({ animated: false, x: shownIndex * width });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 358,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pagerGesture = useMemo(() => Gesture.Native().disallowInterruption(true), []);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/ExpandedAnswer.tsx",
+      "line": 371,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "pagerRef.current?.scrollTo({ animated: !reduceMotion, x: index * width });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/MessageAnswerCards.tsx",
+      "line": 27,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import { useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/MessageAnswerCards.tsx",
+      "line": 114,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reduceMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/MessageAnswerCards.tsx",
+      "line": 118,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const scrollGesture = useMemo(() => Gesture.Native().disallowInterruption(true), []);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/MessageAnswerCards.tsx",
+      "line": 140,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "scrollRef.current?.scrollTo({ animated: animated && !reduceMotion, x: offsets[index] ?? 0 });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/components/MessageAnswerCards.tsx",
+      "line": 172,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "scrollRef.current?.scrollTo({ animated: false, x: shownOffset });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/hooks/__tests__/useMessageListInitialRenderGate.test.tsx",
+      "line": 79,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(globalThis, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/hooks/__tests__/useMessageListInitialRenderGate.test.tsx",
+      "line": 102,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(globalThis, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/hooks/__tests__/useMessageListInitialRenderGate.test.tsx",
+      "line": 123,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "jest.spyOn(globalThis, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/hooks/useMessageListInitialRenderGate.ts",
+      "line": 50,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const readyFrameId = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatWorkspace/hooks/useMessageListInitialRenderGate.ts",
+      "line": 84,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const readyFrameId = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/quotes/__tests__/ChatQuoteProvider.test.tsx",
+      "line": 68,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const raf = jest.spyOn(global, 'requestAnimationFrame').mockImplementation((callback) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/quotes/ChatQuoteProvider.tsx",
+      "line": 86,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "focusFrame.current = requestAnimationFrame(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/quotes/MessageQuoteHighlight.tsx",
+      "line": 1,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "import Animated, { Easing, FadeOut } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/quotes/MessageQuoteHighlight.tsx",
+      "line": 15,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "exiting={FadeOut.duration(400).easing(Easing.out(Easing.cubic))}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/share/ChatShareDragSelection.tsx",
+      "line": 109,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Race(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/share/ChatShareDragSelection.tsx",
+      "line": 110,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/share/ChatShareDragSelection.tsx",
+      "line": 118,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/share/ChatShareDragSelection.tsx",
+      "line": 224,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "frame = requestAnimationFrame(tick);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/share/ChatShareDragSelection.tsx",
+      "line": 243,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "frame = requestAnimationFrame(tick);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/__tests__/ChatInputPrimaryAction.test.tsx",
+      "line": 20,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "LayoutAnimationConfig: Fragment,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/__tests__/ChatInputPrimaryAction.test.tsx",
+      "line": 22,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion: () => true,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/__tests__/ChatInputPrimaryAction.test.tsx",
+      "line": 24,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: unknown) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 10,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "LayoutAnimationConfig,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 12,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 14,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 43,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 50,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "<LayoutAnimationConfig skipEntering>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 60,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "</LayoutAnimationConfig>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 73,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/ChatInputPrimaryAction.tsx",
+      "line": 89,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.set(withTiming(target, { duration: 100, easing: easing.settle }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/DictationCancelAction.tsx",
+      "line": 5,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import Animated, { useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/DictationCancelAction.tsx",
+      "line": 12,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/slotMotion.ts",
+      "line": 2,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import { type EntryExitAnimationFunction, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/slotMotion.ts",
+      "line": 13,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "opacity: withTiming(1, swapTiming),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/slotMotion.ts",
+      "line": 14,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "transform: [{ scale: withTiming(1, swapTiming) }],",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/slotMotion.ts",
+      "line": 24,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "opacity: withTiming(0, swapTiming),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/chat/voice/slotMotion.ts",
+      "line": 25,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "transform: [{ scale: withTiming(0.6, swapTiming) }],",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 13,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "useAnimatedScrollHandler,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 15,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "useReducedMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 17,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 18,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 81,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 126,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "if (!reducedMotion) presence.set(withTiming(1, { duration: enterDuration, easing: easeOut }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 139,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const onScroll = useAnimatedScrollHandler((event) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 148,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "drag.set(withTiming(0, { duration: exitDuration, easing: easeInOut }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 150,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(0, { duration: exitDuration, easing: easeInOut }, (finished) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 157,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "useProgress.set(reducedMotion ? 1 : withTiming(1, { duration: modeDuration, easing: easeOut }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 162,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "useProgress.set(reducedMotion ? 0 : withTiming(0, { duration: modeDuration, easing: easeOut }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 180,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pan = Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/templates/components/TemplateStage.tsx",
+      "line": 191,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "drag.set(withSpring(0, { damping: 20, stiffness: 220 }));",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/drawings/utils/paintingTemplates.ts",
+      "line": 45,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "'human-fragments-motion': require('@/assets/paintings/templates/human-fragments-motion.webp'),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/home/aiUsage/components/AiUsageSquare.tsx",
+      "line": 10,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/home/aiUsage/components/AiUsageSquare.tsx",
+      "line": 52,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring(1, aiUsageCalendar.enterSpring),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/home/aiUsage/components/AiUsageTrend.tsx",
+      "line": 363,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const tap = Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/home/aiUsage/components/AiUsageTrend.tsx",
+      "line": 369,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pan = Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/home/aiUsage/components/AiUsageTrend.tsx",
+      "line": 396,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "return Gesture.Race(pan, tap);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/components/LogoDrawAnimation.tsx",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { Canvas, Group, Mask, Path } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/components/LogoDrawAnimation.tsx",
+      "line": 65,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "* thread via Skia's Reanimated integration.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/components/LogoDrawAnimation.tsx",
+      "line": 151,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Canvas pointerEvents=\"none\" style={{ height, width }}>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/components/LogoDrawAnimation.tsx",
+      "line": 214,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "</Canvas>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/__tests__/useLogoDrawProgress.test.tsx",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring: jest.fn(),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/__tests__/useLogoDrawProgress.test.tsx",
+      "line": 12,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (value: number) => value,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/useLogoDrawProgress.ts",
+      "line": 8,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/useLogoDrawProgress.ts",
+      "line": 9,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/useLogoDrawProgress.ts",
+      "line": 55,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(LOGO_DRAW_SEGMENTS.check.from, logoDrawTiming),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/hooks/useLogoDrawProgress.ts",
+      "line": 56,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withSpring(1, checkSpringConfig, (settled) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/utils/constants.ts",
+      "line": 13,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "* those sub-unit overshoots inside the Canvas, which clips at its bounds.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/utils/logoDrawMath.ts",
+      "line": 2,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "* Pure geometry helpers for the logo draw animation. No Skia or React",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/components/LogoDraw/utils/logoPaths.ts",
+      "line": 11,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "* pen stroke (Skia `Path` end-trim). Reverse-engineering notes:",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/__tests__/useWelcomeIntro.test.tsx",
+      "line": 31,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion: { System: 'system' },",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/__tests__/useWelcomeIntro.test.tsx",
+      "line": 46,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "withDelay: (_delay: number, animation: number) => animation,",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/__tests__/useWelcomeIntro.test.tsx",
+      "line": 47,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming: (_value: number, _config: object, callback?: (finished: boolean) => void) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/useWelcomeIntro.ts",
+      "line": 6,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/useWelcomeIntro.ts",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/useWelcomeIntro.ts",
+      "line": 84,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/useWelcomeIntro.ts",
+      "line": 86,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "{ duration, easing: easing.settle, reduceMotion: ReduceMotion.System },",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/hooks/useWelcomeIntro.ts",
+      "line": 91,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "ReduceMotion.System,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/OnboardingScreen.tsx",
+      "line": 20,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const logoCanvasStyle = {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/onboarding/OnboardingScreen.tsx",
+      "line": 98,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<Animated.View style={[logoCanvasStyle, logoStyle]}>",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 118,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pan = Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 128,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pinch = Gesture.Pinch()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 135,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const reset = Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 138,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(initialScale);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 140,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(initialX);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 141,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.value = withTiming(initialY);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardOverview.tsx",
+      "line": 145,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const gesture = Gesture.Simultaneous(pan, pinch, reset);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardWorkspace.tsx",
+      "line": 66,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { PaintingFocusCanvas } from './PaintingFocusCanvas';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardWorkspace.tsx",
+      "line": 216,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const openCanvas = useCallback(() => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardWorkspace.tsx",
+      "line": 411,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<PaintingFocusCanvas",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingBoardWorkspace.tsx",
+      "line": 525,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "onOpenOverview={boardId ? openCanvas : undefined}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 11,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "withTiming,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 22,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "type CanvasSize = { height: number; width: number };",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 24,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "type PaintingFocusCanvasProps = {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 45,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "export function PaintingFocusCanvas(props: PaintingFocusCanvasProps) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 48,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "return <PaintingFocusCanvasContent {...props} imageSource={props.uri} />;",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 50,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "return <StillPaintingFocusCanvas {...props} />;",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 53,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "function StillPaintingFocusCanvas(props: PaintingFocusCanvasProps) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 68,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<PaintingFocusCanvasContent",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 76,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "function PaintingFocusCanvasContent({",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 89,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "}: PaintingFocusCanvasProps & {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 94,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const [size, setSize] = useState<CanvasSize>({ height: 0, width: 0 });",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 146,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(1);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 148,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 149,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.value = withTiming(0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 163,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pinch = Gesture.Pinch()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 173,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(next);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 182,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const pan = Gesture.Pan()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 201,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const doubleTap = Gesture.Tap()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 218,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "scale.value = withTiming(DOUBLE_TAP_SCALE);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 220,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateX.value = withTiming(targetX);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 221,
+      "categories": [
+        "timing-spring"
+      ],
+      "text": "translateY.value = withTiming(targetY);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 227,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const singleTap = Gesture.Tap().onEnd((event) => {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 231,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const longPress = Gesture.LongPress()",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 237,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "const gesture = Gesture.Race(",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 239,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Exclusive(doubleTap, singleTap),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/paintings/components/PaintingFocusCanvas.tsx",
+      "line": 240,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "Gesture.Simultaneous(pinch, pan),",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/appearance/components/ThemePreviewSelector.tsx",
+      "line": 71,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<ThemePreviewCanvas />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/appearance/components/ThemePreviewSelector.tsx",
+      "line": 75,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<ThemePreviewCanvas clipped />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/appearance/components/ThemePreviewSelector.tsx",
+      "line": 84,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<ThemePreviewCanvas />",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/appearance/components/ThemePreviewSelector.tsx",
+      "line": 89,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "function ThemePreviewCanvas({ clipped = false }: { clipped?: boolean }) {",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/provider/ProviderListScreen.tsx",
+      "line": 10,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "import { LinearTransition, ReduceMotion, useReducedMotion } from 'react-native-reanimated';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/provider/ProviderListScreen.tsx",
+      "line": 26,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": ".reduceMotion(ReduceMotion.System);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/provider/ProviderListScreen.tsx",
+      "line": 48,
+      "categories": [
+        "accessibility-motion"
+      ],
+      "text": "const reducedMotion = useReducedMotion();",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/settings/provider/ProviderListScreen.tsx",
+      "line": 270,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "itemLayoutAnimation={reducedMotion ? undefined : providerListTransition}",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/components/ShareSheet.tsx",
+      "line": 4,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { BlurTargetView, BlurView } from 'expo-blur';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/components/ShareSheet.tsx",
+      "line": 91,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "<BlurView",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/components/ShareSheet.tsx",
+      "line": 94,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "blurMethod=\"dimezisBlurViewSdk31Plus\"",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/htmlCaptureScript.test.ts",
+      "line": 67,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrame: (callback: () => void) => callback(),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/imageCaptureScripts.test.ts",
+      "line": 18,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "scrollTo() {},",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/imageCaptureScripts.test.ts",
+      "line": 40,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrame: (callback: () => void) => {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/imageCaptureScripts.test.ts",
+      "line": 193,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "requestAnimationFrame: (callback: () => void) => callback(),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/stitchCapturedPngPages.test.ts",
+      "line": 64,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia: {",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/__tests__/stitchCapturedPngPages.test.ts",
+      "line": 90,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "getCanvas: () => ({ drawImage: mockDrawImage }),",
+      "test_or_fixture": true,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/htmlCaptureScript.ts",
+      "line": 24,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "var frame=function(){return new Promise(requestAnimationFrame);};",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/htmlCaptureScript.ts",
+      "line": 28,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "freeze.textContent='*,*::before,*::after{transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/htmlCaptureScript.ts",
+      "line": 111,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "window.scrollTo(0,0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/htmlCaptureScript.ts",
+      "line": 113,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "for(var frame=0;frame<4;frame++)await new Promise(requestAnimationFrame);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/imageCaptureScripts.ts",
+      "line": 31,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await new Promise(requestAnimationFrame);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/imageCaptureScripts.ts",
+      "line": 104,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "window.scrollTo(0,0);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/imageCaptureScripts.ts",
+      "line": 107,
+      "categories": [
+        "gesture-scroll"
+      ],
+      "text": "await new Promise(requestAnimationFrame);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/stitchCapturedPngPages.ts",
+      "line": 1,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "import { ImageFormat, Skia } from '@shopify/react-native-skia';",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/stitchCapturedPngPages.ts",
+      "line": 100,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/stitchCapturedPngPages.ts",
+      "line": 108,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "const data = await Skia.Data.fromURI(page.file.uri);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/stitchCapturedPngPages.ts",
+      "line": 120,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "surface.getCanvas().drawImage(image, left, top);",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/features/sharing/utils/stitchCapturedPngPages.ts",
+      "line": 125,
+      "categories": [
+        "css-rendering"
+      ],
+      "text": "Skia,",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    },
+    {
+      "path": "src/frontend/utils/constants.ts",
+      "line": 25,
+      "categories": [
+        "presence-layout"
+      ],
+      "text": "// files with nothing tying them to `easing.settle` in packages/ui/src/motion.ts.",
+      "test_or_fixture": false,
+      "status": "discovered-not-individually-reviewed"
+    }
+  ]
+}

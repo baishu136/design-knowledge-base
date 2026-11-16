@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.reader-bars",
+  "name": "沉浸阅读控制层",
+  "project": "mihon",
+  "category": "visibility",
+  "effect": "顶栏上滑、底栏下滑、纵向导航向所在侧滑出，同时透明度变化。",
+  "applicable": "阅读器、看图器的临时控制层",
+  "not_applicable": "需要持续可见的重要错误或播放状态",
+  "trigger": "visible Boolean",
+  "start_state": {
+    "visible": false,
+    "offset": "±elementSize",
+    "alpha": 0
+  },
+  "end_state": {
+    "visible": true,
+    "offset": 0,
+    "alpha": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "slide": 200,
+      "fade": 150
+    },
+    "delay_ms": null,
+    "easing": {
+      "name": "tween default",
+      "parameters": null
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "translateY": "±height→0",
+    "translateX": "±width→0 (vertical chapter navigator)",
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "visible": false,
+      "offset": "±elementSize",
+      "alpha": 0
+    },
+    "to": {
+      "visible": true,
+      "offset": 0,
+      "alpha": 1
+    }
+  },
+  "synchronization": "三处 AnimatedVisibility 共享 visible，将 slide 与 fade 用 + 并行组合。纵向导航按左右选择 LocalLayoutDirection，水平导航放到底部。",
+  "interruption": "AnimatedVisibility 负责过渡内容保留；反向触发由 Compose Transition 接管。实际快速连击视觉和生命周期未运行。",
+  "gesture": null,
+  "accessibility": "此组件没有单独 Reduce Motion 分支；不要把隐藏状态仅改为alpha而留下可聚焦控件。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "symbol": "fun ReaderAppBars",
+      "line": 46,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "7fc11c0ad46c9d6d043fe4881c683d60fb8bccdb8440d24430b6ddb558068a7e",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt#L46"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "slide/fade 不改变漫画图片本身；控制层透明表面仍产生叠绘。避免迁移时把整张超大图片参与动画。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

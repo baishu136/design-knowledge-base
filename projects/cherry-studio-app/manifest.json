@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app",
+  "name": "cherry-studio-app",
+  "description": "移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。",
+  "repository": "https://github.com/CherryHQ/cherry-studio-app",
+  "branch": "main",
+  "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+  "version": "0.5.5",
+  "analysis_date": "2026-11-16",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "stack": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "source_directories": {
+    "ui": [
+      "packages/ui/src/components",
+      "src/frontend/components",
+      "src/frontend/features"
+    ],
+    "themes": [
+      "packages/design-tokens/src/styles",
+      "src/frontend/styles/global.css"
+    ],
+    "motion": [
+      "packages/ui/src/motion.ts",
+      "packages/ui/src/components/menu",
+      "packages/ui/src/components/loading"
+    ]
+  },
+  "source_snapshot": "source-repositories/cherry-studio-app-e6d157d2ea60",
+  "license": "AGPL-3.0",
+  "coverage": {
+    "status": "core-system-and-selected-high-value-resources",
+    "scanned_text_files": 3703,
+    "discovery_hits": 534,
+    "components": 5,
+    "animations": 6,
+    "original_app_runtime": false
+  },
+  "design_features": "移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。",
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "not_portable": [
+    "业务状态容器、私有模块路径与平台导航不能整体复制",
+    "第三方组件的未追溯默认动效不能当作项目 Token"
+  ],
+  "backlog": "BACKLOG.md"
+}

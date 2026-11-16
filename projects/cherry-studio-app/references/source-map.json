@@ -1,0 +1,2314 @@
+[
+  {
+    "path": "DESIGN.md",
+    "symbol": "## Motion",
+    "line": 194,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "0e58d2d44b676fbbfa3cd5e63aea9d055240e362eaa2e007fed051d534908609",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/DESIGN.md#L194"
+  },
+  {
+    "path": "packages/ui/src/motion.ts",
+    "symbol": "export const easing",
+    "line": 11,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "9cc56aafbd4d19addf5cfb02c994772a64bfec82005bb2cc20f5c151dd4d71e5",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/motion.ts#L11"
+  },
+  {
+    "path": "packages/ui/src/components/menu/menu-motion.ts",
+    "symbol": "export const menuOpenMotion",
+    "line": 6,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "bbb8f939624241d81370e80d59034841d172f0d8c3faff02dafbfd0d020d8406",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-motion.ts#L6"
+  },
+  {
+    "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+    "symbol": "export function useMenuMotion",
+    "line": 13,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "ec677b3115901b63f773e05f4ef0b9394af2406cac0049eebdd5dc8b87a165b2",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/use-menu-motion.ts#L13"
+  },
+  {
+    "path": "packages/ui/src/components/menu/menu-panel.tsx",
+    "symbol": "export function MenuPanel",
+    "line": 16,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "cd2ba65852f7086ae226df55533f0d0646e04bc8ac103a624036dd6975253920",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-panel.tsx#L16"
+  },
+  {
+    "path": "packages/ui/src/components/menu/menu-content.tsx",
+    "symbol": "export function MenuContent",
+    "line": 19,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "44a30a47efd31a48cfa81428c689026e7c1f943c1855a85f6fc1f8de8c7c82c8",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-content.tsx#L19"
+  },
+  {
+    "path": "packages/ui/src/components/button/button.tsx",
+    "symbol": "const rootBaseStyles",
+    "line": 48,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "3316f1a76b124fe49aa3ab69238655cec28e1352acdf110443710001af05b403",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/button/button.tsx#L48"
+  },
+  {
+    "path": "packages/ui/src/components/switch/switch-control/switch-control.tsx",
+    "symbol": "export function SwitchControl",
+    "line": 15,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "b516cffd8199f2984cef1427decbc160c1adaf80deeb48fcf05c5116bb532d9e",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/switch/switch-control/switch-control.tsx#L15"
+  },
+  {
+    "path": "packages/ui/src/components/bottom-sheet/bottom-sheet.tsx",
+    "symbol": "export function BottomSheet(props",
+    "line": 113,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "8e7b9252db415e9877b1d0c8198d4b56c7c2fbfcbd557034d7cc3ad2ddc917c2",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/bottom-sheet/bottom-sheet.tsx#L113"
+  },
+  {
+    "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+    "symbol": "function RotatingPhrase",
+    "line": 312,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "7ccb490cfe0205252f5b7dd4ed46e68fbeab9cee12da2d8d0bb0f9bd2cc22fa2",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/text-animation/text-animation.tsx#L312"
+  },
+  {
+    "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+    "symbol": "export function useEffortSliderGesture",
+    "line": 38,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "43e9b3720615684b68f4d18d62bc3806109b07919f1ff21b73de81892009684a",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts#L38"
+  },
+  {
+    "path": "src/frontend/features/chat/components/ChatInput/effortSlider/utils/constants.ts",
+    "symbol": "export const effortSliderSnapTiming",
+    "line": 9,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "0f1bbfe3e73e54b0838d47b8620d4e4b43b300400547fc01121be4d9d490843a",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/features/chat/components/ChatInput/effortSlider/utils/constants.ts#L9"
+  },
+  {
+    "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+    "symbol": "export function ZoomableImage",
+    "line": 17,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "7c64f671a314517ddb7ec38917c85eb22b877a040505d4f042b006e6483ff016",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx#L17"
+  },
+  {
+    "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+    "symbol": "function useLoaderClock",
+    "line": 106,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "ada8e3ba691520f1585da2c89499cb1f52d22d947b38589bca2ee172fee63654",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/loading/image-generation-loader.tsx#L106"
+  },
+  {
+    "path": "packages/ui/src/components/loading/image-generation-loader-effect.ts",
+    "symbol": "const IMAGE_GENERATION_LOADER_SKSL",
+    "line": 3,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "ebc9fbaef0070792382ab6b207af2b15af275f834ef9de59aab520fa08741465",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/loading/image-generation-loader-effect.ts#L3"
+  },
+  {
+    "path": "packages/ui/src/utils/typography-scale.ts",
+    "symbol": "const sizeSequence",
+    "line": 24,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "b9231946941efabbef04724fb15f10927d01ea4bcaaea89bb0ef0ef837303bc4",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/utils/typography-scale.ts#L24"
+  },
+  {
+    "path": "src/frontend/styles/global.css",
+    "symbol": "@import",
+    "line": 3,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "d7b39dca4bde92f8fbffa6b538e757d1ee4b447d67c7c3c2ee80593705ab4dca",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/styles/global.css#L3"
+  },
+  {
+    "path": "src/app/(drawer)/_layout.tsx",
+    "symbol": "export default",
+    "line": 40,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "d7b7b79ac1f8d0b46bb56c40a8fbc6235bd835b76a27420d07cdedbabfdb7d24",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/app/(drawer)/_layout.tsx#L40"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/product.css",
+    "symbol": "--control-active",
+    "line": 36,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "5e4fd64831bb52215f701f1872b5eedf311836331e2b8c64fecf6ed9ad4b8108",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/product.css#L36"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "@variant light",
+    "line": 105,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L105"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/shadcn.css",
+    "symbol": "HeroUI",
+    "line": 51,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "2b497580314592aa317b97aa74fdbf7bf5f6b0f1c58a7401137146070a8e2e41",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/shadcn.css#L51"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--font-weight-bold",
+    "line": 14,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L14"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-xl",
+    "line": 96,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L96"
+  },
+  {
+    "path": "packages/ui/src/components/loading/spinner/spinner-control/spinner-control.android.tsx",
+    "symbol": "export function SpinnerControl",
+    "line": 11,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "25d70358f48bc726a8ea483fdd7187b26cc86f24df39660f61d3dd233f0aea58",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/loading/spinner/spinner-control/spinner-control.android.tsx#L11"
+  },
+  {
+    "path": "packages/ui/src/components/switch/switch-control/switch-control.ios.tsx",
+    "symbol": "export function SwitchControl",
+    "line": 21,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "6bc4871dbbb894dcf6f8ca79fd316b8292bc8cd808d38ea490b01e636c0cc1c9",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/switch/switch-control/switch-control.ios.tsx#L21"
+  },
+  {
+    "path": "src/frontend/appShell/sidebar/resolveSidebarColumn.ts",
+    "symbol": "export function resolveSidebarColumn",
+    "line": 48,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "64cf64a7de3f7c47c3ca027526a38dc4cec738bb27cafee1fdf0c42402affe6e",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/appShell/sidebar/resolveSidebarColumn.ts#L48"
+  },
+  {
+    "path": "src/frontend/utils/constants.ts",
+    "symbol": "export const appSidebar",
+    "line": 58,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "23036399877380805f5d0630614ad3efb29f41a4dbcf447fbbe04161c1d9e5de",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/utils/constants.ts#L58"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/shadcn.css",
+    "symbol": "--sidebar",
+    "line": 64,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "2b497580314592aa317b97aa74fdbf7bf5f6b0f1c58a7401137146070a8e2e41",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/shadcn.css#L64"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/tokens/typography.css",
+    "symbol": "--font-weight-bold",
+    "line": 24,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "4abe09d3686340315d9e6de1bd7a55e0e632b3a2c7b9331b0fb7ced5cced3dae",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/tokens/typography.css#L24"
+  },
+  {
+    "path": "src/frontend/styles/global.css",
+    "symbol": "--font-mono",
+    "line": 16,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "d7b39dca4bde92f8fbffa6b538e757d1ee4b447d67c7c3c2ee80593705ab4dca",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/styles/global.css#L16"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--indigo-700",
+    "line": 106,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L106"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--violet-700",
+    "line": 107,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L107"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--cyan-700",
+    "line": 108,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L108"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-100",
+    "line": 109,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L109"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-200",
+    "line": 110,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L110"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-100",
+    "line": 111,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L111"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-200",
+    "line": 112,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L112"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-300",
+    "line": 113,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L113"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-400",
+    "line": 114,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L114"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-500",
+    "line": 115,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L115"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-600",
+    "line": 116,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L116"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-700",
+    "line": 117,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L117"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-800",
+    "line": 118,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L118"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-900",
+    "line": 119,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L119"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-1000",
+    "line": 120,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L120"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-100",
+    "line": 121,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L121"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-200",
+    "line": 122,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L122"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-300",
+    "line": 123,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L123"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-400",
+    "line": 124,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L124"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-500",
+    "line": 125,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L125"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-600",
+    "line": 126,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L126"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-700",
+    "line": 127,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L127"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-800",
+    "line": 128,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L128"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-900",
+    "line": 129,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L129"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-1000",
+    "line": 130,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L130"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-100",
+    "line": 131,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L131"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-400",
+    "line": 132,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L132"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-700",
+    "line": 133,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L133"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-900",
+    "line": 134,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L134"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-1000",
+    "line": 135,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L135"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-100",
+    "line": 136,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L136"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-400",
+    "line": 137,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L137"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-700",
+    "line": 138,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L138"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-900",
+    "line": 139,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L139"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-1000",
+    "line": 140,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L140"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-100",
+    "line": 141,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L141"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-400",
+    "line": 142,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L142"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-700",
+    "line": 143,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L143"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-900",
+    "line": 144,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L144"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-1000",
+    "line": 145,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L145"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-100",
+    "line": 146,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L146"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-400",
+    "line": 147,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L147"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-700",
+    "line": 148,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L148"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-900",
+    "line": 149,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L149"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-1000",
+    "line": 150,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L150"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background",
+    "line": 151,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L151"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground",
+    "line": 152,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L152"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--card",
+    "line": 153,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L153"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--card-foreground",
+    "line": 154,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L154"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--popover",
+    "line": 155,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L155"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--popover-foreground",
+    "line": 156,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L156"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--primary",
+    "line": 157,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L157"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--primary-foreground",
+    "line": 158,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L158"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary",
+    "line": 159,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L159"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary-foreground",
+    "line": 160,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L160"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--muted",
+    "line": 161,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L161"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--muted-foreground",
+    "line": 162,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L162"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--accent",
+    "line": 163,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L163"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--accent-foreground",
+    "line": 164,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L164"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--destructive",
+    "line": 165,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L165"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--destructive-foreground",
+    "line": 166,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L166"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border",
+    "line": 167,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L167"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--input",
+    "line": 168,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L168"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--ring",
+    "line": 169,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L169"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-1",
+    "line": 170,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L170"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-2",
+    "line": 171,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L171"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-3",
+    "line": 172,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L172"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-4",
+    "line": 173,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L173"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-5",
+    "line": 174,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L174"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar",
+    "line": 175,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L175"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-foreground",
+    "line": 176,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L176"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-primary",
+    "line": 177,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L177"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-primary-foreground",
+    "line": 178,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L178"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-accent",
+    "line": 179,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L179"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-accent-foreground",
+    "line": 180,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L180"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-border",
+    "line": 181,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L181"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-ring",
+    "line": 182,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L182"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius",
+    "line": 183,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L183"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-subtle",
+    "line": 184,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L184"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground-tertiary",
+    "line": 185,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L185"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground-disabled",
+    "line": 186,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L186"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-subtle",
+    "line": 187,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L187"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-strong",
+    "line": 188,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L188"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-selected",
+    "line": 189,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L189"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--link",
+    "line": 190,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L190"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary-active",
+    "line": 191,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L191"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--control-active",
+    "line": 192,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L192"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success",
+    "line": 193,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L193"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-subtle",
+    "line": 194,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L194"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-subtle-foreground",
+    "line": 195,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L195"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-border",
+    "line": 196,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L196"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning",
+    "line": 197,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L197"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-subtle",
+    "line": 198,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L198"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-subtle-foreground",
+    "line": 199,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L199"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-border",
+    "line": 200,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L200"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info",
+    "line": 201,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L201"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-subtle",
+    "line": 202,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L202"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-subtle-foreground",
+    "line": 203,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L203"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-border",
+    "line": 204,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L204"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error",
+    "line": 205,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L205"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-subtle",
+    "line": 206,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L206"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-subtle-foreground",
+    "line": 207,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L207"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-border",
+    "line": 208,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L208"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--code-block",
+    "line": 209,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L209"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--inline-code",
+    "line": 210,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L210"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--inline-code-foreground",
+    "line": 211,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L211"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--brand",
+    "line": 212,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L212"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chat-user",
+    "line": 213,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L213"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chat-background",
+    "line": 214,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L214"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-amber",
+    "line": 215,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L215"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-amber-foreground",
+    "line": 216,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L216"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-blue",
+    "line": 217,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L217"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-blue-foreground",
+    "line": 218,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L218"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-green",
+    "line": 219,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L219"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-green-foreground",
+    "line": 220,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L220"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-red",
+    "line": 221,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L221"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-red-foreground",
+    "line": 222,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L222"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--constant-black",
+    "line": 223,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L223"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--constant-white",
+    "line": 224,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L224"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--scrim",
+    "line": 225,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L225"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-1",
+    "line": 226,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L226"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-2",
+    "line": 227,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L227"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-3",
+    "line": 228,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L228"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-4",
+    "line": 229,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L229"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--indigo-700",
+    "line": 233,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L233"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--violet-700",
+    "line": 234,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L234"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--cyan-700",
+    "line": 235,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L235"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-100",
+    "line": 236,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L236"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-200",
+    "line": 237,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L237"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-100",
+    "line": 238,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L238"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-200",
+    "line": 239,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L239"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-300",
+    "line": 240,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L240"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-400",
+    "line": 241,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L241"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-500",
+    "line": 242,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L242"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-600",
+    "line": 243,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L243"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-700",
+    "line": 244,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L244"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-800",
+    "line": 245,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L245"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-900",
+    "line": 246,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L246"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-1000",
+    "line": 247,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L247"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-100",
+    "line": 248,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L248"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-200",
+    "line": 249,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L249"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-300",
+    "line": 250,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L250"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-400",
+    "line": 251,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L251"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-500",
+    "line": 252,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L252"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-600",
+    "line": 253,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L253"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-700",
+    "line": 254,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L254"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-800",
+    "line": 255,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L255"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-900",
+    "line": 256,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L256"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--gray-alpha-1000",
+    "line": 257,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L257"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-100",
+    "line": 258,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L258"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-400",
+    "line": 259,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L259"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-700",
+    "line": 260,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L260"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-900",
+    "line": 261,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L261"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--blue-1000",
+    "line": 262,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L262"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-100",
+    "line": 263,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L263"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-400",
+    "line": 264,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L264"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-700",
+    "line": 265,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L265"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-900",
+    "line": 266,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L266"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--green-1000",
+    "line": 267,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L267"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-100",
+    "line": 268,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L268"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-400",
+    "line": 269,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L269"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-700",
+    "line": 270,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L270"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-900",
+    "line": 271,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L271"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--amber-1000",
+    "line": 272,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L272"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-100",
+    "line": 273,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L273"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-400",
+    "line": 274,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L274"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-700",
+    "line": 275,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L275"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-900",
+    "line": 276,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L276"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--red-1000",
+    "line": 277,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L277"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background",
+    "line": 278,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L278"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground",
+    "line": 279,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L279"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--card",
+    "line": 280,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L280"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--card-foreground",
+    "line": 281,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L281"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--popover",
+    "line": 282,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L282"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--popover-foreground",
+    "line": 283,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L283"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--primary",
+    "line": 284,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L284"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--primary-foreground",
+    "line": 285,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L285"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary",
+    "line": 286,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L286"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary-foreground",
+    "line": 287,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L287"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--muted",
+    "line": 288,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L288"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--muted-foreground",
+    "line": 289,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L289"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--accent",
+    "line": 290,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L290"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--accent-foreground",
+    "line": 291,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L291"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--destructive",
+    "line": 292,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L292"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--destructive-foreground",
+    "line": 293,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L293"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border",
+    "line": 294,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L294"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--input",
+    "line": 295,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L295"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--ring",
+    "line": 296,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L296"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-1",
+    "line": 297,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L297"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-2",
+    "line": 298,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L298"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-3",
+    "line": 299,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L299"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-4",
+    "line": 300,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L300"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chart-5",
+    "line": 301,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L301"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar",
+    "line": 302,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L302"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-foreground",
+    "line": 303,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L303"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-primary",
+    "line": 304,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L304"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-primary-foreground",
+    "line": 305,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L305"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-accent",
+    "line": 306,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L306"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-accent-foreground",
+    "line": 307,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L307"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-border",
+    "line": 308,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L308"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--sidebar-ring",
+    "line": 309,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L309"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius",
+    "line": 310,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L310"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--background-subtle",
+    "line": 311,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L311"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground-tertiary",
+    "line": 312,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L312"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--foreground-disabled",
+    "line": 313,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L313"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-subtle",
+    "line": 314,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L314"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-strong",
+    "line": 315,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L315"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--border-selected",
+    "line": 316,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L316"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--link",
+    "line": 317,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L317"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--secondary-active",
+    "line": 318,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L318"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--control-active",
+    "line": 319,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L319"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success",
+    "line": 320,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L320"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-subtle",
+    "line": 321,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L321"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-subtle-foreground",
+    "line": 322,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L322"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--success-border",
+    "line": 323,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L323"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning",
+    "line": 324,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L324"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-subtle",
+    "line": 325,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L325"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-subtle-foreground",
+    "line": 326,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L326"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--warning-border",
+    "line": 327,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L327"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info",
+    "line": 328,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L328"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-subtle",
+    "line": 329,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L329"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-subtle-foreground",
+    "line": 330,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L330"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--info-border",
+    "line": 331,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L331"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error",
+    "line": 332,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L332"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-subtle",
+    "line": 333,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L333"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-subtle-foreground",
+    "line": 334,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L334"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--error-border",
+    "line": 335,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L335"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--code-block",
+    "line": 336,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L336"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--inline-code",
+    "line": 337,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L337"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--inline-code-foreground",
+    "line": 338,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L338"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--brand",
+    "line": 339,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L339"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chat-user",
+    "line": 340,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L340"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--chat-background",
+    "line": 341,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L341"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-amber",
+    "line": 342,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L342"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-amber-foreground",
+    "line": 343,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L343"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-blue",
+    "line": 344,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L344"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-blue-foreground",
+    "line": 345,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L345"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-green",
+    "line": 346,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L346"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-green-foreground",
+    "line": 347,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L347"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-red",
+    "line": 348,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L348"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--tag-red-foreground",
+    "line": 349,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L349"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--constant-black",
+    "line": 350,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L350"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--constant-white",
+    "line": 351,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L351"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--scrim",
+    "line": 352,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L352"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-1",
+    "line": 353,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L353"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-2",
+    "line": 354,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L354"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-3",
+    "line": 355,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L355"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--usage-level-4",
+    "line": 356,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L356"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-4xs",
+    "line": 10,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L10"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-3xs",
+    "line": 11,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L11"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-2xs",
+    "line": 12,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L12"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-xs",
+    "line": 13,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L13"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-sm",
+    "line": 93,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L93"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-md",
+    "line": 94,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L94"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-lg",
+    "line": 95,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L95"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-2xl",
+    "line": 97,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L97"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-3xl",
+    "line": 98,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L98"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-4xl",
+    "line": 99,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L99"
+  },
+  {
+    "path": "packages/design-tokens/src/styles/native.css",
+    "symbol": "--radius-full",
+    "line": 100,
+    "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+    "sha256": "daf5bd4d57c8e212e63a586cd85e7c549af9b8c5d9c1f93482a6a9d48a896726",
+    "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/design-tokens/src/styles/native.css#L100"
+  }
+]

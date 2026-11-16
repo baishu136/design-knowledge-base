@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.shared-axis-navigation",
+  "name": "页面共享轴过渡",
+  "project": "mihon",
+  "category": "navigation",
+  "effect": "Material shared axis X 表达向前/返回；不是共享元素封面过渡。",
+  "applicable": "有明确层级的页面进入/返回",
+  "not_applicable": "将shared axis误用为具有同一封面ID的共享元素动画",
+  "trigger": "navigator.lastItem/lastEvent",
+  "start_state": {
+    "screen": "previous"
+  },
+  "end_state": {
+    "screen": "lastItem"
+  },
+  "timing": {
+    "duration_ms": null,
+    "delay_ms": null,
+    "easing": null,
+    "spring": null,
+    "source": "soup.compose.material.motion.animation.materialSharedAxisX",
+    "repeat": null
+  },
+  "properties": {
+    "slide_distance": "rememberSlideDistance() 依赖返回值；本轮未知"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "screen": "previous"
+    },
+    "to": {
+      "screen": "lastItem"
+    }
+  },
+  "synchronization": "DefaultNavigatorScreenTransition 把非Pop视为forward；ScreenTransition用AnimatedContent和navigator.saveableState保存过渡屏幕状态。数字时长与距离委托composeMaterialMotion，不能套用本库其他fade参数。",
+  "interruption": "AnimatedContent与Voyager saveableState协作；BackHandler enabled=canPop。依赖在快速连续push/pop时的策略需运行验证。",
+  "gesture": null,
+  "accessibility": "系统/依赖运动缩放与屏幕焦点恢复尚未运行核实。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "symbol": "DefaultNavigatorScreenTransition",
+      "line": 39,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "cba760489d5053ed7d5d6ad50c9e67fde8a75270c8c35c2ba7f3f3f61fa51697",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/util/Navigator.kt#L39"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "过渡期可能共存两个复杂屏幕；图片与列表资源需关注释放时机。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.component.sidebar-width-policy",
+  "name": "应用Sidebar宽度策略",
+  "project": "cherry-studio",
+  "purpose": "导航栏hidden/icon/full三态",
+  "structure": "纯策略函数：layout判定、显示宽、持久化宽分开",
+  "parameters": "hidden<20；full>=120；icon50；max280；50~120为瞬态",
+  "states": "拖动预览可中间宽；保存时收束到50",
+  "api": "getSidebarLayout、getSidebarDisplayWidth、normalizeSidebarWidth",
+  "behavior": "策略本身无动画；拖动组件负责输入/提交",
+  "migration": "把连续预览和离散提交拆开，避免保存尴尬中间宽度",
+  "minimal_usage": "normalizeSidebarWidth(90) // 50\ngetSidebarDisplayWidth(90) // 90",
+  "not_applicable": "误把120当所有窗口响应式断点",
+  "sources": [
+    {
+      "path": "src/renderer/components/Sidebar/constants.ts",
+      "symbol": "export function getSidebarLayout",
+      "line": 9,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "55dae8edb926efc5462755ff5c78e4cd7ad3201fe2b69c47a118ab95948ac679",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/Sidebar/constants.ts#L9"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "license": "AGPL-3.0"
+}

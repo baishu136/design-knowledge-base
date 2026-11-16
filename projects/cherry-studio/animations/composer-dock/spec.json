@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.composer-dock",
+  "name": "输入框归位反馈",
+  "project": "cherry-studio",
+  "category": "transition",
+  "effect": "home→docked输入框向下18px、scale.985→1、opacity.98→1。",
+  "applicable": "首次对话后输入框回到固定位置的因果提示",
+  "not_applicable": "泛化为任意两坐标之间共享元素过渡",
+  "trigger": "previousPlacement=home且placement=docked",
+  "start_state": {
+    "translateY": -18,
+    "scale": 0.985,
+    "opacity": 0.98
+  },
+  "end_state": {
+    "translateY": 0,
+    "scale": 1,
+    "opacity": 1
+  },
+  "timing": {
+    "duration_ms": 220,
+    "delay_ms": null,
+    "cleanup_delay_ms": 280,
+    "easing": {
+      "cubic": [
+        0.16,
+        1,
+        0.3,
+        1
+      ]
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "translateY": [
+      -18,
+      0
+    ],
+    "scale": [
+      0.985,
+      1
+    ],
+    "opacity": [
+      0.98,
+      1
+    ],
+    "transform_origin": "center bottom"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "translateY": -18,
+      "scale": 0.985,
+      "opacity": 0.98
+    },
+    "to": {
+      "translateY": 0,
+      "scale": 1,
+      "opacity": 1
+    }
+  },
+  "synchronization": "useLayoutEffect比较前后placement，只标记home-to-docked；属性函数添加CSS class；useEffect在280ms后清标记。220ms绘制时长与280ms清理窗口应分开。",
+  "interruption": "effect cleanup清timer；反向placement直接清transition，不播放相反动画。",
+  "gesture": null,
+  "accessibility": "prefers-reduced-motion时取消动画与transform。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "src/renderer/assets/styles/animation.css",
+      "symbol": "@keyframes animation-chat-composer-dock-down",
+      "line": 81,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "a961f2f4d0a048c53c2d546d0f65e3d9e5063b6eafcc5f8aadfa622f9b66ff10",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/assets/styles/animation.css#L81"
+    },
+    {
+      "path": "src/renderer/components/chat/motion/composerDockMotion.ts",
+      "symbol": "export function useComposerDockMotionTransition",
+      "line": 9,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "9a541f7847205ce5bcb28a5d66af39dce080fec09c1d7db3def3352ed4abff35",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/motion/composerDockMotion.ts#L9"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "只变transform/opacity，但布局位置本身由业务先改变，本动画并非FLIP测量任意距离。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

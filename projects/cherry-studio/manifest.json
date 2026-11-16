@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio",
+  "name": "cherry-studio",
+  "description": "内容优先的多栏AI工作台：中性应用外壳、表面色分层、可调整导航与资源栏；共享Shadcn语义桥接内部cs-* providers，支持运行时主题输入。",
+  "repository": "https://github.com/CherryHQ/cherry-studio",
+  "branch": "main",
+  "commit": "c3263227592ad14313da2b4153bf88502c466454",
+  "version": "2.2.2",
+  "analysis_date": "2026-11-16",
+  "platforms": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "stack": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "source_directories": {
+    "ui": [
+      "packages/ui/src/components",
+      "src/renderer/components",
+      "src/renderer/pages"
+    ],
+    "themes": [
+      "packages/ui/src/styles",
+      "src/renderer/components/ThemeProvider.tsx"
+    ],
+    "motion": [
+      "src/renderer/assets/styles/animation.css",
+      "src/renderer/components/chat/shell",
+      "src/renderer/components/chat/messages/list/useSmoothScrollAnimation.ts"
+    ]
+  },
+  "source_snapshot": "source-repositories/cherry-studio-c3263227592a",
+  "license": "AGPL-3.0",
+  "coverage": {
+    "status": "core-system-and-selected-high-value-resources",
+    "scanned_text_files": 9949,
+    "discovery_hits": 1130,
+    "components": 4,
+    "animations": 7,
+    "original_app_runtime": false
+  },
+  "design_features": "内容优先的多栏AI工作台：中性应用外壳、表面色分层、可调整导航与资源栏；共享Shadcn语义桥接内部cs-* providers，支持运行时主题输入。",
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "not_portable": [
+    "业务状态容器、私有模块路径与平台导航不能整体复制",
+    "第三方组件的未追溯默认动效不能当作项目 Token"
+  ],
+  "backlog": "BACKLOG.md"
+}

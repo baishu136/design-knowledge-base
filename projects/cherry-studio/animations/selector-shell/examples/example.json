@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.example.selector-panel",
+  "project": "cherry-studio",
+  "name": "浮层fade与scale双轨",
+  "animation_id": "cherry-studio.animation.selector-shell",
+  "entry_file": "SelectorPanel.tsx",
+  "files": [
+    "SelectorPanel.tsx",
+    "selector.css"
+  ],
+  "classification": "adapted",
+  "license": "AGPL-3.0",
+  "upstream_commit": "c3263227592ad14313da2b4153bf88502c466454",
+  "scope": "浮层fade与scale双轨",
+  "differences": "仅bottom方向；origin固定top center；父级保留退出120ms且负责焦点；非完整Popover",
+  "requirements": "已有React19/TypeScript/CSS宿主；import SelectorPanel；不要在open=false立刻卸载",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

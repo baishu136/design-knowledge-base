@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.example.scroll-controller",
+  "project": "cherry-studio",
+  "name": "取消/替换/动态目标的滚动控制器",
+  "animation_id": "cherry-studio.animation.smooth-scroll",
+  "entry_file": "controller.mjs",
+  "files": [
+    "controller.mjs"
+  ],
+  "classification": "adapted",
+  "license": "AGPL-3.0",
+  "upstream_commit": "c3263227592ad14313da2b4153bf88502c466454",
+  "scope": "取消/替换/动态目标的滚动控制器",
+  "differences": "从React hook改为getNode和dispose；没有用户事件监听与Reduce Motion集成",
+  "requirements": "浏览器import并注入requestAnimationFrame/cancelAnimationFrame；挂wheel/touchstart时cancel，卸载dispose；Node测试注入虚拟scheduler",
+  "verification": [
+    "adapted",
+    "runtime-verified"
+  ],
+  "runtime_scope": "Node numeric/lifecycle harness only; no visual verification",
+  "visual_runtime_verified": false
+}

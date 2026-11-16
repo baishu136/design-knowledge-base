@@ -1,0 +1,4310 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-16",
+  "projects": [
+    {
+      "id": "cherry-studio",
+      "manifest_path": "projects/cherry-studio/manifest.json"
+    },
+    {
+      "id": "cherry-studio-app",
+      "manifest_path": "projects/cherry-studio-app/manifest.json"
+    },
+    {
+      "id": "mihon",
+      "manifest_path": "projects/mihon/manifest.json"
+    }
+  ],
+  "resources": [
+    {
+      "id": "cherry-studio.project",
+      "project": "cherry-studio",
+      "resource_type": "project",
+      "name": "cherry-studio",
+      "description": "内容优先的多栏AI工作台：中性应用外壳、表面色分层、可调整导航与资源栏；共享Shadcn语义桥接内部cs-* providers，支持运行时主题输入。",
+      "keywords": [
+        "cherry",
+        "studio",
+        "project",
+        "project",
+        "cherry-studio"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/README.md",
+      "spec_path": "projects/cherry-studio/manifest.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/README.md",
+        "projects/cherry-studio/manifest.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.composer-dock",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "输入框归位反馈",
+      "description": "home→docked输入框向下18px、scale.985→1、opacity.98→1。",
+      "keywords": [
+        "输入框归位反馈",
+        "transition",
+        "cherry",
+        "studio",
+        "animation",
+        "composer",
+        "dock"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/composer-dock/README.md",
+      "spec_path": "projects/cherry-studio/animations/composer-dock/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/composer-dock/implementation.md",
+        "projects/cherry-studio/animations/composer-dock/README.md",
+        "projects/cherry-studio/animations/composer-dock/source-reference.md",
+        "projects/cherry-studio/animations/composer-dock/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.dialog",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "Dialog内容与遮罩",
+      "description": "遮罩淡入220ms，内容淡入并自下方进入260ms；两者退出200ms。",
+      "keywords": [
+        "Dialog内容与遮罩",
+        "presence",
+        "cherry",
+        "studio",
+        "animation",
+        "dialog"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/dialog/README.md",
+      "spec_path": "projects/cherry-studio/animations/dialog/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/dialog/implementation.md",
+        "projects/cherry-studio/animations/dialog/README.md",
+        "projects/cherry-studio/animations/dialog/source-reference.md",
+        "projects/cherry-studio/animations/dialog/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.heatmap-entry",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "用量格子入场",
+      "description": "格子从.7倍透明进入至正常尺寸。",
+      "keywords": [
+        "用量格子入场",
+        "entrance",
+        "cherry",
+        "studio",
+        "animation",
+        "heatmap",
+        "entry"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/heatmap-entry/README.md",
+      "spec_path": "projects/cherry-studio/animations/heatmap-entry/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/heatmap-entry/implementation.md",
+        "projects/cherry-studio/animations/heatmap-entry/README.md",
+        "projects/cherry-studio/animations/heatmap-entry/source-reference.md",
+        "projects/cherry-studio/animations/heatmap-entry/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.resource-pane",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "资源栏宽度展开",
+      "description": "侧栏width0→目标宽并淡入，拖动时即时跟随。",
+      "keywords": [
+        "资源栏宽度展开",
+        "layout",
+        "cherry",
+        "studio",
+        "animation",
+        "resource",
+        "pane"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/resource-pane/README.md",
+      "spec_path": "projects/cherry-studio/animations/resource-pane/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/resource-pane/implementation.md",
+        "projects/cherry-studio/animations/resource-pane/README.md",
+        "projects/cherry-studio/animations/resource-pane/source-reference.md",
+        "projects/cherry-studio/animations/resource-pane/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.selector-shell",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "方向感知选择浮层",
+      "description": "按浮层所在侧偏移半rem并从.95放大，外层同步fade；关闭缩小。",
+      "keywords": [
+        "方向感知选择浮层",
+        "presence",
+        "cherry",
+        "studio",
+        "animation",
+        "selector",
+        "shell"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/selector-shell/README.md",
+      "spec_path": "projects/cherry-studio/animations/selector-shell/spec.json",
+      "example_paths": [
+        "projects/cherry-studio/animations/selector-shell/examples/selector.css",
+        "projects/cherry-studio/animations/selector-shell/examples/SelectorPanel.tsx"
+      ],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/selector-shell/implementation.md",
+        "projects/cherry-studio/animations/selector-shell/README.md",
+        "projects/cherry-studio/animations/selector-shell/source-reference.md",
+        "projects/cherry-studio/animations/selector-shell/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.smooth-scroll",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "可取消的阅读定位滚动",
+      "description": "显式导航平滑追近每帧重新采样的目标偏移，最后吸附准确位置。",
+      "keywords": [
+        "可取消的阅读定位滚动",
+        "scroll",
+        "cherry",
+        "studio",
+        "animation",
+        "smooth",
+        "scroll"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/smooth-scroll/README.md",
+      "spec_path": "projects/cherry-studio/animations/smooth-scroll/spec.json",
+      "example_paths": [
+        "projects/cherry-studio/animations/smooth-scroll/examples/controller.mjs"
+      ],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/smooth-scroll/implementation.md",
+        "projects/cherry-studio/animations/smooth-scroll/README.md",
+        "projects/cherry-studio/animations/smooth-scroll/source-reference.md",
+        "projects/cherry-studio/animations/smooth-scroll/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.animation.text-shimmer",
+      "project": "cherry-studio",
+      "resource_type": "animation",
+      "name": "文字流光等待态",
+      "description": "前景色渐变背景在裁成文字的区域移动，连续3秒循环。",
+      "keywords": [
+        "文字流光等待态",
+        "loading",
+        "cherry",
+        "studio",
+        "animation",
+        "text",
+        "shimmer"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/text-shimmer/README.md",
+      "spec_path": "projects/cherry-studio/animations/text-shimmer/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/text-shimmer/implementation.md",
+        "projects/cherry-studio/animations/text-shimmer/README.md",
+        "projects/cherry-studio/animations/text-shimmer/source-reference.md",
+        "projects/cherry-studio/animations/text-shimmer/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.component.button",
+      "project": "cherry-studio",
+      "resource_type": "component",
+      "name": "Shadcn Button",
+      "description": "桌面工具栏和表单动作",
+      "keywords": [
+        "Shadcn Button",
+        "component",
+        "cherry",
+        "studio",
+        "component",
+        "button"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/components/button/README.md",
+      "spec_path": "projects/cherry-studio/components/button/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/components/button/README.md",
+        "projects/cherry-studio/components/button/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.component.dialog",
+      "project": "cherry-studio",
+      "resource_type": "component",
+      "name": "Radix Dialog",
+      "description": "模态窗口与嵌套交互层",
+      "keywords": [
+        "Radix Dialog",
+        "component",
+        "cherry",
+        "studio",
+        "component",
+        "dialog"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/components/dialog/README.md",
+      "spec_path": "projects/cherry-studio/components/dialog/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "cherry-studio.animation.dialog"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/components/dialog/README.md",
+        "projects/cherry-studio/components/dialog/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.component.resource-pane",
+      "project": "cherry-studio",
+      "resource_type": "component",
+      "name": "PageSidebar",
+      "description": "聊天资源/会话列表栏",
+      "keywords": [
+        "PageSidebar",
+        "component",
+        "cherry",
+        "studio",
+        "component",
+        "resource",
+        "pane"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/components/resource-pane/README.md",
+      "spec_path": "projects/cherry-studio/components/resource-pane/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "cherry-studio.animation.resource-pane"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/components/resource-pane/README.md",
+        "projects/cherry-studio/components/resource-pane/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.component.sidebar-width-policy",
+      "project": "cherry-studio",
+      "resource_type": "component",
+      "name": "应用Sidebar宽度策略",
+      "description": "导航栏hidden/icon/full三态",
+      "keywords": [
+        "应用Sidebar宽度策略",
+        "component",
+        "cherry",
+        "studio",
+        "component",
+        "sidebar",
+        "width",
+        "policy"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/components/sidebar-width-policy/README.md",
+      "spec_path": "projects/cherry-studio/components/sidebar-width-policy/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/components/sidebar-width-policy/README.md",
+        "projects/cherry-studio/components/sidebar-width-policy/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.example.selector-panel",
+      "project": "cherry-studio",
+      "resource_type": "example",
+      "name": "浮层fade与scale双轨",
+      "description": "仅bottom方向；origin固定top center；父级保留退出120ms且负责焦点；非完整Popover",
+      "keywords": [
+        "cherry",
+        "studio",
+        "example",
+        "selector",
+        "panel",
+        "example",
+        "浮层fade与scale双轨"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/selector-shell/examples/README.md",
+      "spec_path": "projects/cherry-studio/animations/selector-shell/examples/example.json",
+      "example_paths": [
+        "projects/cherry-studio/animations/selector-shell/examples/SelectorPanel.tsx",
+        "projects/cherry-studio/animations/selector-shell/examples/selector.css"
+      ],
+      "related_resource_ids": [
+        "cherry-studio.animation.selector-shell"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/selector-shell/examples/README.md",
+        "projects/cherry-studio/animations/selector-shell/examples/example.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.example.scroll-controller",
+      "project": "cherry-studio",
+      "resource_type": "example",
+      "name": "取消/替换/动态目标的滚动控制器",
+      "description": "从React hook改为getNode和dispose；没有用户事件监听与Reduce Motion集成",
+      "keywords": [
+        "cherry",
+        "studio",
+        "example",
+        "scroll",
+        "controller",
+        "example",
+        "取消/替换/动态目标的滚动控制器"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/animations/smooth-scroll/examples/README.md",
+      "spec_path": "projects/cherry-studio/animations/smooth-scroll/examples/example.json",
+      "example_paths": [
+        "projects/cherry-studio/animations/smooth-scroll/examples/controller.mjs"
+      ],
+      "related_resource_ids": [
+        "cherry-studio.animation.smooth-scroll"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "adapted",
+        "runtime-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/animations/smooth-scroll/examples/README.md",
+        "projects/cherry-studio/animations/smooth-scroll/examples/example.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.colors",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "colors",
+      "description": "cherry-studio / design-language / colors",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "colors",
+        "design-language",
+        "colors"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/colors.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/colors.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.icons",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "icons",
+      "description": "cherry-studio / design-language / icons",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "icons",
+        "design-language",
+        "icons"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/icons.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/icons.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.layout",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "layout",
+      "description": "cherry-studio / design-language / layout",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "layout",
+        "design-language",
+        "layout"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/layout.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/layout.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.materials",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "materials",
+      "description": "cherry-studio / design-language / materials",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "materials",
+        "design-language",
+        "materials"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/materials.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/materials.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.overview",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "overview",
+      "description": "cherry-studio / design-language / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "overview",
+        "design-language",
+        "overview"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/overview.md",
+      "spec_path": "projects/cherry-studio/design-language/tokens.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.spacing",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "spacing",
+      "description": "cherry-studio / design-language / spacing",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "spacing",
+        "design-language",
+        "spacing"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/spacing.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/spacing.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.design-language.typography",
+      "project": "cherry-studio",
+      "resource_type": "design-language",
+      "name": "typography",
+      "description": "cherry-studio / design-language / typography",
+      "keywords": [
+        "cherry",
+        "studio",
+        "design",
+        "language",
+        "typography",
+        "design-language",
+        "typography"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/design-language/typography.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/design-language/typography.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.architecture.overview",
+      "project": "cherry-studio",
+      "resource_type": "architecture",
+      "name": "overview",
+      "description": "cherry-studio / architecture / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "architecture",
+        "overview",
+        "architecture",
+        "overview"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/architecture/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/architecture/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.interactions.overview",
+      "project": "cherry-studio",
+      "resource_type": "interaction",
+      "name": "overview",
+      "description": "cherry-studio / interactions / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "interactions",
+        "overview",
+        "interaction",
+        "overview"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/interactions/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/interactions/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.license-notes",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "LICENSE-NOTES.md",
+      "description": "cherry-studio LICENSE-NOTES.md",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "license",
+        "notes",
+        "reference",
+        "LICENSE-NOTES.md"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/LICENSE-NOTES.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/LICENSE-NOTES.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.backlog",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "BACKLOG.md",
+      "description": "cherry-studio BACKLOG.md",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "backlog",
+        "reference",
+        "BACKLOG.md"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/BACKLOG.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/BACKLOG.md"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.source-map",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "source-map.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "source",
+        "map",
+        "reference",
+        "source-map.json"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/source-map.json",
+      "spec_path": "projects/cherry-studio/references/source-map.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/source-map.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.animation-discovery",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "animation-discovery.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "animation",
+        "discovery",
+        "reference",
+        "animation-discovery.json"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/animation-discovery.json",
+      "spec_path": "projects/cherry-studio/references/animation-discovery.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/animation-discovery.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.file-inventory",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "file-inventory.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "file",
+        "inventory",
+        "reference",
+        "file-inventory.json"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/file-inventory.json",
+      "spec_path": "projects/cherry-studio/references/file-inventory.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/file-inventory.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.acquisition",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "acquisition.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "acquisition",
+        "reference",
+        "acquisition.json"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/acquisition.json",
+      "spec_path": "projects/cherry-studio/references/acquisition.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/acquisition.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.repository-tree",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "repository-tree.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "repository",
+        "tree",
+        "reference",
+        "repository-tree.json"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/repository-tree.json",
+      "spec_path": "projects/cherry-studio/references/repository-tree.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/repository-tree.json"
+      ]
+    },
+    {
+      "id": "cherry-studio.reference.UPSTREAM-LICENSE",
+      "project": "cherry-studio",
+      "resource_type": "reference",
+      "name": "UPSTREAM-LICENSE.txt",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "cherry",
+        "studio",
+        "reference",
+        "UPSTREAM",
+        "LICENSE",
+        "reference",
+        "UPSTREAM-LICENSE.txt"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React 19",
+        "Electron 45",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "Motion React"
+      ],
+      "doc_path": "projects/cherry-studio/references/UPSTREAM-LICENSE.txt",
+      "spec_path": "projects/cherry-studio/references/UPSTREAM-LICENSE.txt",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio/references/UPSTREAM-LICENSE.txt"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.project",
+      "project": "cherry-studio-app",
+      "resource_type": "project",
+      "name": "cherry-studio-app",
+      "description": "移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "project",
+        "project",
+        "cherry-studio-app"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/README.md",
+      "spec_path": "projects/cherry-studio-app/manifest.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/README.md",
+        "projects/cherry-studio-app/manifest.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.effort-slider",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "离散滑杆磁吸",
+      "description": "拖动跟手并靠近档位磁吸；释放200ms无回弹吸附。",
+      "keywords": [
+        "离散滑杆磁吸",
+        "gesture",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "effort",
+        "slider"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/effort-slider/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/effort-slider/spec.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/effort-slider/examples/SnapMarker.tsx"
+      ],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/effort-slider/implementation.md",
+        "projects/cherry-studio-app/animations/effort-slider/README.md",
+        "projects/cherry-studio-app/animations/effort-slider/source-reference.md",
+        "projects/cherry-studio-app/animations/effort-slider/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.foil-loader",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "图片生成珠光 Shader",
+      "description": "珠光底上白色光带斜向扫过，显露光谱细纹与闪点，每2.4秒循环。",
+      "keywords": [
+        "图片生成珠光 Shader",
+        "shader",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "foil",
+        "loader"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/foil-loader/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/foil-loader/spec.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/foil-loader/examples/clock.mjs"
+      ],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/foil-loader/implementation.md",
+        "projects/cherry-studio-app/animations/foil-loader/README.md",
+        "projects/cherry-studio-app/animations/foil-loader/source-reference.md",
+        "projects/cherry-studio-app/animations/foil-loader/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.image-zoom",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "图片捏合/双击缩放",
+      "description": "居中变换；双击以触点偏移为目标缩至2.5倍，再双击复位。",
+      "keywords": [
+        "图片捏合/双击缩放",
+        "gesture",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "image",
+        "zoom"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/image-zoom/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/image-zoom/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/image-zoom/implementation.md",
+        "projects/cherry-studio-app/animations/image-zoom/README.md",
+        "projects/cherry-studio-app/animations/image-zoom/source-reference.md",
+        "projects/cherry-studio-app/animations/image-zoom/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.menu-panel",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "可中断展开菜单",
+      "description": "32点外壳展开至测量尺寸；内容右移40→0、.97→1、blur2→0，并淡入。",
+      "keywords": [
+        "可中断展开菜单",
+        "presence",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "menu",
+        "panel"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/menu-panel/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/menu-panel/spec.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/menu-panel/examples/MenuSurface.tsx"
+      ],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/menu-panel/implementation.md",
+        "projects/cherry-studio-app/animations/menu-panel/README.md",
+        "projects/cherry-studio-app/animations/menu-panel/source-reference.md",
+        "projects/cherry-studio-app/animations/menu-panel/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.native-bottom-sheet",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "原生底部面板高度跟随",
+      "description": "原生面板在detent之间移动，JS外壳跟随native position更新可见高度。",
+      "keywords": [
+        "原生底部面板高度跟随",
+        "gesture-sheet",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "native",
+        "bottom",
+        "sheet"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/native-bottom-sheet/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/native-bottom-sheet/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/native-bottom-sheet/implementation.md",
+        "projects/cherry-studio-app/animations/native-bottom-sheet/README.md",
+        "projects/cherry-studio-app/animations/native-bottom-sheet/source-reference.md",
+        "projects/cherry-studio-app/animations/native-bottom-sheet/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.animation.rotating-text",
+      "project": "cherry-studio-app",
+      "resource_type": "animation",
+      "name": "短语弹簧切换",
+      "description": "短语上下8点位移和淡入淡出；方向可反转。",
+      "keywords": [
+        "短语弹簧切换",
+        "text",
+        "cherry",
+        "studio",
+        "app",
+        "animation",
+        "rotating",
+        "text"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/rotating-text/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/rotating-text/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/rotating-text/implementation.md",
+        "projects/cherry-studio-app/animations/rotating-text/README.md",
+        "projects/cherry-studio-app/animations/rotating-text/source-reference.md",
+        "projects/cherry-studio-app/animations/rotating-text/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.component.bottom-sheet",
+      "project": "cherry-studio-app",
+      "resource_type": "component",
+      "name": "CherryUI BottomSheet",
+      "description": "统一移动面板壳",
+      "keywords": [
+        "CherryUI BottomSheet",
+        "component",
+        "cherry",
+        "studio",
+        "app",
+        "component",
+        "bottom",
+        "sheet"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/components/bottom-sheet/README.md",
+      "spec_path": "projects/cherry-studio-app/components/bottom-sheet/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "cherry-studio-app.animation.native-bottom-sheet"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/components/bottom-sheet/README.md",
+        "projects/cherry-studio-app/components/bottom-sheet/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.component.button",
+      "project": "cherry-studio-app",
+      "resource_type": "component",
+      "name": "CherryUI Button",
+      "description": "动作按钮与文字/图标动作",
+      "keywords": [
+        "CherryUI Button",
+        "component",
+        "cherry",
+        "studio",
+        "app",
+        "component",
+        "button"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/components/button/README.md",
+      "spec_path": "projects/cherry-studio-app/components/button/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/components/button/README.md",
+        "projects/cherry-studio-app/components/button/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.component.menu",
+      "project": "cherry-studio-app",
+      "resource_type": "component",
+      "name": "MenuContent / MenuPanel",
+      "description": "锚定操作、分组菜单及勾选项",
+      "keywords": [
+        "MenuContent / MenuPanel",
+        "component",
+        "cherry",
+        "studio",
+        "app",
+        "component",
+        "menu"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/components/menu/README.md",
+      "spec_path": "projects/cherry-studio-app/components/menu/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "cherry-studio-app.animation.menu-panel"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/components/menu/README.md",
+        "projects/cherry-studio-app/components/menu/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.component.sidebar-column",
+      "project": "cherry-studio-app",
+      "resource_type": "component",
+      "name": "自适应Sidebar列策略",
+      "description": "手机抽屉、宽窗常驻列与折叠屏布局",
+      "keywords": [
+        "自适应Sidebar列策略",
+        "component",
+        "cherry",
+        "studio",
+        "app",
+        "component",
+        "sidebar",
+        "column"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/components/sidebar-column/README.md",
+      "spec_path": "projects/cherry-studio-app/components/sidebar-column/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/components/sidebar-column/README.md",
+        "projects/cherry-studio-app/components/sidebar-column/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.component.switch",
+      "project": "cherry-studio-app",
+      "resource_type": "component",
+      "name": "SwitchControl（Android/Web）",
+      "description": "布尔偏好控制",
+      "keywords": [
+        "SwitchControl（Android/Web）",
+        "component",
+        "cherry",
+        "studio",
+        "app",
+        "component",
+        "switch"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/components/switch/README.md",
+      "spec_path": "projects/cherry-studio-app/components/switch/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/components/switch/README.md",
+        "projects/cherry-studio-app/components/switch/spec.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.example.snap-marker",
+      "project": "cherry-studio-app",
+      "resource_type": "example",
+      "name": "离散滑杆的程序化吸附",
+      "description": "不含拖拽磁吸与完整slider语义；#666为示例局部中性占位，非上游Token",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "example",
+        "snap",
+        "marker",
+        "example",
+        "离散滑杆的程序化吸附"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/effort-slider/examples/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/effort-slider/examples/example.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/effort-slider/examples/SnapMarker.tsx"
+      ],
+      "related_resource_ids": [
+        "cherry-studio-app.animation.effort-slider"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/effort-slider/examples/README.md",
+        "projects/cherry-studio-app/animations/effort-slider/examples/example.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.example.loader-clock",
+      "project": "cherry-studio-app",
+      "resource_type": "example",
+      "name": "Shader时钟与周期数值模型",
+      "description": "没有渲染Shader；额外限制负delta为0，不代表原文件有该条件",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "example",
+        "loader",
+        "clock",
+        "example",
+        "Shader时钟与周期数值模型"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/foil-loader/examples/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/foil-loader/examples/example.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/foil-loader/examples/clock.mjs"
+      ],
+      "related_resource_ids": [
+        "cherry-studio-app.animation.foil-loader"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "adapted",
+        "runtime-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/foil-loader/examples/README.md",
+        "projects/cherry-studio-app/animations/foil-loader/examples/example.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.example.menu-surface",
+      "project": "cherry-studio-app",
+      "resource_type": "example",
+      "name": "菜单内容透明度和变换",
+      "description": "不含测量/宽高/blur/portal/focus；只复现内容轨道",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "example",
+        "menu",
+        "surface",
+        "example",
+        "菜单内容透明度和变换"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/animations/menu-panel/examples/README.md",
+      "spec_path": "projects/cherry-studio-app/animations/menu-panel/examples/example.json",
+      "example_paths": [
+        "projects/cherry-studio-app/animations/menu-panel/examples/MenuSurface.tsx"
+      ],
+      "related_resource_ids": [
+        "cherry-studio-app.animation.menu-panel"
+      ],
+      "license": "AGPL-3.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/animations/menu-panel/examples/README.md",
+        "projects/cherry-studio-app/animations/menu-panel/examples/example.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.colors",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "colors",
+      "description": "cherry-studio-app / design-language / colors",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "colors",
+        "design-language",
+        "colors"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/colors.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/colors.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.icons",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "icons",
+      "description": "cherry-studio-app / design-language / icons",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "icons",
+        "design-language",
+        "icons"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/icons.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/icons.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.layout",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "layout",
+      "description": "cherry-studio-app / design-language / layout",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "layout",
+        "design-language",
+        "layout"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/layout.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/layout.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.materials",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "materials",
+      "description": "cherry-studio-app / design-language / materials",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "materials",
+        "design-language",
+        "materials"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/materials.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/materials.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.overview",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "overview",
+      "description": "cherry-studio-app / design-language / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "overview",
+        "design-language",
+        "overview"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/overview.md",
+      "spec_path": "projects/cherry-studio-app/design-language/tokens.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.spacing",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "spacing",
+      "description": "cherry-studio-app / design-language / spacing",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "spacing",
+        "design-language",
+        "spacing"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/spacing.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/spacing.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.design-language.typography",
+      "project": "cherry-studio-app",
+      "resource_type": "design-language",
+      "name": "typography",
+      "description": "cherry-studio-app / design-language / typography",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "design",
+        "language",
+        "typography",
+        "design-language",
+        "typography"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/design-language/typography.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/design-language/typography.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.architecture.overview",
+      "project": "cherry-studio-app",
+      "resource_type": "architecture",
+      "name": "overview",
+      "description": "cherry-studio-app / architecture / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "architecture",
+        "overview",
+        "architecture",
+        "overview"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/architecture/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/architecture/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.interactions.overview",
+      "project": "cherry-studio-app",
+      "resource_type": "interaction",
+      "name": "overview",
+      "description": "cherry-studio-app / interactions / overview",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "interactions",
+        "overview",
+        "interaction",
+        "overview"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/interactions/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/interactions/overview.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.license-notes",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "LICENSE-NOTES.md",
+      "description": "cherry-studio-app LICENSE-NOTES.md",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "license",
+        "notes",
+        "reference",
+        "LICENSE-NOTES.md"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/LICENSE-NOTES.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/LICENSE-NOTES.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.backlog",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "BACKLOG.md",
+      "description": "cherry-studio-app BACKLOG.md",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "backlog",
+        "reference",
+        "BACKLOG.md"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/BACKLOG.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/BACKLOG.md"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.source-map",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "source-map.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "source",
+        "map",
+        "reference",
+        "source-map.json"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/references/source-map.json",
+      "spec_path": "projects/cherry-studio-app/references/source-map.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/references/source-map.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.animation-discovery",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "animation-discovery.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "animation",
+        "discovery",
+        "reference",
+        "animation-discovery.json"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/references/animation-discovery.json",
+      "spec_path": "projects/cherry-studio-app/references/animation-discovery.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/references/animation-discovery.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.file-inventory",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "file-inventory.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "file",
+        "inventory",
+        "reference",
+        "file-inventory.json"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/references/file-inventory.json",
+      "spec_path": "projects/cherry-studio-app/references/file-inventory.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/references/file-inventory.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.acquisition",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "acquisition.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "acquisition",
+        "reference",
+        "acquisition.json"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/references/acquisition.json",
+      "spec_path": "projects/cherry-studio-app/references/acquisition.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/references/acquisition.json"
+      ]
+    },
+    {
+      "id": "cherry-studio-app.reference.UPSTREAM-LICENSE",
+      "project": "cherry-studio-app",
+      "resource_type": "reference",
+      "name": "UPSTREAM-LICENSE.txt",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "cherry",
+        "studio",
+        "app",
+        "reference",
+        "UPSTREAM",
+        "LICENSE",
+        "reference",
+        "UPSTREAM-LICENSE.txt"
+      ],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "original_stack": [
+        "TypeScript",
+        "React Native 0.88.1",
+        "Expo 58",
+        "Reanimated 4.7.1",
+        "Gesture Handler",
+        "Skia",
+        "Uniwind"
+      ],
+      "doc_path": "projects/cherry-studio-app/references/UPSTREAM-LICENSE.txt",
+      "spec_path": "projects/cherry-studio-app/references/UPSTREAM-LICENSE.txt",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "AGPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/cherry-studio-app/references/UPSTREAM-LICENSE.txt"
+      ]
+    },
+    {
+      "id": "mihon.project",
+      "project": "mihon",
+      "resource_type": "project",
+      "name": "mihon",
+      "description": "以书库与沉浸阅读为中心：Material 语义配色、多套主题和 AMOLED 覆盖；内容密集的列表/网格与可隐藏阅读工具栏共存。阅读器仍包含 Android View 路径，不能将项目整体视为纯 Compose。",
+      "keywords": [
+        "mihon",
+        "project",
+        "project",
+        "mihon"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/README.md",
+      "spec_path": "projects/mihon/manifest.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/README.md",
+        "projects/mihon/manifest.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.adaptive-sheet",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "自适应面板锚点进出",
+      "description": "手机从全高隐藏锚点滑至0；平板透明度0→1。",
+      "keywords": [
+        "自适应面板锚点进出",
+        "gesture-sheet",
+        "mihon",
+        "animation",
+        "adaptive",
+        "sheet"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/adaptive-sheet/README.md",
+      "spec_path": "projects/mihon/animations/adaptive-sheet/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/adaptive-sheet/implementation.md",
+        "projects/mihon/animations/adaptive-sheet/README.md",
+        "projects/mihon/animations/adaptive-sheet/source-reference.md",
+        "projects/mihon/animations/adaptive-sheet/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.button-elevation",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "交互驱动的按钮高度过渡",
+      "description": "根据press/hover/focus/drag改变 elevation；并非缩放。",
+      "keywords": [
+        "交互驱动的按钮高度过渡",
+        "feedback",
+        "mihon",
+        "animation",
+        "button",
+        "elevation"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/button-elevation/README.md",
+      "spec_path": "projects/mihon/animations/button-elevation/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/button-elevation/implementation.md",
+        "projects/mihon/animations/button-elevation/README.md",
+        "projects/mihon/animations/button-elevation/source-reference.md",
+        "projects/mihon/animations/button-elevation/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.combined-progress",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "持续旋转的确定进度",
+      "description": "未知进度与确定进度交叉淡入；确定进度圆环也持续旋转。",
+      "keywords": [
+        "持续旋转的确定进度",
+        "loading",
+        "mihon",
+        "animation",
+        "combined",
+        "progress"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/combined-progress/README.md",
+      "spec_path": "projects/mihon/animations/combined-progress/spec.json",
+      "example_paths": [
+        "projects/mihon/animations/combined-progress/examples/RotatingProgress.kt"
+      ],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/combined-progress/implementation.md",
+        "projects/mihon/animations/combined-progress/README.md",
+        "projects/mihon/animations/combined-progress/source-reference.md",
+        "projects/mihon/animations/combined-progress/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.fast-scroller",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "快滚条显隐与拖动",
+      "description": "滚动显现、停留2秒、按平台时长淡出。",
+      "keywords": [
+        "快滚条显隐与拖动",
+        "scroll",
+        "mihon",
+        "animation",
+        "fast",
+        "scroller"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/fast-scroller/README.md",
+      "spec_path": "projects/mihon/animations/fast-scroller/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/fast-scroller/implementation.md",
+        "projects/mihon/animations/fast-scroller/README.md",
+        "projects/mihon/animations/fast-scroller/source-reference.md",
+        "projects/mihon/animations/fast-scroller/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.reader-bars",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "沉浸阅读控制层",
+      "description": "顶栏上滑、底栏下滑、纵向导航向所在侧滑出，同时透明度变化。",
+      "keywords": [
+        "沉浸阅读控制层",
+        "visibility",
+        "mihon",
+        "animation",
+        "reader",
+        "bars"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/reader-bars/README.md",
+      "spec_path": "projects/mihon/animations/reader-bars/spec.json",
+      "example_paths": [
+        "projects/mihon/animations/reader-bars/examples/ReaderBars.kt"
+      ],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/reader-bars/implementation.md",
+        "projects/mihon/animations/reader-bars/README.md",
+        "projects/mihon/animations/reader-bars/source-reference.md",
+        "projects/mihon/animations/reader-bars/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.animation.shared-axis-navigation",
+      "project": "mihon",
+      "resource_type": "animation",
+      "name": "页面共享轴过渡",
+      "description": "Material shared axis X 表达向前/返回；不是共享元素封面过渡。",
+      "keywords": [
+        "页面共享轴过渡",
+        "navigation",
+        "mihon",
+        "animation",
+        "shared",
+        "axis",
+        "navigation"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/shared-axis-navigation/README.md",
+      "spec_path": "projects/mihon/animations/shared-axis-navigation/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/animations/shared-axis-navigation/implementation.md",
+        "projects/mihon/animations/shared-axis-navigation/README.md",
+        "projects/mihon/animations/shared-axis-navigation/source-reference.md",
+        "projects/mihon/animations/shared-axis-navigation/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.component.adaptive-sheet",
+      "project": "mihon",
+      "resource_type": "component",
+      "name": "AdaptiveSheet",
+      "description": "手机底部面板/平板居中面板",
+      "keywords": [
+        "AdaptiveSheet",
+        "component",
+        "mihon",
+        "component",
+        "adaptive",
+        "sheet"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/components/adaptive-sheet/README.md",
+      "spec_path": "projects/mihon/components/adaptive-sheet/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "mihon.animation.adaptive-sheet"
+      ],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/components/adaptive-sheet/README.md",
+        "projects/mihon/components/adaptive-sheet/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.component.collapsible-box",
+      "project": "mihon",
+      "resource_type": "component",
+      "name": "CollapsibleBox",
+      "description": "设置/说明组的渐进披露",
+      "keywords": [
+        "CollapsibleBox",
+        "component",
+        "mihon",
+        "component",
+        "collapsible",
+        "box"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/components/collapsible-box/README.md",
+      "spec_path": "projects/mihon/components/collapsible-box/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/components/collapsible-box/README.md",
+        "projects/mihon/components/collapsible-box/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.component.combined-progress",
+      "project": "mihon",
+      "resource_type": "component",
+      "name": "CombinedCircularProgressIndicator",
+      "description": "下载等任务进度反馈",
+      "keywords": [
+        "CombinedCircularProgressIndicator",
+        "component",
+        "mihon",
+        "component",
+        "combined",
+        "progress"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/components/combined-progress/README.md",
+      "spec_path": "projects/mihon/components/combined-progress/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "mihon.animation.combined-progress"
+      ],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/components/combined-progress/README.md",
+        "projects/mihon/components/combined-progress/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.component.two-panel",
+      "project": "mihon",
+      "resource_type": "component",
+      "name": "TwoPanelBox",
+      "description": "大屏主从信息并列",
+      "keywords": [
+        "TwoPanelBox",
+        "component",
+        "mihon",
+        "component",
+        "two",
+        "panel"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/components/two-panel/README.md",
+      "spec_path": "projects/mihon/components/two-panel/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/components/two-panel/README.md",
+        "projects/mihon/components/two-panel/spec.json"
+      ]
+    },
+    {
+      "id": "mihon.example.rotating-progress",
+      "project": "mihon",
+      "resource_type": "example",
+      "name": "确定进度持续旋转",
+      "description": "不含未知态交叉淡入；加入显式reducedMotion",
+      "keywords": [
+        "mihon",
+        "example",
+        "rotating",
+        "progress",
+        "example",
+        "确定进度持续旋转"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/combined-progress/examples/README.md",
+      "spec_path": "projects/mihon/animations/combined-progress/examples/example.json",
+      "example_paths": [
+        "projects/mihon/animations/combined-progress/examples/RotatingProgress.kt"
+      ],
+      "related_resource_ids": [
+        "mihon.animation.combined-progress"
+      ],
+      "license": "Apache-2.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/mihon/animations/combined-progress/examples/README.md",
+        "projects/mihon/animations/combined-progress/examples/example.json"
+      ]
+    },
+    {
+      "id": "mihon.example.reader-bar-motion",
+      "project": "mihon",
+      "resource_type": "example",
+      "name": "顶栏位移与淡入并行",
+      "description": "仅顶栏；加入显式reducedMotion；不含阅读业务",
+      "keywords": [
+        "mihon",
+        "example",
+        "reader",
+        "bar",
+        "motion",
+        "example",
+        "顶栏位移与淡入并行"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/animations/reader-bars/examples/README.md",
+      "spec_path": "projects/mihon/animations/reader-bars/examples/example.json",
+      "example_paths": [
+        "projects/mihon/animations/reader-bars/examples/ReaderBars.kt"
+      ],
+      "related_resource_ids": [
+        "mihon.animation.reader-bars"
+      ],
+      "license": "Apache-2.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/mihon/animations/reader-bars/examples/README.md",
+        "projects/mihon/animations/reader-bars/examples/example.json"
+      ]
+    },
+    {
+      "id": "mihon.design-language.colors",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "colors",
+      "description": "mihon / design-language / colors",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "colors",
+        "design-language",
+        "colors"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/colors.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/colors.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.icons",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "icons",
+      "description": "mihon / design-language / icons",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "icons",
+        "design-language",
+        "icons"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/icons.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/icons.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.layout",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "layout",
+      "description": "mihon / design-language / layout",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "layout",
+        "design-language",
+        "layout"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/layout.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/layout.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.materials",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "materials",
+      "description": "mihon / design-language / materials",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "materials",
+        "design-language",
+        "materials"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/materials.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/materials.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.overview",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "overview",
+      "description": "mihon / design-language / overview",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "overview",
+        "design-language",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/overview.md",
+      "spec_path": "projects/mihon/design-language/tokens.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/overview.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.spacing",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "spacing",
+      "description": "mihon / design-language / spacing",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "spacing",
+        "design-language",
+        "spacing"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/spacing.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/spacing.md"
+      ]
+    },
+    {
+      "id": "mihon.design-language.typography",
+      "project": "mihon",
+      "resource_type": "design-language",
+      "name": "typography",
+      "description": "mihon / design-language / typography",
+      "keywords": [
+        "mihon",
+        "design",
+        "language",
+        "typography",
+        "design-language",
+        "typography"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/design-language/typography.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/design-language/typography.md"
+      ]
+    },
+    {
+      "id": "mihon.architecture.overview",
+      "project": "mihon",
+      "resource_type": "architecture",
+      "name": "overview",
+      "description": "mihon / architecture / overview",
+      "keywords": [
+        "mihon",
+        "architecture",
+        "overview",
+        "architecture",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/architecture/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/architecture/overview.md"
+      ]
+    },
+    {
+      "id": "mihon.interactions.overview",
+      "project": "mihon",
+      "resource_type": "interaction",
+      "name": "overview",
+      "description": "mihon / interactions / overview",
+      "keywords": [
+        "mihon",
+        "interactions",
+        "overview",
+        "interaction",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/interactions/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/interactions/overview.md"
+      ]
+    },
+    {
+      "id": "mihon.reference.license-notes",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "LICENSE-NOTES.md",
+      "description": "mihon LICENSE-NOTES.md",
+      "keywords": [
+        "mihon",
+        "reference",
+        "license",
+        "notes",
+        "reference",
+        "LICENSE-NOTES.md"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/LICENSE-NOTES.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/LICENSE-NOTES.md"
+      ]
+    },
+    {
+      "id": "mihon.reference.backlog",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "BACKLOG.md",
+      "description": "mihon BACKLOG.md",
+      "keywords": [
+        "mihon",
+        "reference",
+        "backlog",
+        "reference",
+        "BACKLOG.md"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/BACKLOG.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/BACKLOG.md"
+      ]
+    },
+    {
+      "id": "mihon.reference.source-map",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "source-map.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "mihon",
+        "reference",
+        "source",
+        "map",
+        "reference",
+        "source-map.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/references/source-map.json",
+      "spec_path": "projects/mihon/references/source-map.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/references/source-map.json"
+      ]
+    },
+    {
+      "id": "mihon.reference.animation-discovery",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "animation-discovery.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "mihon",
+        "reference",
+        "animation",
+        "discovery",
+        "reference",
+        "animation-discovery.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/references/animation-discovery.json",
+      "spec_path": "projects/mihon/references/animation-discovery.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "projects/mihon/references/animation-discovery.json"
+      ]
+    },
+    {
+      "id": "mihon.reference.file-inventory",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "file-inventory.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "mihon",
+        "reference",
+        "file",
+        "inventory",
+        "reference",
+        "file-inventory.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/references/file-inventory.json",
+      "spec_path": "projects/mihon/references/file-inventory.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/references/file-inventory.json"
+      ]
+    },
+    {
+      "id": "mihon.reference.acquisition",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "acquisition.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "mihon",
+        "reference",
+        "acquisition",
+        "reference",
+        "acquisition.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/references/acquisition.json",
+      "spec_path": "projects/mihon/references/acquisition.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/references/acquisition.json"
+      ]
+    },
+    {
+      "id": "mihon.reference.UPSTREAM-LICENSE",
+      "project": "mihon",
+      "resource_type": "reference",
+      "name": "UPSTREAM-LICENSE.txt",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "mihon",
+        "reference",
+        "UPSTREAM",
+        "LICENSE",
+        "reference",
+        "UPSTREAM-LICENSE.txt"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material3 Expressive",
+        "Voyager",
+        "Android Views"
+      ],
+      "doc_path": "projects/mihon/references/UPSTREAM-LICENSE.txt",
+      "spec_path": "projects/mihon/references/UPSTREAM-LICENSE.txt",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "Apache-2.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/mihon/references/UPSTREAM-LICENSE.txt"
+      ]
+    },
+    {
+      "id": "shared.animation-patterns.patterns",
+      "project": "shared",
+      "resource_type": "shared-pattern",
+      "name": "patterns",
+      "description": "跨项目分析；参数仍归原项目",
+      "keywords": [
+        "shared",
+        "animation",
+        "patterns",
+        "patterns",
+        "shared-pattern",
+        "patterns"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "shared/animation-patterns/patterns.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "shared/animation-patterns/patterns.md"
+      ]
+    },
+    {
+      "id": "shared.comparisons.projects",
+      "project": "shared",
+      "resource_type": "shared-pattern",
+      "name": "projects",
+      "description": "跨项目分析；参数仍归原项目",
+      "keywords": [
+        "shared",
+        "comparisons",
+        "projects",
+        "shared-pattern",
+        "projects"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "shared/comparisons/projects.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "shared/comparisons/projects.md"
+      ]
+    },
+    {
+      "id": "shared.component-patterns.lifecycle",
+      "project": "shared",
+      "resource_type": "shared-pattern",
+      "name": "lifecycle",
+      "description": "跨项目分析；参数仍归原项目",
+      "keywords": [
+        "shared",
+        "component",
+        "patterns",
+        "lifecycle",
+        "shared-pattern",
+        "lifecycle"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "shared/component-patterns/lifecycle.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "shared/component-patterns/lifecycle.md"
+      ]
+    },
+    {
+      "id": "shared.design-patterns.semantic-hierarchy",
+      "project": "shared",
+      "resource_type": "shared-pattern",
+      "name": "semantic-hierarchy",
+      "description": "跨项目分析；参数仍归原项目",
+      "keywords": [
+        "shared",
+        "design",
+        "patterns",
+        "semantic",
+        "hierarchy",
+        "shared-pattern",
+        "semantic-hierarchy"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "shared/design-patterns/semantic-hierarchy.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "shared/design-patterns/semantic-hierarchy.md"
+      ]
+    },
+    {
+      "id": "shared.platform-guides.migration",
+      "project": "shared",
+      "resource_type": "shared-pattern",
+      "name": "migration",
+      "description": "跨项目分析；参数仍归原项目",
+      "keywords": [
+        "shared",
+        "platform",
+        "guides",
+        "migration",
+        "shared-pattern",
+        "migration"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "shared/platform-guides/migration.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "shared/platform-guides/migration.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.README",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "README.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "README",
+        "guide",
+        "README.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "README.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.AGENTS",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "AGENTS.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "AGENTS",
+        "guide",
+        "AGENTS.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "AGENTS.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.MAINTENANCE",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "MAINTENANCE.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "MAINTENANCE",
+        "guide",
+        "MAINTENANCE.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "MAINTENANCE.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "MAINTENANCE.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.EXECUTION-REPORT",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "EXECUTION-REPORT.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "EXECUTION",
+        "REPORT",
+        "guide",
+        "EXECUTION-REPORT.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "EXECUTION-REPORT.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "EXECUTION-REPORT.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.VALIDATION",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "VALIDATION.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "VALIDATION",
+        "guide",
+        "VALIDATION.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "VALIDATION.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "VALIDATION.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.CHANGELOG",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "CHANGELOG.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "CHANGELOG",
+        "guide",
+        "CHANGELOG.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "CHANGELOG.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "id": "knowledge-base.schemas.README",
+      "project": "shared",
+      "resource_type": "guide",
+      "name": "schemas/README.md",
+      "description": "知识库使用、维护与验证范围",
+      "keywords": [
+        "knowledge",
+        "base",
+        "schemas",
+        "README",
+        "guide",
+        "schemas/README.md"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/README.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "schemas/README.md"
+      ]
+    },
+    {
+      "id": "schema.animation",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "animation.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "animation",
+        "schema",
+        "animation.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/animation.schema.json",
+      "spec_path": "schemas/animation.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/animation.schema.json"
+      ]
+    },
+    {
+      "id": "schema.catalog",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "catalog.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "catalog",
+        "schema",
+        "catalog.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/catalog.schema.json",
+      "spec_path": "schemas/catalog.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/catalog.schema.json"
+      ]
+    },
+    {
+      "id": "schema.component",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "component.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "component",
+        "schema",
+        "component.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/component.schema.json",
+      "spec_path": "schemas/component.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/component.schema.json"
+      ]
+    },
+    {
+      "id": "schema.example",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "example.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "example",
+        "schema",
+        "example.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/example.schema.json",
+      "spec_path": "schemas/example.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/example.schema.json"
+      ]
+    },
+    {
+      "id": "schema.manifest",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "manifest.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "manifest",
+        "schema",
+        "manifest.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/manifest.schema.json",
+      "spec_path": "schemas/manifest.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/manifest.schema.json"
+      ]
+    },
+    {
+      "id": "schema.source",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "source.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "source",
+        "schema",
+        "source.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/source.schema.json",
+      "spec_path": "schemas/source.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/source.schema.json"
+      ]
+    },
+    {
+      "id": "schema.tokens",
+      "project": "shared",
+      "resource_type": "schema",
+      "name": "tokens.schema.json",
+      "description": "结构化数据约束",
+      "keywords": [
+        "schema",
+        "tokens",
+        "schema",
+        "tokens.schema.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "schemas/tokens.schema.json",
+      "spec_path": "schemas/tokens.schema.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "schemas/tokens.schema.json"
+      ]
+    },
+    {
+      "id": "knowledge-base.validation-results",
+      "project": "shared",
+      "resource_type": "reference",
+      "name": "validation-results.json",
+      "description": "本轮构建或验证的机器可读报告",
+      "keywords": [
+        "knowledge",
+        "base",
+        "validation",
+        "results",
+        "reference",
+        "validation-results.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "validation-results.json",
+      "spec_path": "validation-results.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "validation-results.json"
+      ]
+    },
+    {
+      "id": "knowledge-base.references-build-summary",
+      "project": "shared",
+      "resource_type": "reference",
+      "name": "references-build-summary.json",
+      "description": "本轮构建或验证的机器可读报告",
+      "keywords": [
+        "knowledge",
+        "base",
+        "references",
+        "build",
+        "summary",
+        "reference",
+        "references-build-summary.json"
+      ],
+      "platforms": [
+        "cross-platform"
+      ],
+      "original_stack": [],
+      "doc_path": "references-build-summary.json",
+      "spec_path": "references-build-summary.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "analysis; see linked upstream licenses",
+      "verification": [
+        "inferred"
+      ],
+      "documents": [
+        "references-build-summary.json"
+      ]
+    }
+  ]
+}

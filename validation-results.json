@@ -1,0 +1,235 @@
+{
+  "date": "2026-11-16",
+  "status": "passed",
+  "checks": {
+    "json_files_parsed": 68,
+    "indexed_resources": 112,
+    "cherry-studio_text_snapshot_files_checked": 9949,
+    "cherry-studio-app_text_snapshot_files_checked": 3703,
+    "mihon_text_snapshot_files_checked": 1188,
+    "source_records_checked": 963,
+    "unique_cited_source_files": 64,
+    "parameter_evidence_bindings": 23,
+    "example_harness": {
+      "result": "passed",
+      "scope": "scroll controller cancellation, replacement, disposal, missing DOM, moving target and one-frame boundary; loader clock cap, reset, wrap and phase",
+      "visual_runtime": false
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "parameter_evidence": [
+    {
+      "project": "mihon",
+      "animation": "adaptive-sheet",
+      "source_path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+      "line": 260,
+      "pattern": "durationMillis = (350)",
+      "spec_pointer": "timing.duration_ms",
+      "value": 350
+    },
+    {
+      "project": "mihon",
+      "animation": "reader-bars",
+      "source_path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 42,
+      "pattern": "tween<IntOffset>\\((200)\\)",
+      "spec_pointer": "timing.duration_ms.slide",
+      "value": 200
+    },
+    {
+      "project": "mihon",
+      "animation": "reader-bars",
+      "source_path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+      "line": 43,
+      "pattern": "tween<Float>\\((150)\\)",
+      "spec_pointer": "timing.duration_ms.fade",
+      "value": 150
+    },
+    {
+      "project": "mihon",
+      "animation": "fast-scroller",
+      "source_path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+      "line": 481,
+      "pattern": "ThumbLength = (48)\\.dp",
+      "spec_pointer": "properties.thumb_length_dp",
+      "value": 48
+    },
+    {
+      "project": "mihon",
+      "animation": "combined-progress",
+      "source_path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "line": 60,
+      "pattern": "tween\\((2000), easing = LinearEasing\\)",
+      "spec_pointer": "timing.duration_ms.rotation",
+      "value": 2000
+    },
+    {
+      "project": "mihon",
+      "animation": "button-elevation",
+      "source_path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+      "line": 113,
+      "pattern": "durationMillis = (120)",
+      "spec_pointer": "timing.duration_ms.incoming",
+      "value": 120
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "menu-panel",
+      "source_path": "packages/ui/src/motion.ts",
+      "line": 48,
+      "pattern": "slow: (350)",
+      "spec_pointer": "timing.duration_ms.open",
+      "value": 350
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "menu-panel",
+      "source_path": "packages/ui/src/motion.ts",
+      "line": 46,
+      "pattern": "base: (250)",
+      "spec_pointer": "timing.duration_ms.close",
+      "value": 250
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "menu-panel",
+      "source_path": "packages/ui/src/components/menu/menu-motion.ts",
+      "line": 10,
+      "pattern": "menuRestingScale = (0\\.97)",
+      "spec_pointer": "properties.scale.0",
+      "value": 0.97
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "rotating-text",
+      "source_path": "packages/ui/src/motion.ts",
+      "line": 39,
+      "pattern": "damping: (31\\.5)",
+      "spec_pointer": "timing.spring.damping",
+      "value": 31.5
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "rotating-text",
+      "source_path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "line": 21,
+      "pattern": "ENTER_FADE_DELAY = (60)",
+      "spec_pointer": "timing.delay_ms.enter_fade",
+      "value": 60
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "effort-slider",
+      "source_path": "src/frontend/features/chat/components/ChatInput/effortSlider/utils/constants.ts",
+      "line": 10,
+      "pattern": "duration: (200)",
+      "spec_pointer": "timing.duration_ms",
+      "value": 200
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "image-zoom",
+      "source_path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "line": 13,
+      "pattern": "DOUBLE_TAP_SCALE = (2\\.5)",
+      "spec_pointer": "end_state.doubleTapScale",
+      "value": 2.5
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "native-bottom-sheet",
+      "source_path": "packages/ui/src/components/bottom-sheet/bottom-sheet.tsx",
+      "line": 39,
+      "pattern": "MAX_CARD_WIDTH = (720)",
+      "spec_pointer": "properties.max_width",
+      "value": 720
+    },
+    {
+      "project": "cherry-studio-app",
+      "animation": "foil-loader",
+      "source_path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "line": 17,
+      "pattern": "CLOCK_WRAP_SECONDS = (1200)",
+      "spec_pointer": "properties.clock_wrap_seconds",
+      "value": 1200
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "resource-pane",
+      "source_path": "src/renderer/components/chat/shell/paneLayout.ts",
+      "line": 6,
+      "pattern": "duration: (0\\.3)",
+      "spec_pointer": "timing.duration_ms",
+      "value": 300
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "dialog",
+      "source_path": "packages/ui/src/components/primitives/dialog.tsx",
+      "line": 157,
+      "pattern": "animation-duration-\\[(260)ms\\]",
+      "spec_pointer": "timing.duration_ms.content_open",
+      "value": 260
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "selector-shell",
+      "source_path": "src/renderer/assets/styles/animation.css",
+      "line": 219,
+      "pattern": "animation-selector-shell-panel-enter (150)ms",
+      "spec_pointer": "timing.duration_ms.open",
+      "value": 150
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "composer-dock",
+      "source_path": "src/renderer/assets/styles/animation.css",
+      "line": 94,
+      "pattern": "animation-chat-composer-dock-down (220)ms",
+      "spec_pointer": "timing.duration_ms",
+      "value": 220
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "smooth-scroll",
+      "source_path": "src/renderer/components/chat/messages/list/useSmoothScrollAnimation.ts",
+      "line": 40,
+      "pattern": "DEFAULT_FRAMES = (50)",
+      "spec_pointer": "timing.frames",
+      "value": 50
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "text-shimmer",
+      "source_path": "src/renderer/assets/styles/animation.css",
+      "line": 258,
+      "pattern": "animation-shimmer (3)s linear",
+      "spec_pointer": "timing.duration_ms",
+      "value": 3000
+    },
+    {
+      "project": "cherry-studio",
+      "animation": "heatmap-entry",
+      "source_path": "src/renderer/assets/styles/animation.css",
+      "line": 109,
+      "pattern": "animation-usage-heatmap-cell-enter (520)ms",
+      "spec_pointer": "timing.duration_ms",
+      "value": 520
+    },
+    {
+      "project": "mihon",
+      "animation": "shared-axis-navigation",
+      "delegated": true,
+      "source_path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+      "duration": null
+    }
+  ],
+  "limits": [
+    "No upstream application runtime",
+    "No visual verification",
+    "Native examples not compiled",
+    "JSON Schema supported-keyword subset only",
+    "Static performance analysis only"
+  ]
+}

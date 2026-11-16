@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.component.button",
+  "name": "CherryUI Button",
+  "project": "cherry-studio-app",
+  "purpose": "动作按钮与文字/图标动作",
+  "structure": "Pressable→变体/尺寸Context→Label、可选icon/Spinner",
+  "parameters": "default gap2 px4 py2.5 text-base；rounded/pill；default前景底/背景字，中性而非绿色",
+  "states": "active opacity.8；disabled opacity.4；loading禁用及spinner；无自定义按压spring",
+  "api": "variant、size、shape、icon、loading和Pressable事件；Label子组件",
+  "behavior": "loading与disabled参与阻止提交；accessibilityRole=button",
+  "migration": "保留业务busy/disabled与视觉态一致；不要移植源码内私有cn/Spinner路径",
+  "minimal_usage": "<Button onPress={save}><Button.Label>Save</Button.Label></Button>",
+  "not_applicable": "需要纯Web hover状态全等复现，需平台适配",
+  "sources": [
+    {
+      "path": "packages/ui/src/components/button/button.tsx",
+      "symbol": "const rootBaseStyles",
+      "line": 48,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "3316f1a76b124fe49aa3ab69238655cec28e1352acdf110443710001af05b403",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/button/button.tsx#L48"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "license": "AGPL-3.0"
+}

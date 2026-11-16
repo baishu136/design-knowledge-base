@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.component.sidebar-column",
+  "name": "自适应Sidebar列策略",
+  "project": "cherry-studio-app",
+  "purpose": "手机抽屉、宽窗常驻列与折叠屏布局",
+  "structure": "DrawerLayout→SidebarColumnProvider→resolveSidebarColumn→Drawer front/permanent",
+  "parameters": "overlay最大400点且保留64点场景；手势水平激活20；header40/dock44",
+  "states": "overlay、permanent、collapsed、yielded；fold可覆盖用户collapsed保证内容不跨铰链",
+  "api": "isWide,isCollapsed,isPaneInColumn,fold,insets,windowWidth；输出kind/width/foldGap；toggle动作open/hide/show",
+  "behavior": "文件pane占列优先让位；折叠区优先于普通collapsed；只有overlay+chatFocused启用swipe",
+  "migration": "保留布局决策优先级；Drawer动画由平台导航库负责，不补原生spring",
+  "minimal_usage": "resolveSidebarColumn({isWide:false,isCollapsed:false,isPaneInColumn:false,content:\"sidebar\",windowWidth:390,insetLeft:0,insetRight:0,fold:null}) // overlay",
+  "not_applicable": "将fold/insets硬编码成普通Web断点",
+  "sources": [
+    {
+      "path": "src/frontend/appShell/sidebar/resolveSidebarColumn.ts",
+      "symbol": "export function resolveSidebarColumn",
+      "line": 48,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "64cf64a7de3f7c47c3ca027526a38dc4cec738bb27cafee1fdf0c42402affe6e",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/appShell/sidebar/resolveSidebarColumn.ts#L48"
+    },
+    {
+      "path": "src/frontend/utils/constants.ts",
+      "symbol": "export const appSidebar",
+      "line": 58,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "23036399877380805f5d0630614ad3efb29f41a4dbcf447fbbe04161c1d9e5de",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/utils/constants.ts#L58"
+    },
+    {
+      "path": "src/app/(drawer)/_layout.tsx",
+      "symbol": "export default",
+      "line": 40,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "d7b7b79ac1f8d0b46bb56c40a8fbc6235bd835b76a27420d07cdedbabfdb7d24",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/app/(drawer)/_layout.tsx#L40"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "license": "AGPL-3.0"
+}

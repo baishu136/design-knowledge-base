@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.component.combined-progress",
+  "name": "CombinedCircularProgressIndicator",
+  "project": "mihon",
+  "purpose": "下载等任务进度反馈",
+  "structure": "AnimatedContent→未知Material环/旋转确定Material环",
+  "parameters": "rotation2000ms；progress=0作为未知分支",
+  "states": "未知、确定、进度变化；无hover/pressed/focus定义",
+  "api": "progress:()->Float、modifier；不发业务完成事件",
+  "behavior": "动画与任务生命周期独立；达到1不自动卸载",
+  "migration": "将mode与progress分开更适合通用库；这是迁移建议而非原实现",
+  "minimal_usage": "CombinedCircularProgressIndicator(progress={ 0.65f })",
+  "not_applicable": "要求0%确定进度明确可见的场景",
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "symbol": "fun CombinedCircularProgressIndicator",
+      "line": 40,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "bf7176815d7c512d790c018c55b22b188dfb40538f4e12daa59f831b2e2db69b",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt#L40"
+    }
+  ],
+  "related_resources": [
+    "mihon.animation.combined-progress"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "license": "Apache-2.0"
+}

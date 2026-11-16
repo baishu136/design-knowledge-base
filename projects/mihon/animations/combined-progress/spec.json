@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.animation.combined-progress",
+  "name": "持续旋转的确定进度",
+  "project": "mihon",
+  "category": "loading",
+  "effect": "未知进度与确定进度交叉淡入；确定进度圆环也持续旋转。",
+  "applicable": "下载/解析中仍有工作进行的状态",
+  "not_applicable": "必须将0%和未知进度区分的业务，需独立mode输入",
+  "trigger": "progress()==0f 分支；progress 数值更新",
+  "start_state": {
+    "progress": 0,
+    "mode": "indeterminate"
+  },
+  "end_state": {
+    "progress": ">0",
+    "mode": "determinate rotating"
+  },
+  "timing": {
+    "duration_ms": {
+      "rotation": 2000,
+      "progress": null,
+      "crossfade": null
+    },
+    "delay_ms": null,
+    "easing": {
+      "rotation": "LinearEasing",
+      "progress": "ProgressIndicatorDefaults.ProgressAnimationSpec"
+    },
+    "repeat": "rotation infinite restart",
+    "spring": null
+  },
+  "properties": {
+    "rotate_degrees": [
+      0,
+      360
+    ],
+    "progress": "animated target"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "progress": 0,
+      "mode": "indeterminate"
+    },
+    "to": {
+      "progress": ">0",
+      "mode": "determinate rotating"
+    }
+  },
+  "synchronization": "AnimatedContent以progress()==0f为target；确定分支 rememberInfiniteTransition 旋转，animateFloatAsState 平滑进度。源码注释明确持续旋转是为了表达未卡住。",
+  "interruption": "切换模式由AnimatedContent保留过渡内容；旋转随确定分支组合生命周期。0同时承担未知进度含义，不能直接当真实0%确定进度。",
+  "gesture": null,
+  "accessibility": "由Material进度组件提供基础语义；未发现本组件额外减少动态效果分支。",
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+      "symbol": "fun CombinedCircularProgressIndicator",
+      "line": 40,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "bf7176815d7c512d790c018c55b22b188dfb40538f4e12daa59f831b2e2db69b",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt#L40"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "一个旋转层+进度绘制，无需布局几何逐帧改变；大量列表行同时使用会增加持续绘制。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "Apache-2.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.animation.dialog",
+  "name": "Dialog内容与遮罩",
+  "project": "cherry-studio",
+  "category": "presence",
+  "effect": "遮罩淡入220ms，内容淡入并自下方进入260ms；两者退出200ms。",
+  "applicable": "桌面模态确认/设置",
+  "not_applicable": "将淡入CSS当成已实现focus trap的完整Dialog",
+  "trigger": "Radix data-state open/closed",
+  "start_state": {
+    "overlay_alpha": 0,
+    "content_alpha": 0,
+    "content_translateY": "bottom-4"
+  },
+  "end_state": {
+    "overlay_alpha": 0.5,
+    "content_alpha": 1,
+    "content_translateY": 0
+  },
+  "timing": {
+    "duration_ms": {
+      "overlay_open": 220,
+      "content_open": 260,
+      "close": 200
+    },
+    "delay_ms": null,
+    "easing": {
+      "open_cubic": [
+        0.16,
+        1,
+        0.3,
+        1
+      ],
+      "close_cubic": [
+        0.4,
+        0,
+        1,
+        1
+      ]
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "opacity": [
+      0,
+      1
+    ],
+    "translateY": "directional时bottom-4→0；fade-scale分支当前没有显式scale类"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "overlay_alpha": 0,
+      "content_alpha": 0,
+      "content_translateY": "bottom-4"
+    },
+    "to": {
+      "overlay_alpha": 0.5,
+      "content_alpha": 1,
+      "content_translateY": 0
+    }
+  },
+  "synchronization": "Tailwind动画工具由data-state驱动；Content必须为Portal直接子元素，否则Radix Presence拿不到DOM ref就可能过早卸载。motion=fade-scale在本版本只关闭directional类，不能凭名称写出scale(.95)。",
+  "interruption": "Radix presence延迟卸载；KeyboardLayer释放跟焦点恢复协作。Imperative host卸载延迟另外定义，不能等同CSS时长。",
+  "gesture": null,
+  "accessibility": "motion-reduce:animate-none；保留Dialog焦点和Escape行为需Radix/KeyboardLayer协作，不等于复制CSS即可实现模态框。",
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "sources": [
+    {
+      "path": "packages/ui/src/components/primitives/dialog.tsx",
+      "symbol": "function DialogContent(",
+      "line": 87,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "1efc8ddfe817a72a3cc3c895bbdb593a7c1c99bdd3c37b26220e76e7a245245c",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/packages/ui/src/components/primitives/dialog.tsx#L87"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "opacity/translate适合局部复合；shadow-xl与大内容合成层增加开销。无实际层树或帧时间数据。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

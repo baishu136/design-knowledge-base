@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.component.dialog",
+  "name": "Radix Dialog",
+  "project": "cherry-studio",
+  "purpose": "模态窗口与嵌套交互层",
+  "structure": "KeyboardLayerRoot→Radix Root→Portal→Overlay与Content直接子节点→PortalContainerProvider",
+  "parameters": "overlay黑50%/z80；content p6/gap4/bg-card/rounded3xl；size sm/default/lg/xl",
+  "states": "open/closed/forceMount；closeOnOverlayClick可禁用",
+  "api": "open/defaultOpen/onOpenChange；DialogContent motion,size,closeLabel,showCloseButton",
+  "behavior": "Presence保留退出；焦点恢复后释放KeyboardLayer；嵌套tooltip portal跟层级",
+  "migration": "先实现modal/focus/escape/portal，再加动画；no-drag是Electron专属适配",
+  "minimal_usage": "<Dialog><DialogTrigger>Open</DialogTrigger><DialogContent><DialogTitle>Options</DialogTitle></DialogContent></Dialog>",
+  "not_applicable": "仅拷贝class忽略Radix与KeyboardLayer",
+  "sources": [
+    {
+      "path": "packages/ui/src/components/primitives/dialog.tsx",
+      "symbol": "function DialogContent(",
+      "line": 87,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "1efc8ddfe817a72a3cc3c895bbdb593a7c1c99bdd3c37b26220e76e7a245245c",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/packages/ui/src/components/primitives/dialog.tsx#L87"
+    }
+  ],
+  "related_resources": [
+    "cherry-studio.animation.dialog"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "license": "AGPL-3.0"
+}

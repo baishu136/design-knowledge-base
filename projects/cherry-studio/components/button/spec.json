@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.component.button",
+  "name": "Shadcn Button",
+  "project": "cherry-studio",
+  "purpose": "桌面工具栏和表单动作",
+  "structure": "button或Radix Slot→可选Loader+children",
+  "parameters": "default min-h7.5/13px；navbar30px/18px图标；default黑白中性；shadow-xs",
+  "states": "hover、focus-visible、disabled、busy、aria-invalid；disabled/busy opacity.4",
+  "api": "variant,size,asChild,loading,loadingIcon,disabled及HTML button事件",
+  "behavior": "loading同时disabled/aria-busy；asChild不插入loading子节点",
+  "migration": "保留焦点可见态与业务busy禁用；Slot只接单节点，不直接照搬到RN",
+  "minimal_usage": "<Button loading={saving} onClick={save}>Save</Button>",
+  "not_applicable": "以默认小尺寸作为移动触摸标准",
+  "sources": [
+    {
+      "path": "packages/ui/src/components/primitives/button.tsx",
+      "symbol": "const buttonVariants",
+      "line": 8,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "81e7fbfc5bcc4ceb7cb6f07dd6971ced32024f1c3d61412d9ee112e69d0271dd",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/packages/ui/src/components/primitives/button.tsx#L8"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "license": "AGPL-3.0"
+}

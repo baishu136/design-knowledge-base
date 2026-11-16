@@ -1,0 +1,642 @@
+[
+  {
+    "path": "app/src/main/java/eu/kanade/presentation/theme/TachiyomiTheme.kt",
+    "symbol": "BaseTachiyomiTheme",
+    "line": 37,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "d41675563228490b530ff417a465441a0bef9e16529040b96bccef1dc1cb29e0",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/theme/TachiyomiTheme.kt#L37"
+  },
+  {
+    "path": "app/src/main/java/eu/kanade/presentation/theme/colorscheme/BaseColorScheme.kt",
+    "symbol": "getColorScheme",
+    "line": 17,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "7d4b8ee1fa968526c781d32b441b1f77de3ffd1d60e501c3a234b01ca6ef48ed",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/theme/colorscheme/BaseColorScheme.kt#L17"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Constants.kt",
+    "symbol": "class Padding",
+    "line": 12,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "27f73adfdfedbee5a3b2018f61c02f2d346c42e3e43df13558297b5f73d2d6b2",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Constants.kt#L12"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/theme/Typography.kt",
+    "symbol": "Typography.header",
+    "line": 9,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "fce1fd0a290b6a450986ced9193da7ffd000c4ecd8e50605e7a511010fdc9d34",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/theme/Typography.kt#L9"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt",
+    "symbol": "fun AdaptiveSheet",
+    "line": 53,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "35349c44ce5570d79c6311391069f6b8a39ba187fece72490867d3c08590ad5a",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/AdaptiveSheet.kt#L53"
+  },
+  {
+    "path": "app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt",
+    "symbol": "fun ReaderAppBars",
+    "line": 46,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "7fc11c0ad46c9d6d043fe4881c683d60fb8bccdb8440d24430b6ddb558068a7e",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/reader/appbars/ReaderAppBars.kt#L46"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt",
+    "symbol": "val alpha = remember",
+    "line": 189,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "21b4e988204433df5a0d838bc22722a238d7a5f3e89638533207ee244b61a03b",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/VerticalFastScroller.kt#L189"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt",
+    "symbol": "fun CombinedCircularProgressIndicator",
+    "line": 40,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "bf7176815d7c512d790c018c55b22b188dfb40538f4e12daa59f831b2e2db69b",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/CircularProgressIndicator.kt#L40"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt",
+    "symbol": "animateElevation",
+    "line": 50,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "d4fe0fbd14017fa7c0d194907eafcab364c08cea3d41962e2cb448c1bf3c7423",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/util/Elevation.kt#L50"
+  },
+  {
+    "path": "app/src/main/java/eu/kanade/presentation/util/Navigator.kt",
+    "symbol": "DefaultNavigatorScreenTransition",
+    "line": 39,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "cba760489d5053ed7d5d6ad50c9e67fde8a75270c8c35c2ba7f3f3f61fa51697",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/presentation/util/Navigator.kt#L39"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/TwoPanelBox.kt",
+    "symbol": "fun TwoPanelBox",
+    "line": 19,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "07d7e962cae7ab4fef522c8d4bed121af6a858a7521a53b05caf0760ac551b03",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/TwoPanelBox.kt#L19"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt",
+    "symbol": "fun CollapsibleBox",
+    "line": 26,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "f5aaba1abd9fe7a9e62937d147f8820b443291018453631ea4f21ec43340a884",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/CollapsibleBox.kt#L26"
+  },
+  {
+    "path": "app/src/main/java/eu/kanade/tachiyomi/util/system/DisplayExtensions.kt",
+    "symbol": "TABLET_UI_REQUIRED_SCREEN_WIDTH_DP",
+    "line": 11,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "bd4ce21c3c77a5dfb6b15659d45aa95387d3368f13a7ac03fde3a51f627340b8",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/app/src/main/java/eu/kanade/tachiyomi/util/system/DisplayExtensions.kt#L11"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_primary",
+    "line": 13,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L13"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onPrimary",
+    "line": 14,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L14"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_primaryContainer",
+    "line": 15,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L15"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onPrimaryContainer",
+    "line": 16,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L16"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inversePrimary",
+    "line": 17,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L17"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_secondary",
+    "line": 18,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L18"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSecondary",
+    "line": 19,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L19"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_secondaryContainer",
+    "line": 20,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L20"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSecondaryContainer",
+    "line": 21,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L21"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_tertiary",
+    "line": 22,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L22"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onTertiary",
+    "line": 23,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L23"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_tertiaryContainer",
+    "line": 24,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L24"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onTertiaryContainer",
+    "line": 25,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L25"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_background",
+    "line": 26,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L26"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onBackground",
+    "line": 27,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L27"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surface",
+    "line": 28,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L28"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSurface",
+    "line": 29,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L29"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceVariant",
+    "line": 30,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L30"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSurfaceVariant",
+    "line": 31,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L31"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceTint",
+    "line": 32,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L32"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inverseSurface",
+    "line": 33,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L33"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inverseOnSurface",
+    "line": 34,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L34"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_error",
+    "line": 35,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L35"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onError",
+    "line": 36,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L36"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_errorContainer",
+    "line": 37,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L37"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onErrorContainer",
+    "line": 38,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L38"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_outline",
+    "line": 39,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L39"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_outlineVariant",
+    "line": 40,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L40"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerLowest",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerLow",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainer",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerHigh",
+    "line": 44,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L44"
+  },
+  {
+    "path": "presentation-core/src/main/res/values/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerHighest",
+    "line": 45,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "ef721d024e55f2be977e391d22ed9ef6342046618c51a2a6be64a0e546d6888f",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values/colors_tachiyomi.xml#L45"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_primary",
+    "line": 13,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L13"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onPrimary",
+    "line": 14,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L14"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_primaryContainer",
+    "line": 15,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L15"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onPrimaryContainer",
+    "line": 16,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L16"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inversePrimary",
+    "line": 17,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L17"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_secondary",
+    "line": 18,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L18"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSecondary",
+    "line": 19,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L19"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_secondaryContainer",
+    "line": 20,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L20"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSecondaryContainer",
+    "line": 21,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L21"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_tertiary",
+    "line": 22,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L22"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onTertiary",
+    "line": 23,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L23"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_tertiaryContainer",
+    "line": 24,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L24"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onTertiaryContainer",
+    "line": 25,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L25"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_background",
+    "line": 26,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L26"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onBackground",
+    "line": 27,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L27"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surface",
+    "line": 28,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L28"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSurface",
+    "line": 29,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L29"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceVariant",
+    "line": 30,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L30"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onSurfaceVariant",
+    "line": 31,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L31"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceTint",
+    "line": 32,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L32"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inverseSurface",
+    "line": 33,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L33"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_inverseOnSurface",
+    "line": 34,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L34"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_error",
+    "line": 35,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L35"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onError",
+    "line": 36,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L36"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_errorContainer",
+    "line": 37,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L37"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_onErrorContainer",
+    "line": 38,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L38"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_outline",
+    "line": 39,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L39"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_outlineVariant",
+    "line": 40,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L40"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerLowest",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerLow",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainer",
+    "line": 41,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L41"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerHigh",
+    "line": 44,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L44"
+  },
+  {
+    "path": "presentation-core/src/main/res/values-night/colors_tachiyomi.xml",
+    "symbol": "tachiyomi_surfaceContainerHighest",
+    "line": 45,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "9c2b007e877546374993b4c467d474c6b427105a664237d714120db637ee1624",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/res/values-night/colors_tachiyomi.xml#L45"
+  },
+  {
+    "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Button.kt",
+    "symbol": "val animatable = remember",
+    "line": 283,
+    "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+    "sha256": "539113660b42de5588e15668d6a6548a6c271b1058b6ad7889993648d0c42544",
+    "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/material/Button.kt#L283"
+  }
+]

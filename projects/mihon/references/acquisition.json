@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/mihonapp/mihon",
+  "branch": "main",
+  "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+  "commit_date": "2026-11-14T16:14:09Z",
+  "snapshot_path": "source-repositories/mihon",
+  "acquisition": "git clone --depth 1 --single-branch; worktree verified clean"
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.effort-slider",
+  "name": "离散滑杆磁吸",
+  "project": "cherry-studio-app",
+  "category": "gesture",
+  "effect": "拖动跟手并靠近档位磁吸；释放200ms无回弹吸附。",
+  "applicable": "少量离散模型推理档位",
+  "not_applicable": "连续精确数值输入或密集档位不应保留同一磁吸范围",
+  "trigger": "Pan minDistance0；programmatic value change由组件处理",
+  "start_state": {
+    "position": "current fraction"
+  },
+  "end_state": {
+    "position": "nearest stop fraction"
+  },
+  "timing": {
+    "duration_ms": 200,
+    "delay_ms": null,
+    "easing": {
+      "name": "Easing.out(Easing.cubic)",
+      "formula": "1-(1-t)^3"
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "position_fraction": [
+      0,
+      1
+    ],
+    "magnet_radius": "0.5 × adjacent stop gap"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "position": "current fraction"
+    },
+    "to": {
+      "position": "nearest stop fraction"
+    }
+  },
+  "synchronization": "trackXToFraction先归一化；magnetize改变视觉position；nearestStopIndex变化时才runOnJS(onCommit)。onFinalize选最近档位，按reducedMotion立即赋值或withTiming。",
+  "interruption": "onFinalize包括取消路径；disabled禁用gesture。连续拖动用shared values更新，不为每帧建立JS状态；外部值同步仍需组件协作。",
+  "gesture": "begin/update seek；finalize吸附；跨档commit去重。",
+  "accessibility": "reducedMotion参数直接跳最终值；手势hook本身不提供屏幕阅读器adjustable action，不能单独用作完整可访问slider。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts",
+      "symbol": "export function useEffortSliderGesture",
+      "line": 38,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "43e9b3720615684b68f4d18d62bc3806109b07919f1ff21b73de81892009684a",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/features/chat/components/ChatInput/effortSlider/hooks/useEffortSliderGesture.ts#L38"
+    },
+    {
+      "path": "src/frontend/features/chat/components/ChatInput/effortSlider/utils/constants.ts",
+      "symbol": "export const effortSliderSnapTiming",
+      "line": 9,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "0f1bbfe3e73e54b0838d47b8620d4e4b43b300400547fc01121be4d9d490843a",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/features/chat/components/ChatInput/effortSlider/utils/constants.ts#L9"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "UI worklet负责每帧，JS仅跨档commit。大量档位或昂贵onCommit仍需限流/分离副作用。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

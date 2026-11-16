@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.menu-panel",
+  "name": "可中断展开菜单",
+  "project": "cherry-studio-app",
+  "category": "presence",
+  "effect": "32点外壳展开至测量尺寸；内容右移40→0、.97→1、blur2→0，并淡入。",
+  "applicable": "短列表锚定操作菜单",
+  "not_applicable": "大面积多层实时blur或尚未测量即打开的面板",
+  "trigger": "isOpen且isMeasured；关闭请求",
+  "start_state": {
+    "progress": 0,
+    "size": [
+      32,
+      32
+    ],
+    "opacity": 0
+  },
+  "end_state": {
+    "progress": 1,
+    "size": "measured",
+    "opacity": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "open": 350,
+      "close": 250
+    },
+    "delay_ms": null,
+    "easing": {
+      "open_cubic": [
+        0.34,
+        1.25,
+        0.64,
+        1
+      ],
+      "close_cubic": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "container_width": [
+      32,
+      "menuWidth"
+    ],
+    "container_height": [
+      32,
+      "visibleHeight"
+    ],
+    "translateX": [
+      40,
+      0
+    ],
+    "scale": [
+      0.97,
+      1
+    ],
+    "blur": [
+      2,
+      0
+    ],
+    "opacity": "panel=p; container=min(4p,1)"
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "progress": 0,
+      "size": [
+        32,
+        32
+      ],
+      "opacity": 0
+    },
+    "to": {
+      "progress": 1,
+      "size": "measured",
+      "opacity": 1
+    }
+  },
+  "synchronization": "一个shared progress连接容器几何与内容轨道。打开使用y控制点1.25的超调Bezier，关闭用settle。外壳向上展开时top随animatedHeight变化，以锚边保持视觉连接。不要把声明的menuFadeMotion200ms误记为这个useMenuMotion的独立淡入轨道。",
+  "interruption": "cleanup cancelAnimation并使旧finishExit失效；完成回调仅finished为真时runOnJS卸载。未完成退出重开从当前progress继续。",
+  "gesture": null,
+  "accessibility": "useReducedMotion打开直接1，关闭duration0；关闭时立即移除交互和可访问子树。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "packages/ui/src/motion.ts",
+      "symbol": "export const easing",
+      "line": 11,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "9cc56aafbd4d19addf5cfb02c994772a64bfec82005bb2cc20f5c151dd4d71e5",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/motion.ts#L11"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-motion.ts",
+      "symbol": "export const menuOpenMotion",
+      "line": 6,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "bbb8f939624241d81370e80d59034841d172f0d8c3faff02dafbfd0d020d8406",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-motion.ts#L6"
+    },
+    {
+      "path": "packages/ui/src/components/menu/use-menu-motion.ts",
+      "symbol": "export function useMenuMotion",
+      "line": 13,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "ec677b3115901b63f773e05f4ef0b9394af2406cac0049eebdd5dc8b87a165b2",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/use-menu-motion.ts#L13"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-panel.tsx",
+      "symbol": "export function MenuPanel",
+      "line": 16,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "cd2ba65852f7086ae226df55533f0d0646e04bc8ac103a624036dd6975253920",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-panel.tsx#L16"
+    },
+    {
+      "path": "packages/ui/src/components/menu/menu-content.tsx",
+      "symbol": "export function MenuContent",
+      "line": 19,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "44a30a47efd31a48cfa81428c689026e7c1f943c1855a85f6fc1f8de8c7c82c8",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/menu/menu-content.tsx#L19"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "width/height会触发布局；blur可能增加离屏成本。panel固定内容宽、测量变化阈值>1减少回写抖动，但不等于零布局开销。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

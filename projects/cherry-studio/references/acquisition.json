@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/CherryHQ/cherry-studio",
+  "branch": "main",
+  "commit": "c3263227592ad14313da2b4153bf88502c466454",
+  "commit_date": "2026-11-16T05:05:34Z",
+  "snapshot_path": "source-repositories/cherry-studio-c3263227592a",
+  "archive_sha256": "e2d7fb487fe6b1941858e90198a8784bfce8fe1342a0bf69935d851fd43ee4a7",
+  "acquisition": "GitHub codeload immutable commit archive"
+}

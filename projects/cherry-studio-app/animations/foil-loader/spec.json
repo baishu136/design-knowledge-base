@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.foil-loader",
+  "name": "图片生成珠光 Shader",
+  "project": "cherry-studio-app",
+  "category": "shader",
+  "effect": "珠光底上白色光带斜向扫过，显露光谱细纹与闪点，每2.4秒循环。",
+  "applicable": "图片生成占位的单卡反馈",
+  "not_applicable": "无限滚动里大量并发全尺寸Shader或必须给出确定完成百分比",
+  "trigger": "active && AppState.active && !reducedMotion",
+  "start_state": {
+    "time": 0,
+    "uStatic": 0
+  },
+  "end_state": {
+    "time": "mod1200 seconds; effect cycle2.4",
+    "uStatic_when_inactive": 1
+  },
+  "timing": {
+    "duration_ms": 2400,
+    "delay_ms": null,
+    "easing": {
+      "formula": "mix(cycle, cycle²*(3-2cycle),0.5)"
+    },
+    "repeat": "continuous when active",
+    "spring": null
+  },
+  "properties": {
+    "default_size": 208,
+    "frame_delta_cap_ms": 64,
+    "clock_wrap_seconds": 1200,
+    "shader_uniforms": [
+      "uResolution",
+      "uTime",
+      "uStatic",
+      "uSurfaceColor"
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "time": 0,
+      "uStatic": 0
+    },
+    "to": {
+      "time": "mod1200 seconds; effect cycle2.4",
+      "uStatic_when_inactive": 1
+    }
+  },
+  "synchronization": "useFrameCallback在UI线程累加实际delta并限制64ms；uniforms由derived value传给一个Rect的SkRuntimeEffect。shader把周期映射到斜向光带，presence在周期两端衰减掩盖重启；底色亮度调节深浅主题效果。编译结果缓存于模块级cachedEffect。",
+  "interruption": "active=false时setActive(false)并time=0；重新开始从起点。AppState和reduceMotionChanged订阅在卸载移除，frame cleanup关闭。",
+  "gesture": null,
+  "accessibility": "初始useReducedMotion+动态AccessibilityInfo事件；减少动态时uStatic=1将shader输出alpha置0，仍保留进度语义与中性底。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader.tsx",
+      "symbol": "function useLoaderClock",
+      "line": 106,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "ada8e3ba691520f1585da2c89499cb1f52d22d947b38589bca2ee172fee63654",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/loading/image-generation-loader.tsx#L106"
+    },
+    {
+      "path": "packages/ui/src/components/loading/image-generation-loader-effect.ts",
+      "symbol": "const IMAGE_GENERATION_LOADER_SKSL",
+      "line": 3,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "ebc9fbaef0070792382ab6b207af2b15af275f834ef9de59aab520fa08741465",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/loading/image-generation-loader-effect.ts#L3"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "单shader减少节点，但每像素cos/exp/hash仍有GPU填充率成本；面积、DPR和并发卡片放大成本。缓存编译不代表像素计算缓存。低端设备可采用中性静态降级（原实现已有inactive/static路径）；无GPU时间或FPS实测。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

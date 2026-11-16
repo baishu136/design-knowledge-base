@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.rotating-text",
+  "name": "短语弹簧切换",
+  "project": "cherry-studio-app",
+  "category": "text",
+  "effect": "短语上下8点位移和淡入淡出；方向可反转。",
+  "applicable": "生成状态、短状态文案",
+  "not_applicable": "长篇正文持续滚动或依靠动画表达唯一业务状态",
+  "trigger": "active phrase / direction / measured / still",
+  "start_state": {
+    "translateY": "±8",
+    "opacity": 0
+  },
+  "end_state": {
+    "translateY": 0,
+    "opacity": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "enter_fade": 200,
+      "exit_fade": 120,
+      "spring": null
+    },
+    "delay_ms": {
+      "enter_fade": 60
+    },
+    "easing": {
+      "fade_cubic": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "spring": {
+      "damping": 31.5,
+      "mass": 1,
+      "stiffness": 248
+    },
+    "repeat": null
+  },
+  "properties": {
+    "translateY": "enterFrom→0→-enterFrom",
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "translateY": "±8",
+      "opacity": 0
+    },
+    "to": {
+      "translateY": 0,
+      "opacity": 1
+    }
+  },
+  "synchronization": "独立translateY spring和opacity timing；新短语若完全不可见则重置入场边，否则保持当前位置再设目标；测量层保证尺寸。弹簧时长未显式指定，420ms只能作为源码注释中的近似，不记为固定duration。",
+  "interruption": "每次effect先cancelAnimation两轨；源码注释称保留position/velocity，但显式取消后的速度连续性未运行确认，不保证C1连续。",
+  "gesture": null,
+  "accessibility": "useReducedMotion或isEnabled=false走still；非active短语屏蔽无障碍后代。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "packages/ui/src/motion.ts",
+      "symbol": "export const easing",
+      "line": 11,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "9cc56aafbd4d19addf5cfb02c994772a64bfec82005bb2cc20f5c151dd4d71e5",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/motion.ts#L11"
+    },
+    {
+      "path": "packages/ui/src/components/text-animation/text-animation.tsx",
+      "symbol": "function RotatingPhrase",
+      "line": 312,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "7ccb490cfe0205252f5b7dd4ed46e68fbeab9cee12da2d8d0bb0f9bd2cc22fa2",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/text-animation/text-animation.tsx#L312"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "transform/opacity适合局部复合；同时挂载多个短语与测量文本有额外内存/排版成本。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

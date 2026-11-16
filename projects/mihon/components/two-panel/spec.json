@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.component.two-panel",
+  "name": "TwoPanelBox",
+  "project": "mihon",
+  "purpose": "大屏主从信息并列",
+  "structure": "BoxWithConstraints→TopStart Box + TopEnd Box",
+  "parameters": "可用宽扣除Insets；首列不超过450dp，末列余量；无内建断点",
+  "states": "宽度变化重算；无拖拽或动画",
+  "api": "startContent、endContent、modifier、contentWindowInsets",
+  "behavior": "布局方向感知start/end；不是固定left/right",
+  "migration": "available=W-insets；a=min(available/2,450dp)；b=available-a",
+  "minimal_usage": "TwoPanelBox(startContent={ Text(\"Info\") }, endContent={ Text(\"Chapters\") })",
+  "not_applicable": "窄屏自动变单栏；调用方先判断",
+  "sources": [
+    {
+      "path": "presentation-core/src/main/java/tachiyomi/presentation/core/components/TwoPanelBox.kt",
+      "symbol": "fun TwoPanelBox",
+      "line": 19,
+      "commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+      "sha256": "07d7e962cae7ab4fef522c8d4bed121af6a858a7521a53b05caf0760ac551b03",
+      "url": "https://github.com/mihonapp/mihon/blob/4823ba69ca65fa707fb89406f3a4c43c9e0053dd/presentation-core/src/main/java/tachiyomi/presentation/core/components/TwoPanelBox.kt#L19"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material3 Expressive",
+    "Voyager",
+    "Android Views"
+  ],
+  "license": "Apache-2.0"
+}

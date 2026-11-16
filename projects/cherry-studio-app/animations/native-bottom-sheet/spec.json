@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.native-bottom-sheet",
+  "name": "原生底部面板高度跟随",
+  "project": "cherry-studio-app",
+  "category": "gesture-sheet",
+  "effect": "原生面板在detent之间移动，JS外壳跟随native position更新可见高度。",
+  "applicable": "跨iOS/Android统一选项面板外壳",
+  "not_applicable": "完全脱离native provider的浏览器直接复制",
+  "trigger": "open/index改变、拖动、键盘出现",
+  "start_state": {
+    "index": 0
+  },
+  "end_state": {
+    "index": "openIndex based on sizes"
+  },
+  "timing": {
+    "duration_ms": null,
+    "delay_ms": null,
+    "easing": null,
+    "spring": null,
+    "source": "@swmansion/react-native-bottom-sheet programmatic/native behavior",
+    "repeat": null
+  },
+  "properties": {
+    "ratios": {
+      "compact": 0.4,
+      "medium": 0.6,
+      "large": 0.8,
+      "full": 1
+    },
+    "top_inset": 12,
+    "max_width": 720,
+    "top_corner_radius": 32,
+    "keyboard_gap": 12
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "index": 0
+    },
+    "to": {
+      "index": "openIndex based on sizes"
+    }
+  },
+  "synchronization": "detent由availableCardHeight和size/sizes/height计算；useEvent worklet接收native position，visibleCardStyle.height=clamp(position,minCardHeight,cardHeight)。多档保留选中高度，键盘压缩body。",
+  "interruption": "React state同步open与openIndex；hasNotifiedCloseRef防重复回调。底层native中断/速度阈值未追溯，不补spring参数。",
+  "gesture": null,
+  "accessibility": "BackHandler与overlay navigation包装负责关闭；依赖native Reduce Motion与焦点恢复需设备验证。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "packages/ui/src/components/bottom-sheet/bottom-sheet.tsx",
+      "symbol": "export function BottomSheet(props",
+      "line": 113,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "8e7b9252db415e9877b1d0c8198d4b56c7c2fbfcbd557034d7cc3ad2ddc917c2",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/bottom-sheet/bottom-sheet.tsx#L113"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "原生拖动+UI worklet减少JS往返，但height跟随涉及内容布局，长列表、键盘和footer需专项测量。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

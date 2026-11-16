@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.animation.image-zoom",
+  "name": "图片捏合/双击缩放",
+  "project": "cherry-studio-app",
+  "category": "gesture",
+  "effect": "居中变换；双击以触点偏移为目标缩至2.5倍，再双击复位。",
+  "applicable": "附件图片预览",
+  "not_applicable": "地图式焦点稳定缩放或医学/像素精确图像工具需增强数学模型",
+  "trigger": "Pinch、Pan、doubleTap Race",
+  "start_state": {
+    "scale": 1,
+    "translate": [
+      0,
+      0
+    ]
+  },
+  "end_state": {
+    "doubleTapScale": 2.5,
+    "releaseScaleRange": [
+      1,
+      4
+    ]
+  },
+  "timing": {
+    "duration_ms": null,
+    "delay_ms": null,
+    "easing": null,
+    "spring": null,
+    "source": "withTiming 未显式传配置",
+    "repeat": null
+  },
+  "properties": {
+    "scale": "pinch更新仅下限1；释放才限制最大4",
+    "translate_clamp": "±dimension*(scale-1)/2",
+    "image_transition_ms": 120
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "scale": 1,
+      "translate": [
+        0,
+        0
+      ]
+    },
+    "to": {
+      "doubleTapScale": 2.5,
+      "releaseScaleRange": [
+        1,
+        4
+      ]
+    }
+  },
+  "synchronization": "savedScale/savedX/Y作手势基准；双击用-(event-center)*(2.5-1)并clamp。translateX、translateY在scale之前；普通pan更新不clamp，结束才限制。pinch没有围绕focal point重建变换。",
+  "interruption": "复位完成回调finished后onZoomChange(false)；scale shared值会被新withTiming或手势直接写入。手势中断及saved值竞态尚未运行。",
+  "gesture": "1倍pan disabled；Pinch+Pan Simultaneous；doubleTap与其Race。",
+  "accessibility": "本文件未显式Reduce Motion；图片有accessibilityLabel，但放大/复位的替代按钮需产品层提供。",
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "sources": [
+    {
+      "path": "src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx",
+      "symbol": "export function ZoomableImage",
+      "line": 17,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "7c64f671a314517ddb7ec38917c85eb22b877a040505d4f042b006e6483ff016",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/src/frontend/components/ArtifactPreview/components/ArtifactImageViewer/ZoomableImage.tsx#L17"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "变换不重新布局图片；大图decode、original分辨率、纹理占用仍可能造成卡顿。原图模式cachePolicy=disk且关闭downscale。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "AGPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

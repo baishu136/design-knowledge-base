@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio-app.component.switch",
+  "name": "SwitchControl（Android/Web）",
+  "project": "cherry-studio-app",
+  "purpose": "布尔偏好控制",
+  "structure": "Pressable track→描边thumb外壳→白色内芯",
+  "parameters": "default44×24、thumb20；lg48×28、thumb24；sm36×20、thumb16；hitSlop8",
+  "states": "value切items-start/end与control-active/border-selected；disabled.opacity40；无插值动画",
+  "api": "value受控、onValueChange(!value)、disabled、size及accessibilityLabel",
+  "behavior": "accessibilityRole=switch；checked/disabled同步",
+  "migration": "UI控件几何与父行的触摸目标分离；iOS另走平台文件，不能混作一份源码",
+  "minimal_usage": "<SwitchControl value={enabled} onValueChange={setEnabled} accessibilityLabel=\"Enabled\" />",
+  "not_applicable": "把小轨道当唯一完整触摸目标且不保留hitSlop",
+  "sources": [
+    {
+      "path": "packages/ui/src/components/switch/switch-control/switch-control.tsx",
+      "symbol": "export function SwitchControl",
+      "line": 15,
+      "commit": "e6d157d2ea604ef65d38ca14e88ba92de706ad8a",
+      "sha256": "b516cffd8199f2984cef1427decbc160c1adaf80deeb48fcf05c5116bb532d9e",
+      "url": "https://github.com/CherryHQ/cherry-studio-app/blob/e6d157d2ea604ef65d38ca14e88ba92de706ad8a/packages/ui/src/components/switch/switch-control/switch-control.tsx#L15"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React Native 0.88.1",
+    "Expo 58",
+    "Reanimated 4.7.1",
+    "Gesture Handler",
+    "Skia",
+    "Uniwind"
+  ],
+  "license": "AGPL-3.0"
+}

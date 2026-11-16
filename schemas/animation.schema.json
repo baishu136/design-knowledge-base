@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "project",
+    "name",
+    "category",
+    "effect",
+    "start_state",
+    "end_state",
+    "trigger",
+    "timing",
+    "properties",
+    "transform_origin",
+    "keyframes_or_sequence",
+    "synchronization",
+    "interruption",
+    "gesture",
+    "accessibility",
+    "dependencies",
+    "sources",
+    "performance",
+    "verification",
+    "runtime_verified",
+    "license"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9.-]+\\.animation\\.[a-z0-9-]+$"
+    },
+    "project": {
+      "type": "string"
+    },
+    "timing": {
+      "type": "object",
+      "required": [
+        "duration_ms",
+        "delay_ms",
+        "easing",
+        "spring",
+        "repeat"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "source.schema.json"
+      }
+    },
+    "runtime_verified": {
+      "type": "boolean"
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "performance": {
+      "type": "object",
+      "required": [
+        "kind",
+        "notes",
+        "measurements"
+      ]
+    }
+  }
+}

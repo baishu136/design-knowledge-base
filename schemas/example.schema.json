@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "project",
+    "name",
+    "animation_id",
+    "entry_file",
+    "files",
+    "classification",
+    "license",
+    "scope",
+    "differences",
+    "requirements",
+    "verification",
+    "runtime_scope",
+    "visual_runtime_verified"
+  ],
+  "properties": {
+    "classification": {
+      "enum": [
+        "adapted",
+        "original-reimplementation",
+        "original-excerpt"
+      ]
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visual_runtime_verified": {
+      "type": "boolean"
+    }
+  }
+}

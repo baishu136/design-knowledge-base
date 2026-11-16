@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "mihon.example.reader-bar-motion",
+  "project": "mihon",
+  "name": "顶栏位移与淡入并行",
+  "animation_id": "mihon.animation.reader-bars",
+  "entry_file": "ReaderBars.kt",
+  "files": [
+    "ReaderBars.kt"
+  ],
+  "classification": "adapted",
+  "license": "Apache-2.0",
+  "upstream_commit": "4823ba69ca65fa707fb89406f3a4c43c9e0053dd",
+  "scope": "顶栏位移与淡入并行",
+  "differences": "仅顶栏；加入显式reducedMotion；不含阅读业务",
+  "requirements": "Compose animation/runtime/ui；在已有Android Compose宿主导入并调用ReaderBarMotion(visible,false){ Text(\"Title\") }",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

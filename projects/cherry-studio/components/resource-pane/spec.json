@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "id": "cherry-studio.component.resource-pane",
+  "name": "PageSidebar",
+  "project": "cherry-studio",
+  "purpose": "聊天资源/会话列表栏",
+  "structure": "AnimatePresence→motion.div→裁切content和外侧resize handle",
+  "parameters": "默认240/min200/max360；可用宽阈值540；motion300ms",
+  "states": "未打开、打开、收起保留、resizing；收起inert",
+  "api": "open,width,children,onPaneCollapse,onResizingChange",
+  "behavior": "拖动duration0；键盘splitter调用setPaneWidth；首次打开后保留树",
+  "migration": "保留可用宽协商、持久化和隐藏焦点策略；DOM惯性不能映射为alpha0",
+  "minimal_usage": "<PageSidebar open={open} onPaneCollapse={collapse}>{list}</PageSidebar>",
+  "not_applicable": "把此组件当整应用Sidebar；两者宽度阈值不同",
+  "sources": [
+    {
+      "path": "src/renderer/components/chat/shell/PageSidebar.tsx",
+      "symbol": "export function PageSidebar",
+      "line": 28,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "c6a11f92c3c78f1140f8d4971c3d2d69d0631f3fc20287ebd3518ae94ab3f77f",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/shell/PageSidebar.tsx#L28"
+    },
+    {
+      "path": "src/renderer/components/chat/shell/paneLayout.ts",
+      "symbol": "export const CHAT_SHELL_TRANSITION",
+      "line": 5,
+      "commit": "c3263227592ad14313da2b4153bf88502c466454",
+      "sha256": "6a394be7f89217be48144b40d298496a835f62de32e37f26e268ea5135002cdd",
+      "url": "https://github.com/CherryHQ/cherry-studio/blob/c3263227592ad14313da2b4153bf88502c466454/src/renderer/components/chat/shell/paneLayout.ts#L5"
+    }
+  ],
+  "related_resources": [
+    "cherry-studio.animation.resource-pane"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "TypeScript",
+    "React 19",
+    "Electron 45",
+    "Tailwind CSS 4",
+    "Radix UI",
+    "Motion React"
+  ],
+  "license": "AGPL-3.0"
+}
