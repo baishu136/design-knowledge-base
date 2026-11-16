@@ -14,4 +14,4 @@ author.py为本轮人工分析内容的可重放作者数据；build.py为通用
 
 ## 快照获取说明
 
-Cherry两仓使用GitHub codeload按Commit获取完整归档并校验SHA256；Mihon使用depth1 Git clone且工作树干净。仓库之外的源码不是知识库发布物的一部分；归档/复制时同时保存所需来源和许可证。早期中断的cherry-studio与cherry-studio-app克隆目录、以及desktop review-files只用于获取过程，均不是manifest指向的分析快照；不纳入覆盖率。
+Cherry两仓及DroidDeck使用GitHub codeload按Commit获取归档并记录SHA256；Mihon使用depth1 Git clone。DroidDeck归档未递归包含MaliBridge/Syncthing子模块，覆盖仅指超级项目已有文件。仓库之外的源码不是知识库发布物的一部分；归档/复制时同时保存所需来源和许可证。早期中断的cherry-studio与cherry-studio-app克隆目录、以及desktop review-files只用于获取过程，均不是manifest指向的分析快照；不纳入覆盖率。

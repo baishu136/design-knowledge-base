@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.launcher-layout",
+  "name": "LauncherLayout与AppScale",
+  "project": "droiddeck",
+  "purpose": "底部/侧边导航与用户界面缩放",
+  "structure": "自定义Layout测navigation→1dp line→剩余内容，placeRelative支持方向",
+  "parameters": "narrowScreen<600dp；NarrowPaneWidth520；AppScale选75/85/100/115/125/150%",
+  "states": "bottomNavigation切向；宽高约束重算；scaled density和configuration同步",
+  "api": "bottomNavigation,divider,navigation,content,modifier；scaledAppDensity/scaledAppConfiguration",
+  "behavior": "dualScreen调用处可强制侧栏；不是仅由orientation或600自动决定",
+  "migration": "迁移时保留字体缩放、导航占位与断点基准；勿单独scale绘制画面让命中框失配",
+  "minimal_usage": "LauncherLayout(bottomNavigation=true,divider=pal.line,navigation={ Nav() },content={ Page() })",
+  "not_applicable": "直接把Android Configuration dp当浏览器CSS px断点",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/Layout.kt",
+      "symbol": "internal fun LauncherLayout",
+      "line": 23,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "8334a925182b14b4ed11e2664161c3b97055d62200354566c18f7a7dcf80e03c",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Layout.kt#L23"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/AppScale.kt",
+      "symbol": "internal fun scaledAppDensity",
+      "line": 8,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "6888c9a84ac150cda6d680a57e599dc849f427690b86b9ade70b802c6d85ceb9",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/AppScale.kt#L8"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

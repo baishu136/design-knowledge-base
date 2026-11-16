@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.logo-throbber",
+  "name": "品牌形变旋转加载器",
+  "project": "droiddeck",
+  "category": "loading",
+  "effect": "Logo左侧形变、双侧绕中心旋转，中央球缩到.8后恢复。",
+  "applicable": "短时品牌加载反馈",
+  "not_applicable": "大量列表实例、唯一无障碍进度反馈或复用Logo为通用无品牌资产",
+  "trigger": "组合挂载并running且Motion.scale非0",
+  "start_state": {
+    "phase": 0,
+    "ball_scale": 1,
+    "bend": 0
+  },
+  "end_state": {
+    "phase": "repeat1→0",
+    "ball_scale": 1,
+    "bend": 0
+  },
+  "timing": {
+    "duration_ms": 1900,
+    "delay_ms": null,
+    "easing": {
+      "clock": "linear",
+      "bend_cubic": [
+        0.5,
+        0,
+        0.3,
+        1
+      ],
+      "turn_cubic": [
+        0.65,
+        0,
+        0.35,
+        1
+      ]
+    },
+    "repeat": "infinite",
+    "spring": null
+  },
+  "properties": {
+    "rotation_degrees": [
+      0,
+      360
+    ],
+    "bend_segments": [
+      0,
+      0.1,
+      0.24,
+      0.76,
+      0.9,
+      1
+    ],
+    "rotation_interval": [
+      0.16,
+      0.84
+    ],
+    "ball_scale": [
+      1,
+      0.8,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "phase": 0,
+      "ball_scale": 1,
+      "bend": 0
+    },
+    "to": {
+      "phase": "repeat1→0",
+      "ball_scale": 1,
+      "bend": 0
+    }
+  },
+  "synchronization": "单线性loop驱动三组分段函数；bend在.10..24上升、.76..90下降；turn在.16..84做360；ball在.12..30缩小、.70..88恢复。remember缓存Path对象，几何点列表由LogoShape预建，Canvas每帧reset/rebuild path。",
+  "interruption": "still将绘制p强制0，但rememberInfiniteTransition的建立在still判断之前；仅从running=false不能证明clock停止。离开组合才解除本循环生命周期。",
+  "gesture": null,
+  "accessibility": "Motion.scale0显示静止图案；本Canvas函数自身无progressbar语义参数，使用者需配文字/状态。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt",
+      "symbol": "internal fun LogoThrobber",
+      "line": 24,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "07fde46bf4d2226d7c9ee3fed17b5f10aadf3c28f3dc169fe48838a39b889441",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt#L24"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "缓存Path减少分配，但顶点计算和path绘制仍逐帧发生；不是Shader，不能宣称所有计算在GPU。无实际数据。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

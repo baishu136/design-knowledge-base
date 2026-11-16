@@ -266,6 +266,8 @@ native='packages/design-tokens/src/styles/native.css'
 for name,value in re.findall(r'(--radius-[\w-]+|--font-weight-bold)\s*:\s*([^;]+);',text_file(a['root'],native)):
     token(a,name,value,'CSS expression','生成适配层的共享形状/字重；保留rem、px和calc而不假设设备像素',ar(native,name),'all')
 css_tokens(d,[UI+'styles/tokens/colors/primitive.css',UI+'styles/tokens/colors/status-legacy.css',UI+'styles/tokens/colors/providers.css',UI+'styles/tokens/spacing.css',UI+'styles/tokens/radius.css',UI+'styles/tokens/typography.css',UI+'styles/theme-input.css',UI+'styles/shadcn.css',UI+'styles/product.css'])
+from author_droiddeck import build_project as build_droiddeck
+build_droiddeck()
 manifests=[finish_project(p) for p in PROJECTS.values()]
 dump('references-build-summary.json',manifests)
 print(json.dumps([{p['id']:{'components':len(p['components']),'animations':len(p['animations']),'tokens':len(p['tokens'])}} for p in PROJECTS.values()],ensure_ascii=False))

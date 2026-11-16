@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck",
+  "name": "droiddeck",
+  "description": "面向触摸、鼠标与手柄焦点的游戏启动器：深色分层底、双强调色渐变、可滑移焦点环、按钮原点扩张与场景升降面板；另有White Red浅色、True Black和动态RGB主题。分析对象为Android启动器UI，不将所承载的Steam/KDE桌面认作自身组件。",
+  "repository": "https://github.com/Droid-Deck/DroidDeck",
+  "branch": "main",
+  "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+  "version": "0.7.1",
+  "analysis_date": "2026-11-16",
+  "platforms": [
+    "Android"
+  ],
+  "stack": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "source_directories": {
+    "ui": [
+      "app/src/main/java/com/droiddeck/launcher/ui/",
+      "app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt"
+    ],
+    "themes": [
+      "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/AppScale.kt"
+    ],
+    "motion": [
+      "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt",
+      "app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt",
+      "app/src/main/res/anim"
+    ]
+  },
+  "source_snapshot": "source-repositories/droiddeck-f65e7a3d436b",
+  "license": "GPL-3.0",
+  "coverage": {
+    "status": "core-system-and-selected-high-value-resources",
+    "scanned_text_files": 2112,
+    "discovery_hits": 1458,
+    "components": 7,
+    "animations": 9,
+    "original_app_runtime": false
+  },
+  "design_features": "面向触摸、鼠标与手柄焦点的游戏启动器：深色分层底、双强调色渐变、可滑移焦点环、按钮原点扩张与场景升降面板；另有White Red浅色、True Black和动态RGB主题。分析对象为Android启动器UI，不将所承载的Steam/KDE桌面认作自身组件。",
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "not_portable": [
+    "业务状态容器、私有模块路径与平台导航不能整体复制",
+    "第三方组件的未追溯默认动效不能当作项目 Token"
+  ],
+  "backlog": "BACKLOG.md"
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.button-press",
+  "name": "主按钮按压与高亮光晕",
+  "project": "droiddeck",
+  "category": "feedback",
+  "effect": "按下缩至.955，hover/focus扩至1.02，阴影rest6→hot14dp。",
+  "applicable": "游戏启动等高优先级动作",
+  "not_applicable": "密集列表每个小按钮都常驻大型彩色阴影",
+  "trigger": "InteractionSource pressed与rememberHot且enabled",
+  "start_state": {
+    "scale": 1,
+    "shadow_dp": 6
+  },
+  "end_state": {
+    "pressed_scale": 0.955,
+    "hot_scale": 1.02,
+    "hot_shadow_dp": 14
+  },
+  "timing": {
+    "duration_ms": {
+      "shadow": 300
+    },
+    "delay_ms": null,
+    "easing": {
+      "shadow_cubic": [
+        0.2,
+        0.8,
+        0.2,
+        1
+      ]
+    },
+    "spring": {
+      "dampingRatio": 0.5,
+      "stiffness": "Spring.StiffnessMedium (依赖常量未展开)"
+    },
+    "repeat": null
+  },
+  "properties": {
+    "scale": [
+      1,
+      0.955,
+      1.02
+    ],
+    "shadow_elevation_dp": [
+      6,
+      14
+    ],
+    "disabled_shadow_dp": 0
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "scale": 1,
+      "shadow_dp": 6
+    },
+    "to": {
+      "pressed_scale": 0.955,
+      "hot_scale": 1.02,
+      "hot_shadow_dp": 14
+    }
+  },
+  "synchronization": "animateFloatAsState scale以pressed优先；shadow独立tween。graphicsLayer再clip按钮形状、画渐变、glideBorder；普通按压不必引入整页LaunchFlood，但点击会登记原点供后续使用。",
+  "interruption": "目标切换由animateFloatAsState接管；enabled时hot才生效，disabled用surfaceVariant渐变及line2边框。LaunchOrigin.flooding匹配此按钮时alpha0避免复制画面叠在原件。",
+  "gesture": null,
+  "accessibility": "Role.Button且enabled控制点击；键盘主动作FocusRequester在组件挂卸时登记计数。scale0不移除焦点语义。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt",
+      "symbol": "internal fun PrimaryButton",
+      "line": 176,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "76290a1f9bcbdf542f9f512550180ec171645b755d1906b2d56f48569a6979b2",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt#L176"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "scale通常局部图层，彩色阴影仍可能增加绘制/合成开销；不要按scale成本评估整个效果。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

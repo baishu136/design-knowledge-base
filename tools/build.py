@@ -77,8 +77,8 @@ def component(p, slug, name, refs, *, use, structure, parameters, states, api, b
 SEARCH = {
  'timing-spring':r'withTiming|withSpring|tween\(|spring\(|TweenSpec|animateTo\(|withDecay',
  'presence-layout':r'AnimatedVisibility|AnimatedContent|Crossfade|animateContentSize|AnimatePresence|motion\.|layoutId|LayoutAnimation|FadeIn|FadeOut',
- 'gesture-scroll':r'Gesture\.|anchoredDraggable|pointerInput|requestAnimationFrame|scrollTo\(|useAnimatedScrollHandler|useMotionValue',
- 'css-rendering':r'@keyframes|transition:|animation:|animate-|RuntimeShader|Shader|Canvas|Skia|BlurView|backdrop-filter|graphicsLayer',
+ 'gesture-scroll':r'Gesture\.|anchoredDraggable|pointerInput|requestAnimationFrame|scrollTo\(|useAnimatedScrollHandler|useMotionValue|withFrameNanos',
+ 'css-rendering':r'@keyframes|transition:|animation:|animate-|RuntimeShader|Shader|Canvas|Skia|BlurView|backdrop-filter|graphicsLayer|ValueAnimator|ObjectAnimator|TransitionManager',
  'accessibility-motion':r'useReducedMotion|ReduceMotion|prefers-reduced-motion|MotionDurationScale|ANIMATOR_DURATION_SCALE',
 }
 
@@ -91,7 +91,7 @@ def scan(p):
             return old['coverage']['scanned_text_files'], old['coverage']['discovery_hits']
     results=[]; files=[]
     for f in sorted(p['root'].rglob('*')):
-        if not f.is_file() or '.git' in f.parts or f.suffix.lower() not in ['.ts','.tsx','.js','.jsx','.css','.scss','.kt','.xml','.java','.swift','.m','.mm','.h']:
+        if not f.is_file() or '.git' in f.parts or f.suffix.lower() not in ['.ts','.tsx','.js','.jsx','.css','.scss','.kt','.xml','.java','.swift','.m','.mm','.h','.cpp','.c','.glsl','.frag','.vert']:
             continue
         path=f.relative_to(p['root']).as_posix()
         raw=f.read_bytes(); content=raw.decode('utf-8',errors='replace')
@@ -109,7 +109,7 @@ def scan(p):
 
 def finish_project(p):
     base=f"projects/{p['id']}"
-    p['license']='Apache-2.0' if p['id']=='mihon' else 'AGPL-3.0'
+    p.setdefault('license','Apache-2.0' if p['id']=='mihon' else 'AGPL-3.0')
     license_text=text_file(p['root'],'LICENSE')
     write(base+'/references/UPSTREAM-LICENSE.txt',license_text)
     files,hits=scan(p)
@@ -135,6 +135,8 @@ def finish_project(p):
     write(base+'/README.md',f"# {p['id']}\n\n{p['overview']}\n\n分析版本：{p['version']} / main / `{p['commit']}`。{files} 个文本源文件参与全仓候选扫描；{hits} 条词法命中不等于 {hits} 个动画。\n\n## 阅读导航\n\n1. [设计语言](design-language/overview.md) → [Token](design-language/tokens.json) → [布局](design-language/layout.md)\n2. 按需选组件或动画，然后读取同目录 spec.json。\n3. [架构](architecture/overview.md) · [交互](interactions/overview.md) · [许可证](LICENSE-NOTES.md)\n4. [覆盖范围与待办](BACKLOG.md) · [来源索引](references/source-map.json)\n\n## 组件\n\n{comps}\n\n## 动画\n\n{links}\n\n## 完成边界\n\n核心资料可检索；原项目未构建、未运行、未录屏。完整候选清单在 references/animation-discovery.json；业务页面、依赖默认值和设备行为仍需后续深化。不要将“源码确认”理解为“运行效果确认”。")
     if p['id']=='mihon':
         legal='上游 LICENSE 为 Apache License 2.0。分发摘录/改编需保留版权、许可证和适用 NOTICE；修改文件须显著说明修改。Elevation.kt 明确带有 Android Open Source Project 2021 版权和 Apache 2.0 头，不能只署 Mihon。未发现根级 NOTICE 不代表依赖没有 NOTICE。'
+    elif p['license']=='GPL-3.0':
+        legal='上游 LICENSE 为 GNU General Public License version 3，README 同样标为 GPL-3.0；不是 AGPL。摘录和改编继续保留来源、修改说明及 GPL 许可，不能混用本库其他项目的 AGPL/Apache 标签。Linux 运行时、游戏图像、Valve/其他商标及子模块另有权利和许可证，本轮不分发这些内容。'
     else:
         legal='上游 LICENSE 为 GNU Affero General Public License v3。摘录或改编不因为放进知识库就变为宽松许可；分发、组合或网络交互引起的源码提供等义务须依完整许可证判断。本库不承诺“独立重写”标签自动排除衍生作品关系。商业复用按上游授权路径核实。'
     write(base+'/LICENSE-NOTES.md',f"# 来源与复用边界\n\n{p['repo']} @ `{p['commit']}`\n\n{legal}\n\n完整许可：[上游 LICENSE 原文](references/UPSTREAM-LICENSE.txt)。原始版权逐文件以固定版本源文件头及许可证为准；不替原作者授予商标、图标或第三方字体/图片权利。\n\n- 原始源码：保存在知识库之外的 source-repositories，未改动。\n- 分析文档与规格：本任务产出的总结；source-verified 与 inferred 按具体主张区分。\n- adapted 示例：即使减少了业务依赖，仍保留来源和对应上游许可。\n- original-reimplementation 示例：基于行为规格单独编写，明确与原框架/业务实现的差异。\n\n未搬运上游截图、商标、字体与媒体；assets/、preview/ 因无实录/授权整理需要而未创建。")

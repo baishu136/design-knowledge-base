@@ -1,0 +1,12 @@
+# 原始实现
+
+仓库：https://github.com/Droid-Deck/DroidDeck
+
+Commit：`f65e7a3d436bee56f32626dc3536708d12e43162`
+
+- [`app/src/main/res/anim/session_rise.xml:2` — `<set`](https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_rise.xml#L2)
+- [`app/src/main/res/anim/session_sink.xml:2` — `<set`](https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_sink.xml#L2)
+- [`app/src/main/java/com/droiddeck/launcher/SessionActivity.kt:6289` — `overridePendingTransition(R.anim.session_hold, R.anim.session_sink)`](https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/SessionActivity.kt#L6289)
+- [`app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt:769` — `R.anim.session_rise`](https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt#L769)
+
+本目录没有整段复制业务实现。哈希与精确定位保存在 [source-map](../../references/source-map.json)。按源码链接阅读原始层；spec.json 与 implementation.md 为行为分析层；examples 若存在则为第三层。许可证与署名见 [LICENSE-NOTES](../../LICENSE-NOTES.md)。

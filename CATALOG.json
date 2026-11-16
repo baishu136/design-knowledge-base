@@ -11,6 +11,10 @@
       "manifest_path": "projects/cherry-studio-app/manifest.json"
     },
     {
+      "id": "droiddeck",
+      "manifest_path": "projects/droiddeck/manifest.json"
+    },
+    {
       "id": "mihon",
       "manifest_path": "projects/mihon/manifest.json"
     }
@@ -2609,6 +2613,1438 @@
       ],
       "documents": [
         "projects/cherry-studio-app/references/UPSTREAM-LICENSE.txt"
+      ]
+    },
+    {
+      "id": "droiddeck.project",
+      "project": "droiddeck",
+      "resource_type": "project",
+      "name": "droiddeck",
+      "description": "面向触摸、鼠标与手柄焦点的游戏启动器：深色分层底、双强调色渐变、可滑移焦点环、按钮原点扩张与场景升降面板；另有White Red浅色、True Black和动态RGB主题。分析对象为Android启动器UI，不将所承载的Steam/KDE桌面认作自身组件。",
+      "keywords": [
+        "droiddeck",
+        "project",
+        "project",
+        "droiddeck"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/README.md",
+      "spec_path": "projects/droiddeck/manifest.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/README.md",
+        "projects/droiddeck/manifest.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.button-press",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "主按钮按压与高亮光晕",
+      "description": "按下缩至.955，hover/focus扩至1.02，阴影rest6→hot14dp。",
+      "keywords": [
+        "主按钮按压与高亮光晕",
+        "feedback",
+        "droiddeck",
+        "animation",
+        "button",
+        "press"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/button-press/README.md",
+      "spec_path": "projects/droiddeck/animations/button-press/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/button-press/implementation.md",
+        "projects/droiddeck/animations/button-press/README.md",
+        "projects/droiddeck/animations/button-press/source-reference.md",
+        "projects/droiddeck/animations/button-press/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.chip-glide",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "标签选中背景的先后缘弹性",
+      "description": "胶囊选中底沿索引方向拉长再收拢；纵横轴可切。",
+      "keywords": [
+        "标签选中背景的先后缘弹性",
+        "selection",
+        "droiddeck",
+        "animation",
+        "chip",
+        "glide"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/chip-glide/README.md",
+      "spec_path": "projects/droiddeck/animations/chip-glide/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/chip-glide/implementation.md",
+        "projects/droiddeck/animations/chip-glide/README.md",
+        "projects/droiddeck/animations/chip-glide/source-reference.md",
+        "projects/droiddeck/animations/chip-glide/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.focus-glide",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "保留速度的焦点环追随",
+      "description": "四边分别追逐新控件，前缘先走、尾缘延后；远距离可收成圆点再展开。",
+      "keywords": [
+        "保留速度的焦点环追随",
+        "focus",
+        "droiddeck",
+        "animation",
+        "focus",
+        "glide"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/focus-glide/README.md",
+      "spec_path": "projects/droiddeck/animations/focus-glide/spec.json",
+      "example_paths": [
+        "projects/droiddeck/animations/focus-glide/examples/spring.mjs"
+      ],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/focus-glide/implementation.md",
+        "projects/droiddeck/animations/focus-glide/README.md",
+        "projects/droiddeck/animations/focus-glide/source-reference.md",
+        "projects/droiddeck/animations/focus-glide/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.inner-gamer",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "量化更新的动态RGB主题",
+      "description": "primary和secondary沿相差60度色环变化，整应用配色随之更新。",
+      "keywords": [
+        "量化更新的动态RGB主题",
+        "theme-animation",
+        "droiddeck",
+        "animation",
+        "inner",
+        "gamer"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/inner-gamer/README.md",
+      "spec_path": "projects/droiddeck/animations/inner-gamer/spec.json",
+      "example_paths": [
+        "projects/droiddeck/animations/inner-gamer/examples/HueCycle.kt"
+      ],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/inner-gamer/implementation.md",
+        "projects/droiddeck/animations/inner-gamer/README.md",
+        "projects/droiddeck/animations/inner-gamer/source-reference.md",
+        "projects/droiddeck/animations/inner-gamer/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.launch-flood",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "按钮四边扩张到启动场景",
+      "description": "按钮渐变圆角框按四边距离不同节奏铺满屏幕，背景缩至.96。",
+      "keywords": [
+        "按钮四边扩张到启动场景",
+        "container-transform",
+        "droiddeck",
+        "animation",
+        "launch",
+        "flood"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/launch-flood/README.md",
+      "spec_path": "projects/droiddeck/animations/launch-flood/spec.json",
+      "example_paths": [
+        "projects/droiddeck/animations/launch-flood/examples/LaunchEdges.kt"
+      ],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/launch-flood/implementation.md",
+        "projects/droiddeck/animations/launch-flood/README.md",
+        "projects/droiddeck/animations/launch-flood/source-reference.md",
+        "projects/droiddeck/animations/launch-flood/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.lift-sheet",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "场景升降面板与内容错峰",
+      "description": "背景缩至.95，面板升起，启动按钮随动，12段内容分批显现。",
+      "keywords": [
+        "场景升降面板与内容错峰",
+        "gesture-sheet",
+        "droiddeck",
+        "animation",
+        "lift",
+        "sheet"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/lift-sheet/README.md",
+      "spec_path": "projects/droiddeck/animations/lift-sheet/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/lift-sheet/implementation.md",
+        "projects/droiddeck/animations/lift-sheet/README.md",
+        "projects/droiddeck/animations/lift-sheet/source-reference.md",
+        "projects/droiddeck/animations/lift-sheet/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.logo-throbber",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "品牌形变旋转加载器",
+      "description": "Logo左侧形变、双侧绕中心旋转，中央球缩到.8后恢复。",
+      "keywords": [
+        "品牌形变旋转加载器",
+        "loading",
+        "droiddeck",
+        "animation",
+        "logo",
+        "throbber"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/logo-throbber/README.md",
+      "spec_path": "projects/droiddeck/animations/logo-throbber/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/logo-throbber/implementation.md",
+        "projects/droiddeck/animations/logo-throbber/README.md",
+        "projects/droiddeck/animations/logo-throbber/source-reference.md",
+        "projects/droiddeck/animations/logo-throbber/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.page-flood",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "卡片至详情容器过渡",
+      "description": "卡片原点手绘扩张到页面或目标Rect，内容在边缘完成后显现。",
+      "keywords": [
+        "卡片至详情容器过渡",
+        "container-transform",
+        "droiddeck",
+        "animation",
+        "page",
+        "flood"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/page-flood/README.md",
+      "spec_path": "projects/droiddeck/animations/page-flood/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/page-flood/implementation.md",
+        "projects/droiddeck/animations/page-flood/README.md",
+        "projects/droiddeck/animations/page-flood/source-reference.md",
+        "projects/droiddeck/animations/page-flood/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.animation.session-activity",
+      "project": "droiddeck",
+      "resource_type": "animation",
+      "name": "会话Activity上下交接",
+      "description": "进入从父高100%向上到0并alpha.6→1；退出向父高100%下移。",
+      "keywords": [
+        "会话Activity上下交接",
+        "navigation",
+        "droiddeck",
+        "animation",
+        "session",
+        "activity"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/session-activity/README.md",
+      "spec_path": "projects/droiddeck/animations/session-activity/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/session-activity/implementation.md",
+        "projects/droiddeck/animations/session-activity/README.md",
+        "projects/droiddeck/animations/session-activity/source-reference.md",
+        "projects/droiddeck/animations/session-activity/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.card-detail-host",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "CardDetailHost",
+      "description": "从游戏grid进入详情且保留返回画面",
+      "keywords": [
+        "CardDetailHost",
+        "component",
+        "droiddeck",
+        "component",
+        "card",
+        "detail",
+        "host"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/card-detail-host/README.md",
+      "spec_path": "projects/droiddeck/components/card-detail-host/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "droiddeck.animation.page-flood"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/card-detail-host/README.md",
+        "projects/droiddeck/components/card-detail-host/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.color-picker",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "ColorPickerDialog",
+      "description": "自定义渐变和True Black强调色",
+      "keywords": [
+        "ColorPickerDialog",
+        "component",
+        "droiddeck",
+        "component",
+        "color",
+        "picker"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/color-picker/README.md",
+      "spec_path": "projects/droiddeck/components/color-picker/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/color-picker/README.md",
+        "projects/droiddeck/components/color-picker/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.focus-host",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "FocusGlideHost与glideBorder",
+      "description": "整窗口手柄/键盘焦点提示",
+      "keywords": [
+        "FocusGlideHost与glideBorder",
+        "component",
+        "droiddeck",
+        "component",
+        "focus",
+        "host"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/focus-host/README.md",
+      "spec_path": "projects/droiddeck/components/focus-host/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "droiddeck.animation.focus-glide"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/focus-host/README.md",
+        "projects/droiddeck/components/focus-host/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.launcher-layout",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "LauncherLayout与AppScale",
+      "description": "底部/侧边导航与用户界面缩放",
+      "keywords": [
+        "LauncherLayout与AppScale",
+        "component",
+        "droiddeck",
+        "component",
+        "launcher",
+        "layout"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/launcher-layout/README.md",
+      "spec_path": "projects/droiddeck/components/launcher-layout/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/launcher-layout/README.md",
+        "projects/droiddeck/components/launcher-layout/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.lift-hero",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "LiftHero",
+      "description": "Hero页面的设置/启动复合层",
+      "keywords": [
+        "LiftHero",
+        "component",
+        "droiddeck",
+        "component",
+        "lift",
+        "hero"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/lift-hero/README.md",
+      "spec_path": "projects/droiddeck/components/lift-hero/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "droiddeck.animation.lift-sheet"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/lift-hero/README.md",
+        "projects/droiddeck/components/lift-hero/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.primary-button",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "PrimaryButton",
+      "description": "手柄/触摸共用的启动主动作",
+      "keywords": [
+        "PrimaryButton",
+        "component",
+        "droiddeck",
+        "component",
+        "primary",
+        "button"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/primary-button/README.md",
+      "spec_path": "projects/droiddeck/components/primary-button/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [
+        "droiddeck.animation.button-press",
+        "droiddeck.animation.launch-flood"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/primary-button/README.md",
+        "projects/droiddeck/components/primary-button/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.component.tab-strip",
+      "project": "droiddeck",
+      "resource_type": "component",
+      "name": "TabStrip与BumperKey",
+      "description": "手柄LB/RB与触摸横向tab",
+      "keywords": [
+        "TabStrip与BumperKey",
+        "component",
+        "droiddeck",
+        "component",
+        "tab",
+        "strip"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/components/tab-strip/README.md",
+      "spec_path": "projects/droiddeck/components/tab-strip/spec.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/components/tab-strip/README.md",
+        "projects/droiddeck/components/tab-strip/spec.json"
+      ]
+    },
+    {
+      "id": "droiddeck.example.focus-spring",
+      "project": "droiddeck",
+      "resource_type": "example",
+      "name": "保留速度的单边弹簧数值内核",
+      "description": "单边模型，不含四边延迟、droplet、窗口焦点、Job生命周期；禁用motion由helper显式snap，另夹住负delta",
+      "keywords": [
+        "droiddeck",
+        "example",
+        "focus",
+        "spring",
+        "example",
+        "保留速度的单边弹簧数值内核"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/focus-glide/examples/README.md",
+      "spec_path": "projects/droiddeck/animations/focus-glide/examples/example.json",
+      "example_paths": [
+        "projects/droiddeck/animations/focus-glide/examples/spring.mjs"
+      ],
+      "related_resource_ids": [
+        "droiddeck.animation.focus-glide"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "adapted",
+        "runtime-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/focus-glide/examples/README.md",
+        "projects/droiddeck/animations/focus-glide/examples/example.json"
+      ]
+    },
+    {
+      "id": "droiddeck.example.hue-cycle",
+      "project": "droiddeck",
+      "resource_type": "example",
+      "name": "3度量化RGB时钟",
+      "description": "不包含ThemeColors对比度生成；caller传reducedMotion；回调只在量化档改变时发出；静止不发新颜色",
+      "keywords": [
+        "droiddeck",
+        "example",
+        "hue",
+        "cycle",
+        "example",
+        "3度量化RGB时钟"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/inner-gamer/examples/README.md",
+      "spec_path": "projects/droiddeck/animations/inner-gamer/examples/example.json",
+      "example_paths": [
+        "projects/droiddeck/animations/inner-gamer/examples/HueCycle.kt"
+      ],
+      "related_resource_ids": [
+        "droiddeck.animation.inner-gamer"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/inner-gamer/examples/README.md",
+        "projects/droiddeck/animations/inner-gamer/examples/example.json"
+      ]
+    },
+    {
+      "id": "droiddeck.example.launch-edges",
+      "project": "droiddeck",
+      "resource_type": "example",
+      "name": "四边覆盖状态控制器",
+      "description": "无Canvas/Logo/遮罩/触摸门闩；boolean reached改为Compose状态；geometry变化可重启动画；仅布尔reducedMotion，不含Motion.ms的系统scale读取",
+      "keywords": [
+        "droiddeck",
+        "example",
+        "launch",
+        "edges",
+        "example",
+        "四边覆盖状态控制器"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/animations/launch-flood/examples/README.md",
+      "spec_path": "projects/droiddeck/animations/launch-flood/examples/example.json",
+      "example_paths": [
+        "projects/droiddeck/animations/launch-flood/examples/LaunchEdges.kt"
+      ],
+      "related_resource_ids": [
+        "droiddeck.animation.launch-flood"
+      ],
+      "license": "GPL-3.0",
+      "verification": [
+        "adapted",
+        "unverified"
+      ],
+      "documents": [
+        "projects/droiddeck/animations/launch-flood/examples/README.md",
+        "projects/droiddeck/animations/launch-flood/examples/example.json"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.colors",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "colors",
+      "description": "droiddeck / design-language / colors",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "colors",
+        "design-language",
+        "colors"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/colors.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/colors.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.icons",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "icons",
+      "description": "droiddeck / design-language / icons",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "icons",
+        "design-language",
+        "icons"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/icons.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/icons.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.layout",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "layout",
+      "description": "droiddeck / design-language / layout",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "layout",
+        "design-language",
+        "layout"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/layout.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/layout.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.materials",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "materials",
+      "description": "droiddeck / design-language / materials",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "materials",
+        "design-language",
+        "materials"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/materials.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/materials.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.overview",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "overview",
+      "description": "droiddeck / design-language / overview",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "overview",
+        "design-language",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/overview.md",
+      "spec_path": "projects/droiddeck/design-language/tokens.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/overview.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.spacing",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "spacing",
+      "description": "droiddeck / design-language / spacing",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "spacing",
+        "design-language",
+        "spacing"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/spacing.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/spacing.md"
+      ]
+    },
+    {
+      "id": "droiddeck.design-language.typography",
+      "project": "droiddeck",
+      "resource_type": "design-language",
+      "name": "typography",
+      "description": "droiddeck / design-language / typography",
+      "keywords": [
+        "droiddeck",
+        "design",
+        "language",
+        "typography",
+        "design-language",
+        "typography"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/design-language/typography.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/design-language/typography.md"
+      ]
+    },
+    {
+      "id": "droiddeck.architecture.overview",
+      "project": "droiddeck",
+      "resource_type": "architecture",
+      "name": "overview",
+      "description": "droiddeck / architecture / overview",
+      "keywords": [
+        "droiddeck",
+        "architecture",
+        "overview",
+        "architecture",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/architecture/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/architecture/overview.md"
+      ]
+    },
+    {
+      "id": "droiddeck.interactions.overview",
+      "project": "droiddeck",
+      "resource_type": "interaction",
+      "name": "overview",
+      "description": "droiddeck / interactions / overview",
+      "keywords": [
+        "droiddeck",
+        "interactions",
+        "overview",
+        "interaction",
+        "overview"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/interactions/overview.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/interactions/overview.md"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.license-notes",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "LICENSE-NOTES.md",
+      "description": "droiddeck LICENSE-NOTES.md",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "license",
+        "notes",
+        "reference",
+        "LICENSE-NOTES.md"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/LICENSE-NOTES.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/LICENSE-NOTES.md"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.backlog",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "BACKLOG.md",
+      "description": "droiddeck BACKLOG.md",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "backlog",
+        "reference",
+        "BACKLOG.md"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/BACKLOG.md",
+      "spec_path": null,
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/BACKLOG.md"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.source-map",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "source-map.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "source",
+        "map",
+        "reference",
+        "source-map.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/source-map.json",
+      "spec_path": "projects/droiddeck/references/source-map.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/source-map.json"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.animation-discovery",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "animation-discovery.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "animation",
+        "discovery",
+        "reference",
+        "animation-discovery.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/animation-discovery.json",
+      "spec_path": "projects/droiddeck/references/animation-discovery.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "unverified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/animation-discovery.json"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.file-inventory",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "file-inventory.json",
+      "description": "固定来源或未逐项复核的候选清单",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "file",
+        "inventory",
+        "reference",
+        "file-inventory.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/file-inventory.json",
+      "spec_path": "projects/droiddeck/references/file-inventory.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/file-inventory.json"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.acquisition",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "acquisition.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "acquisition",
+        "reference",
+        "acquisition.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/acquisition.json",
+      "spec_path": "projects/droiddeck/references/acquisition.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/acquisition.json"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.repository-tree",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "repository-tree.json",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "repository",
+        "tree",
+        "reference",
+        "repository-tree.json"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/repository-tree.json",
+      "spec_path": "projects/droiddeck/references/repository-tree.json",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/repository-tree.json"
+      ]
+    },
+    {
+      "id": "droiddeck.reference.UPSTREAM-LICENSE",
+      "project": "droiddeck",
+      "resource_type": "reference",
+      "name": "UPSTREAM-LICENSE.txt",
+      "description": "来源获取与许可原文",
+      "keywords": [
+        "droiddeck",
+        "reference",
+        "UPSTREAM",
+        "LICENSE",
+        "reference",
+        "UPSTREAM-LICENSE.txt"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "original_stack": [
+        "Kotlin 2.1.0",
+        "Jetpack Compose BOM 2024.02.00",
+        "Material3",
+        "Compose Canvas",
+        "Android View Animation",
+        "Coil 2.6.0"
+      ],
+      "doc_path": "projects/droiddeck/references/UPSTREAM-LICENSE.txt",
+      "spec_path": "projects/droiddeck/references/UPSTREAM-LICENSE.txt",
+      "example_paths": [],
+      "related_resource_ids": [],
+      "license": "GPL-3.0",
+      "verification": [
+        "source-verified"
+      ],
+      "documents": [
+        "projects/droiddeck/references/UPSTREAM-LICENSE.txt"
       ]
     },
     {

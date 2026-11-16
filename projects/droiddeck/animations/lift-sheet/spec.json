@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.lift-sheet",
+  "name": "场景升降面板与内容错峰",
+  "project": "droiddeck",
+  "category": "gesture-sheet",
+  "effect": "背景缩至.95，面板升起，启动按钮随动，12段内容分批显现。",
+  "applicable": "全屏游戏Hero的设置/操作层",
+  "not_applicable": "普通短确认框或不需要按钮联动的轻量菜单",
+  "trigger": "open/launching或纵向drag/nested scroll",
+  "start_state": {
+    "lift": 0,
+    "ride": 0,
+    "sink": 0,
+    "pieces": 0
+  },
+  "end_state": {
+    "lift": 1,
+    "ride": 1,
+    "sink": 1,
+    "pieces": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "sink_open": 260,
+      "piece_open": 220,
+      "piece_exit": 90,
+      "sink_exit": 300
+    },
+    "delay_ms": {
+      "initial_lift": 120,
+      "piece_formula": "120+260+i*55",
+      "drag_piece_stagger": 35
+    },
+    "easing": {
+      "tween_cubic": [
+        0.2,
+        0.8,
+        0.2,
+        1
+      ]
+    },
+    "spring": {
+      "lift_open": {
+        "dampingRatio": 0.7,
+        "stiffness": 380
+      },
+      "lift_exit": {
+        "dampingRatio": 1,
+        "stiffness": 380
+      },
+      "ride_exit": {
+        "dampingRatio": 0.55,
+        "stiffness": 300
+      }
+    },
+    "repeat": null
+  },
+  "properties": {
+    "pieces": 12,
+    "scrim_alpha": 0.42,
+    "behind_scale": [
+      1,
+      0.95
+    ],
+    "drag_progress_max": 1.04,
+    "flick_threshold_dp_per_s": 600,
+    "open_from_closed_threshold": 0.3,
+    "stay_open_threshold": 0.7,
+    "sheet_corner_dp": 18
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "lift": 0,
+      "ride": 0,
+      "sink": 0,
+      "pieces": 0
+    },
+    "to": {
+      "lift": 1,
+      "ride": 1,
+      "sink": 1,
+      "pieces": 1
+    }
+  },
+  "synchronization": "常规open先pull到24、sink；120ms后lift/ride，piece_i延迟380+i*55后220ms进入。拖动直接snap相关轨，松手按速度±600dp/s优先，再用起始态不同的.3/.7阈值吸附；拖动后的piece错峰为35ms，不能与普通open的55ms混用。launching进入fold/foldTop另一分支。",
+  "interruption": "dragJob可取消；dragSettled阻止open效果重播并保留拖后焦点恢复。ON_STOP清open/shown/launching并注销observer。onDragCancel以0速度settle；后台返回和外部launch交接需实机验证。",
+  "gesture": "用户拖动、rows nested scroll和速度tracker协作；手势方向与drop面板仲裁，解除时按状态和阈值吸附。",
+  "accessibility": "触摸/Keyboard模式分别处理焦点，open后延迟请求tab/指定控件，close恢复play；BackHandler仅open且非launching启用。手柄导航与读屏未同等验证。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+      "symbol": "internal fun LiftHero",
+      "line": 176,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "84a505d67496f5fcb4e45c8eb8faffb5d17bb191a62ed907f26805e31819544a",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt#L176"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "多Animatable+12个piece、多层Canvas path和背景层；手势follow每次scope.launch snap多轨，密集输入需关注任务频率和大内容绘制。无时帧测量。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

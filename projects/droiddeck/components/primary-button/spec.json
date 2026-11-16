@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.primary-button",
+  "name": "PrimaryButton",
+  "project": "droiddeck",
+  "purpose": "手柄/触摸共用的启动主动作",
+  "structure": "Row+InteractionSource→graphicsLayer→gradient→glideBorder→Icon/Text",
+  "parameters": "Shape12/pill；minHeight48/compact44/pill40dp；字15/17/12sp；图标17/20dp",
+  "states": "enabled、pressed、hot、LaunchOrigin.flooding隐藏原按钮；禁用不是单纯alpha降低",
+  "api": "text,enabled,main,compact,large,icon,fill,onClick；main登记primary FocusRequester",
+  "behavior": "按压优先scale.955；hot1.02；点击记录bounds供LaunchFlood",
+  "migration": "把原点登记、焦点模型与视觉动作分层，业务禁用条件不能只传给动画",
+  "minimal_usage": "PrimaryButton(\"Play\", main=true, enabled=ready) { launch() }",
+  "not_applicable": "依赖私有LocalFrontFocus/LaunchOrigin却声称独立可编译",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt",
+      "symbol": "internal fun PrimaryButton",
+      "line": 176,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "76290a1f9bcbdf542f9f512550180ec171645b755d1906b2d56f48569a6979b2",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt#L176"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "related_resources": [
+    "droiddeck.animation.button-press",
+    "droiddeck.animation.launch-flood"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

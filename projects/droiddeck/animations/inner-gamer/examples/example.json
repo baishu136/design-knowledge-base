@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.example.hue-cycle",
+  "project": "droiddeck",
+  "name": "3度量化RGB时钟",
+  "animation_id": "droiddeck.animation.inner-gamer",
+  "entry_file": "HueCycle.kt",
+  "files": [
+    "HueCycle.kt"
+  ],
+  "classification": "adapted",
+  "license": "GPL-3.0",
+  "upstream_commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+  "scope": "3度量化RGB时钟",
+  "differences": "不包含ThemeColors对比度生成；caller传reducedMotion；回调只在量化档改变时发出；静止不发新颜色",
+  "requirements": "已有Compose animation/runtime宿主；HueCycle(speed=3,reducedMotion=false){ hue -> updatePalette(hue) }",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

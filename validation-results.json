@@ -2,17 +2,23 @@
   "date": "2026-11-16",
   "status": "passed",
   "checks": {
-    "json_files_parsed": 68,
-    "indexed_resources": 112,
+    "json_files_parsed": 94,
+    "indexed_resources": 149,
     "cherry-studio_text_snapshot_files_checked": 9949,
     "cherry-studio-app_text_snapshot_files_checked": 3703,
+    "droiddeck_text_snapshot_files_checked": 2112,
     "mihon_text_snapshot_files_checked": 1188,
-    "source_records_checked": 963,
-    "unique_cited_source_files": 64,
-    "parameter_evidence_bindings": 23,
+    "source_records_checked": 1050,
+    "unique_cited_source_files": 87,
+    "parameter_evidence_bindings": 35,
     "example_harness": {
       "result": "passed",
       "scope": "scroll controller cancellation, replacement, disposal, missing DOM, moving target and one-frame boundary; loader clock cap, reset, wrap and phase",
+      "visual_runtime": false
+    },
+    "droiddeck_example_harness": {
+      "result": "passed",
+      "scope": "DroidDeck adapted single-edge spring: convergence at multiple simulated timesteps, velocity retention, latest target, disabled motion, dt cap and scale, critical damping reference",
       "visual_runtime": false
     }
   },
@@ -216,6 +222,114 @@
       "pattern": "animation-usage-heatmap-cell-enter (520)ms",
       "spec_pointer": "timing.duration_ms",
       "value": 520
+    },
+    {
+      "project": "droiddeck",
+      "animation": "focus-glide",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "line": 246,
+      "pattern": "minOf\\(left, (0\\.004)f\\)",
+      "spec_pointer": "properties.integration_substep_ms",
+      "value": 4
+    },
+    {
+      "project": "droiddeck",
+      "animation": "focus-glide",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "line": 148,
+      "pattern": "lead\\(\\) = Edge\\(0\\.62f, (700)f\\)",
+      "spec_pointer": "timing.spring.lead.stiffness",
+      "value": 700
+    },
+    {
+      "project": "droiddeck",
+      "animation": "chip-glide",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt",
+      "line": 93,
+      "pattern": "delay\\(Motion.ms\\((40)\\)",
+      "spec_pointer": "timing.delay_ms.trail",
+      "value": 40
+    },
+    {
+      "project": "droiddeck",
+      "animation": "launch-flood",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt",
+      "line": 141,
+      "pattern": "dampingRatio = (0\\.48)f",
+      "spec_pointer": "timing.spring.dampingRatio",
+      "value": 0.48
+    },
+    {
+      "project": "droiddeck",
+      "animation": "page-flood",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt",
+      "line": 77,
+      "pattern": "PAGE_RETURN_MS = (900)",
+      "spec_pointer": "timing.duration_ms.retention",
+      "value": 900
+    },
+    {
+      "project": "droiddeck",
+      "animation": "button-press",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt",
+      "line": 200,
+      "pattern": "if \\(pressed\\) (0\\.955)f",
+      "spec_pointer": "end_state.pressed_scale",
+      "value": 0.955
+    },
+    {
+      "project": "droiddeck",
+      "animation": "lift-sheet",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+      "line": 172,
+      "pattern": "PIECES = (12)",
+      "spec_pointer": "properties.pieces",
+      "value": 12
+    },
+    {
+      "project": "droiddeck",
+      "animation": "lift-sheet",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+      "line": 362,
+      "pattern": "val flick = with\\(density\\) \\{ (600)\\.dp",
+      "spec_pointer": "properties.flick_threshold_dp_per_s",
+      "value": 600
+    },
+    {
+      "project": "droiddeck",
+      "animation": "inner-gamer",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+      "line": 60,
+      "pattern": "RGB_HUE_STEP = (3)f",
+      "spec_pointer": "properties.hue_step_degrees",
+      "value": 3
+    },
+    {
+      "project": "droiddeck",
+      "animation": "logo-throbber",
+      "source_path": "app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt",
+      "line": 67,
+      "pattern": "LOOP_MS = (1900)",
+      "spec_pointer": "timing.duration_ms",
+      "value": 1900
+    },
+    {
+      "project": "droiddeck",
+      "animation": "session-activity",
+      "source_path": "app/src/main/res/anim/session_rise.xml",
+      "line": 3,
+      "pattern": "android:duration=\"(380)\"",
+      "spec_pointer": "timing.duration_ms.enter",
+      "value": 380
+    },
+    {
+      "project": "droiddeck",
+      "animation": "session-activity",
+      "source_path": "app/src/main/res/anim/session_sink.xml",
+      "line": 3,
+      "pattern": "android:duration=\"(320)\"",
+      "spec_pointer": "timing.duration_ms.exit",
+      "value": 320
     },
     {
       "project": "mihon",

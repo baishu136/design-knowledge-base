@@ -66,6 +66,7 @@ for f in ROOT.rglob('*.md'):
 manifests={f.parent.name:load(f) for f in ROOT.glob('projects/*/manifest.json')}
 source_count=0;file_count=0
 for pid,manifest in manifests.items():
+    print(json.dumps({'auditing_project':pid},ensure_ascii=False),flush=True)
     upstream=WORK/manifest['source_snapshot']
     check(upstream.is_dir(),'Missing snapshot '+str(upstream))
     sources=load(ROOT/f'projects/{pid}/references/source-map.json')
@@ -122,6 +123,18 @@ bindings=[
  ('cherry-studio','smooth-scroll','src/renderer/components/chat/messages/list/useSmoothScrollAnimation.ts',r'DEFAULT_FRAMES = (50)','timing.frames'),
  ('cherry-studio','text-shimmer','src/renderer/assets/styles/animation.css',r'animation-shimmer (3)s linear','timing.duration_ms',1000),
  ('cherry-studio','heatmap-entry','src/renderer/assets/styles/animation.css',r'animation-usage-heatmap-cell-enter (520)ms','timing.duration_ms'),
+ ('droiddeck','focus-glide','app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt',r'minOf\(left, (0\.004)f\)','properties.integration_substep_ms',1000),
+ ('droiddeck','focus-glide','app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt',r'lead\(\) = Edge\(0\.62f, (700)f\)','timing.spring.lead.stiffness'),
+ ('droiddeck','chip-glide','app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt',r'delay\(Motion.ms\((40)\)','timing.delay_ms.trail'),
+ ('droiddeck','launch-flood','app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt',r'dampingRatio = (0\.48)f','timing.spring.dampingRatio'),
+ ('droiddeck','page-flood','app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt',r'PAGE_RETURN_MS = (900)','timing.duration_ms.retention'),
+ ('droiddeck','button-press','app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt',r'if \(pressed\) (0\.955)f','end_state.pressed_scale'),
+ ('droiddeck','lift-sheet','app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt',r'PIECES = (12)','properties.pieces'),
+ ('droiddeck','lift-sheet','app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt',r'val flick = with\(density\) \{ (600)\.dp','properties.flick_threshold_dp_per_s'),
+ ('droiddeck','inner-gamer','app/src/main/java/com/droiddeck/launcher/ui/Theme.kt',r'RGB_HUE_STEP = (3)f','properties.hue_step_degrees'),
+ ('droiddeck','logo-throbber','app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt',r'LOOP_MS = (1900)','timing.duration_ms'),
+ ('droiddeck','session-activity','app/src/main/res/anim/session_rise.xml',r'android:duration="(380)"','timing.duration_ms.enter'),
+ ('droiddeck','session-activity','app/src/main/res/anim/session_sink.xml',r'android:duration="(320)"','timing.duration_ms.exit'),
 ]
 evidence=[]
 for binding in bindings:
@@ -148,6 +161,9 @@ checks['parameter_evidence_bindings']=len(evidence)
 runtime=subprocess.run(['node',str(ROOT/'tools/check-examples.mjs')],capture_output=True,text=True)
 check(runtime.returncode==0,'Example harness failed: '+runtime.stderr)
 checks['example_harness']=json.loads(runtime.stdout) if runtime.returncode==0 else runtime.stdout
+droid_runtime=subprocess.run(['node',str(ROOT/'tools/check-droiddeck.mjs')],capture_output=True,text=True)
+check(droid_runtime.returncode==0,'DroidDeck example harness failed: '+droid_runtime.stderr)
+checks['droiddeck_example_harness']=json.loads(droid_runtime.stdout) if droid_runtime.returncode==0 else droid_runtime.stdout
 for f in ROOT.glob('projects/*/animations/*/spec.json'):check(load(f)['runtime_verified'] is False,'Unexpected original app runtime claim '+str(f))
 for f in ROOT.glob('projects/*/animations/*/examples/example.json'):
     ex=load(f);check(not ex['visual_runtime_verified'],'Unexpected visual runtime claim '+str(f))
@@ -156,7 +172,7 @@ for f in ROOT.glob('projects/*/animations/*/examples/example.json'):
 result=dict(date='2026-11-16',status='passed' if not errors else 'failed',checks=checks,errors=errors,warnings=warnings,parameter_evidence=evidence,limits=['No upstream application runtime','No visual verification','Native examples not compiled','JSON Schema supported-keyword subset only','Static performance analysis only'])
 (ROOT/'validation-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 report='# 最终审计与验证\n\n状态：'+result['status']+'。\n\n'+ '\n'.join(f'- {k}：`{json.dumps(v,ensure_ascii=False)}`' for k,v in checks.items())
-report+='\n\n## 审计边界\n\nJSON可解析、声明Schema子集、ID唯一、关联ID、索引路径、Markdown链接、来源Commit/行范围/SHA256、全部支持文本文件快照哈希、Mihon干净工作树、组件/动画数量、参数证据绑定与未知值防猜测均被检查。源码参数证据记录于validation-results.json。\n\n原项目未运行；Node仅运行2个移植内核。没有截图、录屏、原生编译、GPU或FPS测试。对性能和设计意图的解释是静态分析，不是实测或官方承诺。\n\n所有原项目动画runtime_verified=false；原生和React视觉例仍unverified。静态成功不提升它们的状态。\n'
+report+='\n\n## 审计边界\n\nJSON可解析、声明Schema子集、ID唯一、关联ID、索引路径、Markdown链接、来源Commit/行范围/SHA256、全部支持文本文件快照哈希、Mihon干净工作树、组件/动画数量、参数证据绑定与未知值防猜测均被检查。源码参数证据记录于validation-results.json。\n\n原项目未运行；Node运行3个移植内核（scroll controller、loader clock、DroidDeck单边spring），模拟多刷新步长不是实际设备FPS测试。没有截图、录屏、原生编译、GPU或FPS测试。对性能和设计意图的解释是静态分析，不是实测或官方承诺。\n\n所有原项目动画runtime_verified=false；原生和React视觉例仍unverified。静态成功不提升它们的状态。\n'
 if errors:report+='\n## 失败\n\n'+'\n'.join('- '+e for e in errors)
 (ROOT/'VALIDATION.md').write_text(report,encoding='utf-8')
 print(json.dumps({'status':result['status'],'checks':checks,'errors':errors[:30]},ensure_ascii=False))

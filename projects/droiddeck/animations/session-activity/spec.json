@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.session-activity",
+  "name": "会话Activity上下交接",
+  "project": "droiddeck",
+  "category": "navigation",
+  "effect": "进入从父高100%向上到0并alpha.6→1；退出向父高100%下移。",
+  "applicable": "启动器和远端会话Activity的切换",
+  "not_applicable": "复制成普通Compose局部卡片的变换规范",
+  "trigger": "Activity overridePendingTransition调用",
+  "start_state": {
+    "enter_translateY": "100%p",
+    "enter_alpha": 0.6,
+    "exit_translateY": 0
+  },
+  "end_state": {
+    "enter_translateY": 0,
+    "enter_alpha": 1,
+    "exit_translateY": "100%p"
+  },
+  "timing": {
+    "duration_ms": {
+      "enter": 380,
+      "exit": 320
+    },
+    "delay_ms": null,
+    "easing": {
+      "enter": "@android:interpolator/decelerate_cubic",
+      "exit": "@android:interpolator/accelerate_cubic"
+    },
+    "spring": null,
+    "repeat": null
+  },
+  "properties": {
+    "translateY_percent_parent": [
+      100,
+      0,
+      100
+    ],
+    "enter_opacity": [
+      0.6,
+      1
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "enter_translateY": "100%p",
+      "enter_alpha": 0.6,
+      "exit_translateY": 0
+    },
+    "to": {
+      "enter_translateY": 0,
+      "enter_alpha": 1,
+      "exit_translateY": "100%p"
+    }
+  },
+  "synchronization": "res/anim set组合translate与alpha；sink只有translate，不补造退出fade。SessionActivity在没有可用Flood return目标等分支下使用sink；FrontEndActivity引用rise。它是Android传统View/Activity动画，不是Compose Motion.tw控制的同一个时钟。",
+  "interruption": "生命周期与窗口过渡由Android处理；再入、系统手势返回和动画关闭需设备验证。",
+  "gesture": null,
+  "accessibility": "XML没有自建Reduce Motion分支；不把Motion.scale对Compose的处理自动套进这些系统动画。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/res/anim/session_rise.xml",
+      "symbol": "<set",
+      "line": 2,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "97b9eb9a99a8d7ffbf55a712a5c32629668fd153db05aabe7d9629b4cd8b9bab",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_rise.xml#L2"
+    },
+    {
+      "path": "app/src/main/res/anim/session_sink.xml",
+      "symbol": "<set",
+      "line": 2,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "1c658275441b5c84d86aeb95b325881496e56fc3a2412bd6934f630ea8f05ee6",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_sink.xml#L2"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/SessionActivity.kt",
+      "symbol": "overridePendingTransition(R.anim.session_hold, R.anim.session_sink)",
+      "line": 6289,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "f03e476fe488927b2f1ad38533cef14ae6f11ac2b7a2a9b08f2d0b5391f20f56",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/SessionActivity.kt#L6289"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt",
+      "symbol": "R.anim.session_rise",
+      "line": 769,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "51cbb4f6ba87d697394d9df97354dee9e81c558db355f6e64d3d2a166db17ab6",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt#L769"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "Activity层窗口变换较适合系统合成，但承载Surface/会话渲染的兼容性与内存不可从XML判断。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

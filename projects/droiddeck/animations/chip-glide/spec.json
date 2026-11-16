@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.chip-glide",
+  "name": "标签选中背景的先后缘弹性",
+  "project": "droiddeck",
+  "category": "selection",
+  "effect": "胶囊选中底沿索引方向拉长再收拢；纵横轴可切。",
+  "applicable": "短tab/选项chip的触摸选择反馈",
+  "not_applicable": "将其直接当键盘焦点环使用",
+  "trigger": "index、at Rect、visible、Motion.scale",
+  "start_state": {
+    "start_end": "previous selection edges"
+  },
+  "end_state": {
+    "start_end": "new selection edges",
+    "pinch": 0
+  },
+  "timing": {
+    "duration_ms": {
+      "show": 160,
+      "hide": 120
+    },
+    "delay_ms": {
+      "trail": 40
+    },
+    "easing": {
+      "tween_cubic": [
+        0.2,
+        0.8,
+        0.2,
+        1
+      ]
+    },
+    "spring": {
+      "lead": {
+        "dampingRatio": 0.62,
+        "stiffness": 700
+      },
+      "trail": {
+        "dampingRatio": 0.78,
+        "stiffness": 360
+      },
+      "pinch_reset": {
+        "dampingRatio": 0.6,
+        "stiffness": 500
+      }
+    },
+    "repeat": null
+  },
+  "properties": {
+    "fill_alpha": 0.16,
+    "outline_alpha": 0.7,
+    "outline_width_dp": 1,
+    "collapsed_radius_dp": 6
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "start_end": "previous selection edges"
+    },
+    "to": {
+      "start_end": "new selection edges",
+      "pinch": 0
+    }
+  },
+  "synchronization": "同一Canvas画背景；index决定lead/end与trail/start谁先走，尾缘delay40ms后spring。glideShape在pinch=0使用边缘，在pinch=1变到中心±drop。当前ChipGlide只将pinch归0，不能据此宣称每次必有pinch收球阶段。",
+  "interruption": "LaunchedEffect键改变取消旧协程；初次/同index/无上次或scale0直接snap。看不见或shown<.5先把几何移到目标以避免看见穿越。",
+  "gesture": null,
+  "accessibility": "Keyboard输入模式时此ChipGlide本身不显示，交给其他焦点反馈；不能把胶囊背景当唯一可访问选中语义。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt",
+      "symbol": "internal fun BoxScope.ChipGlide",
+      "line": 44,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "fa7c9a3deff81b6cb7dd1f8c1c9f9609029ba7f9d8b937e91d6587d9ed2a7795",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt#L44"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "Canvas绘制替代每个tab独立布局动画；Rect测量与Compose状态仍需布局消费者配合。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

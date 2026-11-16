@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.example.focus-spring",
+  "project": "droiddeck",
+  "name": "保留速度的单边弹簧数值内核",
+  "animation_id": "droiddeck.animation.focus-glide",
+  "entry_file": "spring.mjs",
+  "files": [
+    "spring.mjs"
+  ],
+  "classification": "adapted",
+  "license": "GPL-3.0",
+  "upstream_commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+  "scope": "保留速度的单边弹簧数值内核",
+  "differences": "单边模型，不含四边延迟、droplet、窗口焦点、Job生命周期；禁用motion由helper显式snap，另夹住负delta",
+  "requirements": "Node标准ES module；node tools/check-droiddeck.mjs；不编译Compose也不测帧率",
+  "verification": [
+    "adapted",
+    "runtime-verified"
+  ],
+  "runtime_scope": "Node numeric/lifecycle harness only; no visual verification",
+  "visual_runtime_verified": false
+}

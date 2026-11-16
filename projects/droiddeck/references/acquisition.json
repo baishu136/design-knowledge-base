@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Droid-Deck/DroidDeck",
+  "branch": "main",
+  "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+  "commit_date": "2026-11-16T04:17:44Z",
+  "snapshot_path": "source-repositories/droiddeck-f65e7a3d436b",
+  "archive_sha256": "44282c6733da102932af25bc2a56eebb0e9a40e9b083b55c8771c2de21c877fb",
+  "acquisition": "GitHub codeload immutable commit archive",
+  "submodules_included": false
+}

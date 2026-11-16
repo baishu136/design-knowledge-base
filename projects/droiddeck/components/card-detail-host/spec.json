@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.card-detail-host",
+  "name": "CardDetailHost",
+  "project": "droiddeck",
+  "purpose": "从游戏grid进入详情且保留返回画面",
+  "structure": "Offscreen渐隐Host→保留的grid Column→shown详情树→PageFlood",
+  "parameters": "gridScale.95；fade顶部14dp；PAGE_RETURN_MS900基础窗口",
+  "states": "open/shown/leaving/from；grid焦点在covering时拒绝enter",
+  "api": "open:String?,detailScroll,gridScrolled,onDetailFocus,wrap,grid,detail及bleedInsets",
+  "behavior": "打开读取StoresMotion卡片原点，关闭延迟清shown，重开取消旧effect",
+  "migration": "稳定身份与可测量卡片原点优先，无法定位时必须有回退",
+  "minimal_usage": "CardDetailHost(open,scroll,{false},{},grid={ Grid() },detail={ key -> Details(key) })",
+  "not_applicable": "无限保留所有详情或跨Window原点未换坐标",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt",
+      "symbol": "internal fun CardDetailHost",
+      "line": 60,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "e4a297140e65bd921c6997c3c13d9fdefdacaee3b8425543eedb4428e02085b7",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt#L60"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt",
+      "symbol": "internal fun PageFlood",
+      "line": 80,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "8ad5c571cbe6b2379a8e92f6518074779d70c777ff3d8ed134c3edbf062405e4",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt#L80"
+    }
+  ],
+  "related_resources": [
+    "droiddeck.animation.page-flood"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

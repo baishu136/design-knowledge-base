@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.example.launch-edges",
+  "project": "droiddeck",
+  "name": "四边覆盖状态控制器",
+  "animation_id": "droiddeck.animation.launch-flood",
+  "entry_file": "LaunchEdges.kt",
+  "files": [
+    "LaunchEdges.kt"
+  ],
+  "classification": "adapted",
+  "license": "GPL-3.0",
+  "upstream_commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+  "scope": "四边覆盖状态控制器",
+  "differences": "无Canvas/Logo/遮罩/触摸门闩；boolean reached改为Compose状态；geometry变化可重启动画；仅布尔reducedMotion，不含Motion.ms的系统scale读取",
+  "requirements": "已有Android Compose BOM2024.02.00宿主；调用rememberLaunchEdges返回四边进度，自行绘制和处理业务启动",
+  "verification": [
+    "adapted",
+    "unverified"
+  ],
+  "runtime_scope": null,
+  "visual_runtime_verified": false
+}

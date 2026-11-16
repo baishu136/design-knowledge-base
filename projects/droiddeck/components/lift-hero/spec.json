@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.lift-hero",
+  "name": "LiftHero",
+  "project": "droiddeck",
+  "purpose": "Hero页面的设置/启动复合层",
+  "structure": "背景/遮罩→Canvas面板壁→tabs与rows→联动play按钮→分段piece",
+  "parameters": "sheetInset12、corner18、pieces12；sheetTop=max(paneH/6,minAbove+buttonH/2-ride)",
+  "states": "open/shown/dragging/launching/stopped；DropSheet仲裁",
+  "api": "key,tabs,onOpen,onPrimary,background,words,button,rows,onOpenChange,drop",
+  "behavior": "open时移焦点，Back关闭；ON_STOP清临时状态；启动先fold再onPrimary",
+  "migration": "拆成geometry、presentation状态与业务启动回调，保留手势/焦点恢复顺序",
+  "minimal_usage": "LiftHero(key=\"game\", tabs=tabs, onOpen={}, onPrimary=launch, background=bg, words=title, button=play, rows=settings)",
+  "not_applicable": "普通弹窗无需移植整套Hero状态依赖",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+      "symbol": "internal fun LiftHero",
+      "line": 176,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "84a505d67496f5fcb4e45c8eb8faffb5d17bb191a62ed907f26805e31819544a",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt#L176"
+    }
+  ],
+  "related_resources": [
+    "droiddeck.animation.lift-sheet"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

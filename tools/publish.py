@@ -4,8 +4,11 @@ import json, re
 
 def load(p): return json.loads((ROOT/p).read_text(encoding='utf-8'))
 projects={p.name:load(f'projects/{p.name}/manifest.json') for p in (ROOT/'projects').iterdir() if p.is_dir()}
+project_order=[k for k in ['cherry-studio-app','mihon','cherry-studio','droiddeck'] if k in projects]
+project_order.extend(k for k in projects if k not in project_order)
+project_rows='\n'.join(f"| [{k}](projects/{k}/README.md) | {projects[k]['version']} / {projects[k]['commit'][:12]} | {projects[k]['coverage']['components']} | {projects[k]['coverage']['animations']} | {projects[k]['description'].split('：')[0]} |" for k in project_order)
 
-write('README.md','''# 多项目设计知识库
+write('README.md',f'''# 多项目设计知识库
 
 这是基于固定源码快照的设计与动效工程资产。每个项目独立保留规则；跨项目总结不会回写或混合原始Token。当前交付是**核心系统与高价值动画首轮建库**，不是全仓每一个页面/动画的逐项审计完成声明。
 
@@ -17,11 +20,9 @@ write('README.md','''# 多项目设计知识库
 
 | 项目 | 分析版本 | 组件 | 动画 | 核心特征 |
 |---|---|---:|---:|---|
-| [Cherry Mobile](projects/cherry-studio-app/README.md) | 0.5.5 / e6d157d2ea60 | 5 | 6 | 移动自有Token、可中断菜单、手势与Shader |
-| [Mihon](projects/mihon/README.md) | 0.21.3 / 4823ba69ca65 | 4 | 6 | Material主题、沉浸阅读、嵌套滚动面板 |
-| [Cherry Desktop](projects/cherry-studio/README.md) | 2.2.2 / c3263227592a | 4 | 7 | 多栏工作台、Radix生命周期、可取消滚动 |
+{project_rows}
 
-7组移植示例中，2个框架无关JavaScript内核经过Node执行验证；4组原生组件片段和1组React/CSS片段未编译或运行。没有原项目实机预览、FPS、GPU耗时或内存数据。详见 [执行报告](EXECUTION-REPORT.md) 和 [验证报告](VALIDATION.md)。
+移植示例分别声明验证范围；框架无关内核的Node测试不等于原生视觉验证。没有原项目实机预览、FPS、GPU耗时或内存数据。详见 [执行报告](EXECUTION-REPORT.md) 和 [验证报告](VALIDATION.md)。
 
 ## 资料层次与可信度
 
@@ -35,9 +36,12 @@ tokens.json保留CSS变量表达式及静态别名替换，不伪称浏览器com
 
 数据作者入口是tools/author.py；tools/build.py只写本知识库，绝不执行上游构建/安装。修改生成文档前先修改作者数据，避免下次重建覆盖手工改动。新增资源的来源与状态在结构化文件中保存。更新版本按 [维护流程](MAINTENANCE.md)。
 
+DroidDeck作者数据独立在tools/author_droiddeck.py，由author.py统一调用。各项目共享生成器，不共享原始设计规则。
+
 ```powershell
 python design-knowledge-base/tools/author.py
 node design-knowledge-base/tools/check-examples.mjs
+node design-knowledge-base/tools/check-droiddeck.mjs
 python design-knowledge-base/tools/publish.py
 python design-knowledge-base/tools/validate.py
 ```
@@ -97,11 +101,11 @@ author.py为本轮人工分析内容的可重放作者数据；build.py为通用
 
 ## 快照获取说明
 
-Cherry两仓使用GitHub codeload按Commit获取完整归档并校验SHA256；Mihon使用depth1 Git clone且工作树干净。仓库之外的源码不是知识库发布物的一部分；归档/复制时同时保存所需来源和许可证。早期中断的cherry-studio与cherry-studio-app克隆目录、以及desktop review-files只用于获取过程，均不是manifest指向的分析快照；不纳入覆盖率。
+Cherry两仓及DroidDeck使用GitHub codeload按Commit获取归档并记录SHA256；Mihon使用depth1 Git clone。DroidDeck归档未递归包含MaliBridge/Syncthing子模块，覆盖仅指超级项目已有文件。仓库之外的源码不是知识库发布物的一部分；归档/复制时同时保存所需来源和许可证。早期中断的cherry-studio与cherry-studio-app克隆目录、以及desktop review-files只用于获取过程，均不是manifest指向的分析快照；不纳入覆盖率。
 ''')
 write('shared/comparisons/projects.md','''# 项目设计语言与迁移选择
 
-本表是基于各项目固定版本的**分析总结**，不是三项目共享的官方设计规范。每列必须回到相应项目，不合并Token。
+本表是基于各项目固定版本的**分析总结**，不是多项目共享的官方设计规范。每列必须回到相应项目，不合并Token。
 
 | 维度 | Cherry Mobile | Mihon | Cherry Desktop |
 |---|---|---|---|
@@ -118,6 +122,23 @@ write('shared/comparisons/projects.md','''# 项目设计语言与迁移选择
 选择：阅读内容使用Mihon的临时控制层；移动操作浮层参考Cherry Mobile的测量/退出门闩；桌面高密度信息工具参考Desktop的宽度协商与焦点策略。需要减少动态时先保留业务状态与导航能力，再缩短/取消轨道。
 
 来源：[Mobile概述](../../projects/cherry-studio-app/design-language/overview.md)、[Mihon概述](../../projects/mihon/design-language/overview.md)、[Desktop概述](../../projects/cherry-studio/design-language/overview.md)及各自动画spec。以上性能只属静态风险，无测量排序。
+
+## DroidDeck 对照
+
+| 维度 | DroidDeck | 与现有项目的区别/选择 |
+|---|---|---|
+| 风格/密度 | 游戏内容、鲜明动作渐变与手柄焦点；含浅色预设 | 相比Cherry中性动作更突出；不是全应用都黑底 |
+| 导航 | side/bottom由调用方选择，另有双屏会话 | 比Mihon更多控制器焦点/跨窗口策略；不可仅凭600dp归类 |
+| 主题架构 | Palette→darkColorScheme映射；动态HSV与对比度校正 | 相比Mihon的Material/Monet，更多自有动态算法；构造名不表示只能深色 |
+| 动画节奏 | 不同物理弹簧、多边延迟、内容错峰 | 不套用Mobile350ms菜单或Desktop300ms面板作为通用时长 |
+| 缓动 | Motion.tw(.2,.8,.2,1)；FocusGlide手写数值积分 | Compose spring参数为dampingRatio，而RN物理damping不是同单位 |
+| 交互反馈 | 按压.955/hot1.02、窗口级滑移ring、A/B/LB/RB | 手柄密集界面优先参考DroidDeck；触摸阅读控制优先Mihon |
+| 抽象方式 | FocusGlideHost/Window、Motion、SharedMotion和Hero状态层 | 不同于Radix Presence的DOM生命周期；跨窗口坐标必须匹配 |
+| 性能策略 | 4ms积分子步、Path复用、RGB3度量化 | 数值稳定措施不等于GPU/FPS指标；CardDetailHost显式Offscreen有成本 |
+| 迁移难度 | 参数/数学模型中，窗口焦点与会话交接高 | 最先抽单边弹簧与覆盖回调，后接目标框架输入和焦点生命周期 |
+| 许可 | GPL-3.0 | 不与Cherry的AGPL或Mihon的Apache标签混用 |
+
+来源：[DroidDeck概述](../../projects/droiddeck/design-language/overview.md)、[焦点环](../../projects/droiddeck/animations/focus-glide/spec.json)、[布局](../../projects/droiddeck/design-language/layout.md)、[主题](../../projects/droiddeck/design-language/colors.md)。
 ''')
 write('shared/animation-patterns/patterns.md','''# 动画模式检索与取舍
 
@@ -130,19 +151,30 @@ write('shared/animation-patterns/patterns.md','''# 动画模式检索与取舍
 | 持续等待 | [Mihon progress](../../projects/mihon/animations/combined-progress/README.md)、[Mobile Shader](../../projects/cherry-studio-app/animations/foil-loader/README.md)、[Desktop shimmer](../../projects/cherry-studio/animations/text-shimmer/README.md) | 分别旋转、每像素GPU、文字背景paint | 后台/不可见停止；语义busy不依赖动画；不伪称都是GPU廉价 |
 | 可取消滚动 | [Desktop RAF](../../projects/cherry-studio/animations/smooth-scroll/README.md)、[Mihon thumb](../../projects/mihon/animations/fast-scroller/README.md) | 一个移动内容，一个显示滚动导航；不可直接替换 | 明确用户中断与目标变化，不排队 |
 
-共享轴是页面层级运动，不是共享元素ID过渡。本轮没有将任何项目记为“共享封面过渡”或“歌词播放器动画”，因为没有完成对应证据确认。
+共享轴是页面层级运动，不是共享元素ID过渡。v0.1三项目范围没有确认可建档的共享封面或歌词播放器动画；新增项目须重新按证据判断。
+
+DroidDeck补充：[PageFlood](../../projects/droiddeck/animations/page-flood/README.md)确实将同一已记录卡片原点/封面Painter过渡到详情，是自定义容器/封面连续性实现，不是Compose SharedTransitionLayout。先前“三项目没有已确认共享封面”结论仅适用于v0.1范围。
+
+| 新模式 | 证据 | 保留规则 |
+|---|---|---|
+| 保留速度的多边焦点 | [FocusGlide](../../projects/droiddeck/animations/focus-glide/README.md) | leading/trailing参数、重定向速度、窗口坐标与scale0最终焦点 |
+| 覆盖即交接 | [LaunchFlood](../../projects/droiddeck/animations/launch-flood/README.md) | onCovered在四边首次触达后通知，不等待spring稳定；输入门闩只限交接 |
+| 多轨面板错峰 | [LiftHero](../../projects/droiddeck/animations/lift-sheet/README.md) | 普通open55ms错峰与拖后35ms分开，手势阈值含起始态滞回 |
+| 主题色量化 | [Inner Gamer](../../projects/droiddeck/animations/inner-gamer/README.md) | 3度状态量化不等于每帧时钟停止，对比度校正与动画并行 |
 
 建议的框架无关协议（本库分析）：输入intent、currentVisualState、reducedMotion、geometry；输出visualTracks、interactiveState、completion/cancel；业务状态不要依赖动画结束才能正确。参数从目标项目规格选，不从本表抽取统一默认值。
 ''')
 write('shared/design-patterns/semantic-hierarchy.md','''# 语义层次与主题边界
 
-三个项目都把语义角色与基础色分离，但实现不等价。Cherry Desktop运行时输入可以覆写主题强调；Mobile分离固定control-active与随主题primary；Mihon可动态生成Monet色，并有AMOLED覆盖。
+四个项目都把语义角色与基础色分离，但实现不等价。Cherry Desktop运行时输入可以覆写主题强调；Mobile分离固定control-active与随主题primary；Mihon可动态生成Monet色，并有AMOLED覆盖；DroidDeck的Palette动态生成还需要渐变采样和对比度修正，Paper并不表示浅色主题。
 
 通用提炼（inferred）：先定义角色和成对前景，再选调色板；布局分组先靠间距、对齐、文字层级，浮层再使用阴影或scrim。移植必须保留禁用、危险、选中与焦点的非颜色线索。
 
 不适用：把CSS背景透明混合结果直接转换成固定Android hex，或把一个主题的数值覆盖所有深色/动态主题。CSS color-mix和OKLCH尚需目标渲染能力及对比度实测。
 
 来源：[Mobile颜色](../../projects/cherry-studio-app/design-language/colors.md)、[Mihon颜色](../../projects/mihon/design-language/colors.md)、[Desktop颜色](../../projects/cherry-studio/design-language/colors.md)。
+
+新增来源：[DroidDeck Palette](../../projects/droiddeck/design-language/colors.md)。Palette某一对前景/渐变达到算法阈值，不能泛化为全界面已通过无障碍测试。
 ''')
 write('shared/component-patterns/lifecycle.md','''# 可迁移组件的边界
 
@@ -154,6 +186,8 @@ write('shared/component-patterns/lifecycle.md','''# 可迁移组件的边界
 - Progress：未知进度和确定0%应分别建模；Mihon源码用0分支是具体设计，迁移可改为显式mode并标adapted。
 
 来源：[Mobile组件](../../projects/cherry-studio-app/README.md)、[Mihon组件](../../projects/mihon/README.md)、[Desktop组件](../../projects/cherry-studio/README.md)。
+
+DroidDeck补充：[FocusHost](../../projects/droiddeck/components/focus-host/README.md)把多个控件的热边框交给同窗口Host统一绘制，跨View回退静态border。迁移要保留focus/hover/selected三种不同状态，不把装饰选中chip等同键盘焦点。其[TabStrip](../../projects/droiddeck/components/tab-strip/README.md)并未直接消费ChipGlide，不能将相似效果误记为同一组件依赖。
 ''')
 write('shared/platform-guides/migration.md','''# 平台迁移与验证
 
@@ -175,6 +209,7 @@ backlogs={
 'mihon': [('P1','依赖默认值','materialSharedAxisX/rememberSlideDistance、MaterialExpressiveTheme字体/shape和ProgressAnimationSpec逐版本回溯'),('P1','运行验证','Android设备测试sheet嵌套滚动、返回、旋转和AMOLED/Monet'),('P2','更多动画','MangaInfoHeader展开、下载指示、ReaderNavigationOverlay、AnimatedVector XML逐个建档'),('P2','传统阅读器','pager/webtoon View动画、图片解码和资源释放路径深读')],
 'cherry-studio-app':[('P1','原生运行','自定义Expo development client验证菜单反向触发、native sheet键盘和image zoom中断'),('P1','性能验证','Skia Shader在低端Android、后台、Reduce Motion动态切换下测量'),('P1','侧栏补全','WindowFoldRegion/isWide检测、drawer依赖内部动画与手势竞争实机验证'),('P2','更多动画','LogoDraw、WelcomeIntro、PaintingFocusCanvas、dot-matrix、ExpandedAnswer、composer overlay逐条建档'),('P2','文档差异','跟踪上游sidebar过时注释和BottomSheet数字圆角与DESIGN规则的偏差')],
 'cherry-studio':[('P1','运行验证','Electron验证Dialog/SelectorShell快速切换、嵌套portal、焦点恢复和PageSidebar resize'),('P1','性能验证','多栏width重排、虚拟列表动态目标、120Hz固定50帧时长差异'),('P2','更多动画','BrowserCursorAnimation、迁移confetti、locate/search闪烁、Skeleton、SortableList、右面板独立条目'),('P2','无障碍覆盖','逐消费者核对shimmer/RAF reduced-motion，不以局部规则代表全仓')],
+'droiddeck':[('P1','Android运行','验证控制器连按、远距droplet、跨Popup焦点、Motion开关与系统scale'),('P1','手势/交接','LiftHero与DropSheet仲裁、ON_STOP恢复、PageFlood目标消失、LaunchFlood覆盖回调与Surface切换'),('P1','性能测量','低scale数值步数、Offscreen封面、RGB主题校正重组和后台循环；不以模拟时钟数据代替FPS'),('P2','更多动画','DropSheet、Iris、Hop、GlideWindows、Flights、Store下载、底屏与AgentPet逐项细读'),('P2','未覆盖边界','子模块与Steam/KDE外部界面不计原生组件；依赖默认Typography/Shape常量及全量图标消费者继续核实')],
 }
 for pid,items in backlogs.items():
     data=load(f'projects/{pid}/references/animation-discovery.json')
@@ -198,6 +233,9 @@ examples=[
  ('cherry-studio-app','foil-loader','loader-clock','clock.mjs','Shader时钟与周期数值模型','没有渲染Shader；额外限制负delta为0，不代表原文件有该条件','Node标准ES module，无第三方依赖；由tools/check-examples.mjs执行，或import advanceClock/phaseAt',True),
  ('cherry-studio','smooth-scroll','scroll-controller','controller.mjs','取消/替换/动态目标的滚动控制器','从React hook改为getNode和dispose；没有用户事件监听与Reduce Motion集成','浏览器import并注入requestAnimationFrame/cancelAnimationFrame；挂wheel/touchstart时cancel，卸载dispose；Node测试注入虚拟scheduler',True),
  ('cherry-studio','selector-shell','selector-panel','SelectorPanel.tsx','浮层fade与scale双轨','仅bottom方向；origin固定top center；父级保留退出120ms且负责焦点；非完整Popover','已有React19/TypeScript/CSS宿主；import SelectorPanel；不要在open=false立刻卸载',False),
+ ('droiddeck','focus-glide','focus-spring','spring.mjs','保留速度的单边弹簧数值内核','单边模型，不含四边延迟、droplet、窗口焦点、Job生命周期；禁用motion由helper显式snap，另夹住负delta','Node标准ES module；node tools/check-droiddeck.mjs；不编译Compose也不测帧率',True),
+ ('droiddeck','launch-flood','launch-edges','LaunchEdges.kt','四边覆盖状态控制器','无Canvas/Logo/遮罩/触摸门闩；boolean reached改为Compose状态；geometry变化可重启动画；仅布尔reducedMotion，不含Motion.ms的系统scale读取','已有Android Compose BOM2024.02.00宿主；调用rememberLaunchEdges返回四边进度，自行绘制和处理业务启动',False),
+ ('droiddeck','inner-gamer','hue-cycle','HueCycle.kt','3度量化RGB时钟','不包含ThemeColors对比度生成；caller传reducedMotion；回调只在量化档改变时发出；静止不发新颜色','已有Compose animation/runtime宿主；HueCycle(speed=3,reducedMotion=false){ hue -> updatePalette(hue) }',False),
 ]
 for pid,anim,slug,file,name,diff,deps,ran in examples:
     base=f'projects/{pid}/animations/{anim}/examples'
@@ -251,10 +289,18 @@ validate.py执行这些Schema所使用关键词的标准库子集校验（type/r
 
 write('CHANGELOG.md','''# 变更记录
 
+## 2026-11-16 — v0.2 DroidDeck
+
+- 新增DroidDeck 0.7.1 / f65e7a3d436b独立资料：7个组件、9个动画，保留GPL-3.0及不可直接迁移的运行时边界。
+- 覆盖焦点多边积分、ChipGlide、LaunchFlood、PageFlood、LiftHero、按钮、RGB主题、Canvas Logo与Activity XML交接。
+- 新增3组adapted示例；单边弹簧模型通过Node行为验证，2份Compose控制器未编译/未运行。
+- 动态项目导航、四项目对比、候选扫描、参数证据、索引和BACKLOG同步更新。原项目源码保持不变，不上传运行时/游戏图像/密钥。
+- 保留v0.1既有项目与资源ID。
+
 ## 2026-11-16 — v0.1 核心系统与高价值动画
 
 - 首次建立三个独立项目资料，固定main Commit，保留来源哈希和完整上游许可证。
-- 提取13个组件、19个动画、929条Token声明/分析记录（主题条目分别计数，非916个独立语义角色）。
+- 提取13个组件、19个动画、929条Token声明/分析记录（主题条目分别计数，非929个独立语义角色）。
 - 建立7组adapted示例，其中2个数值/生命周期内核经Node验证，无原项目运行或视觉验证。
 - 全仓候选清单与逐项目BACKLOG区分扫描与深读；记录mobile Sidebar注释过时、局部圆角规则冲突、Desktop fade-scale命名与实现差异。
 - 增加Schema、CATALOG、Agent调用协议、维护流程和可重复验证工具。
@@ -309,7 +355,7 @@ if not (ROOT/'validation-results.json').exists():
 counts={k:{'components':p['coverage']['components'],'animations':p['coverage']['animations'],'tokens':len(load(f'projects/{k}/design-language/tokens.json')['tokens']),'scanned_text_files':p['coverage']['scanned_text_files'],'discovery_hits':p['coverage']['discovery_hits']} for k,p in projects.items()}
 write('EXECUTION-REPORT.md','''# 执行报告
 
-完成A扫描、B核心设计系统、C代表组件/动画、E跨项目总结、F索引与调用协议。D验证限源码、路径、参数证据和两个数值内核；原生视觉验证未完成。G自动审计结果见VALIDATION.md。全仓扫描不是全仓逐项细读，未提取范围保留BACKLOG。
+完成A扫描、B核心设计系统、C代表组件/动画、E跨项目总结、F索引与调用协议。D验证限源码、路径、参数证据和三个数值内核；原生视觉验证未完成。G自动审计结果见VALIDATION.md。全仓扫描不是全仓逐项细读，未提取范围保留BACKLOG。
 
 ## 分析快照与数量
 
@@ -322,17 +368,18 @@ Token数量包含主题分项与原始CSS声明，不等于独立语义角色数
 - Cherry Mobile：自有语义Token、品牌红与动作绿分离；优先menu-panel的退出保留/测量与foil-loader的时钟/无障碍/后台暂停。
 - Mihon：Material多主题/AMOLED与沉浸阅读；优先reader-bars并行轨道、fast-scroller的placement/collectLatest、adaptive-sheet嵌套滚动。
 - Cherry Desktop：多栏空间协商与键盘交互；优先resource-pane拖动0ms策略、Dialog Presence/焦点、smooth-scroll取消与动态目标。
+- DroidDeck：触摸/手柄共用的游戏UI；优先focus-glide保留速度/边缘先后、launch-flood覆盖门槛回调、lift-sheet手势滞回、ThemeColors渐变校正。
 
 ## 示例和验证
 
-7组adapted示例：Mihon2、Mobile3、Desktop2。Node验证Desktop scroll-controller（移动目标/取消/替换/卸载/DOM消失/一帧边界）和Mobile loader-clock（delta上限、停用复位、周期wrap）。这是数值/生命周期模型运行，不是UI运行。
+10组adapted示例：Mihon2、Mobile3、Desktop2、DroidDeck3。Node验证Desktop scroll-controller（移动目标/取消/替换/卸载/DOM消失/一帧边界）、Mobile loader-clock（delta上限、停用复位、周期wrap）与DroidDeck focus-spring（多模拟步长收敛、保留速度、重定向、scale0、dt上限和临界阻尼近似）。这是数值/生命周期模型运行，不是UI运行。
 
-其余5组未编译/未运行：2份Compose、2份React Native、1份React/CSS。没有Android/iOS/Electron应用安装、实机截图或录屏，也没有FPS/GPU/内存数据。所有原项目runtime_verified=false。
+其余7组未编译/未运行：4份Compose、2份React Native、1份React/CSS。没有Android/iOS/Electron应用安装、实机截图或录屏，也没有FPS/GPU/内存数据。所有原项目runtime_verified=false。
 
 ## 可维护资产
 
 根入口README→CATALOG/AGENTS→项目overview→spec→examples→source-reference/source-map；生成工具与schemas可持续复核固定来源。原始源码独立保存，未修改或执行安装脚本；根LICENSE文本随各项目资料保存，摘录和改编许可证保留在各文件头。
 
-具体剩余任务在三个BACKLOG；首轮核心资产已交付，不宣称完整设计历史、所有依赖默认值、所有动画类型与设备行为均已分析。
+具体剩余任务在各项目BACKLOG；核心资产已交付，不宣称完整设计历史、所有依赖默认值、所有动画类型与设备行为均已分析。
 ''')
 print(json.dumps({'resources':len(resources),'projects':counts,'examples':len(examples)},ensure_ascii=False))

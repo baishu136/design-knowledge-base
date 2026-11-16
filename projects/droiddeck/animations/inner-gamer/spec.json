@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.inner-gamer",
+  "name": "量化更新的动态RGB主题",
+  "project": "droiddeck",
+  "category": "theme-animation",
+  "effect": "primary和secondary沿相差60度色环变化，整应用配色随之更新。",
+  "applicable": "明确由用户开启的个性化游戏主题",
+  "not_applicable": "信息内容需要稳定语义颜色或低功耗常驻界面",
+  "trigger": "主题选择inner_gamer，speed1..10，Motion.scale非0",
+  "start_state": {
+    "hue": "remembered rgbHue"
+  },
+  "end_state": {
+    "hue": "start+360 loop; stored in 3 degree steps"
+  },
+  "timing": {
+    "duration_ms": null,
+    "duration_formula_ms": "30000/clamp(speed,1,10)",
+    "delay_ms": null,
+    "easing": {
+      "name": "LinearEasing"
+    },
+    "repeat": "infinite Restart",
+    "spring": null
+  },
+  "properties": {
+    "hue_step_degrees": 3,
+    "accent_hue_offset_degrees": 60,
+    "default_speed": 3,
+    "speed_range": [
+      1,
+      10
+    ]
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "hue": "remembered rgbHue"
+    },
+    "to": {
+      "hue": "start+360 loop; stored in 3 degree steps"
+    }
+  },
+  "synchronization": "key(speed)重建周期但起始hue从Themes.rgbHue保留；infiniteTransition线性推进360，stepped=floor((hue%360)/3)*3，再SideEffect写入状态。Palette生成仍执行readable与渐变对比度修正，故实际primary不是未经修正的HSV原值。",
+  "interruption": "离开主题移除周期组合；app Motion.scale0不建InnerGamerCycle。系统时钟动画比例另生效。代码没有本组件AppState后台监听，不能宣称显式后台停帧。",
+  "gesture": null,
+  "accessibility": "关闭应用/系统动画可静止；动态色仍须维护文字配对。4.5算法覆盖onPrimary渐变样本，不代表其他角色全部合规。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+      "symbol": "private fun InnerGamerCycle",
+      "line": 211,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L211"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt",
+      "symbol": "internal object ThemeColors",
+      "line": 11,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "8bbc7bda0a90d7141818c4b7df900be5f0c90c32478346472b3f481b4f3a3146",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt#L11"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "3度量化减少整组palette状态变动次数（每理想周期120个档位），但infiniteTransition仍按帧推进，SideEffect及校正计算不是只跑120帧。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

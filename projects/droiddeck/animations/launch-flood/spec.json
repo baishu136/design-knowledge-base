@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.launch-flood",
+  "name": "按钮四边扩张到启动场景",
+  "project": "droiddeck",
+  "category": "container-transform",
+  "effect": "按钮渐变圆角框按四边距离不同节奏铺满屏幕，背景缩至.96。",
+  "applicable": "按钮触发不可逆场景交接/启动加载",
+  "not_applicable": "无后续场景却吞输入的装饰动画",
+  "trigger": "LaunchOrigin取到有效按钮bounds；Canvas测量完成",
+  "start_state": {
+    "edge_progress": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "from": "button rect"
+  },
+  "end_state": {
+    "edge_progress": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "covered": true
+  },
+  "timing": {
+    "duration_ms": null,
+    "delay_ms": {
+      "per_edge": "round(180*(1-travel/far))*Motion.scale"
+    },
+    "easing": null,
+    "spring": {
+      "dampingRatio": 0.48,
+      "stiffness": "lerp(110,190,travel/far)"
+    },
+    "repeat": null
+  },
+  "properties": {
+    "behind_scale": [
+      1,
+      0.96
+    ],
+    "corner_rest_dp": 12,
+    "blob_corner_factor": 0.42,
+    "origin_ttl_ms": 1500,
+    "edge_delay_max_ms": 180
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "edge_progress": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "from": "button rect"
+    },
+    "to": {
+      "edge_progress": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "covered": true
+    }
+  },
+  "synchronization": "每条边计算到屏幕对应边的travel与lead=travel/far，距离越远延迟越少且stiffness越高。边首次>=1后reached保持covered判定不随回弹反复变化；四边均触达即回调onCovered，不等待所有spring settle。圆角以sin(pi*mean)中间鼓起、渐变两端以mix=min(mean*2,1)向signal合并。",
+  "interruption": "LaunchedEffect/page生命周期取消；rememberUpdatedState保持回调新鲜。四边reached只在本次记忆状态中保留；重新启动业务需新实例。scale0立即覆盖并通知。",
+  "gesture": null,
+  "accessibility": "VeilRing暂时遮去焦点；覆盖Canvas消费触摸，必须限定在真实启动交接；scale0走snap。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt",
+      "symbol": "internal fun LaunchFlood",
+      "line": 108,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "621ccde16894ed35c2230662a53566038b55671ae78b0241ff43c12751a1527d",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt#L108"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "每帧Canvas渐变+圆角重绘，目标变化不是系统共享元素。平均进度回调可能增加重组；大屏和背景合成面积需实测。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

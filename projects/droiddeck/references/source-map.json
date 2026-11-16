@@ -1,0 +1,698 @@
+[
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "fun DroidDeckTheme",
+    "line": 167,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L167"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt",
+    "symbol": "internal object ThemeColors",
+    "line": 11,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "8bbc7bda0a90d7141818c4b7df900be5f0c90c32478346472b3f481b4f3a3146",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt#L11"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+    "symbol": "internal object Motion",
+    "line": 329,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+    "symbol": "private fun Modifier.focusGlideOverlay",
+    "line": 189,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L189"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+    "symbol": "internal fun Modifier.glideBorder",
+    "line": 120,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L120"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt",
+    "symbol": "internal fun BoxScope.ChipGlide",
+    "line": 44,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "fa7c9a3deff81b6cb7dd1f8c1c9f9609029ba7f9d8b937e91d6587d9ed2a7795",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/SharedMotion.kt#L44"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt",
+    "symbol": "internal fun LaunchFlood",
+    "line": 108,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "621ccde16894ed35c2230662a53566038b55671ae78b0241ff43c12751a1527d",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/LaunchFlood.kt#L108"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt",
+    "symbol": "internal fun PageFlood",
+    "line": 80,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "8ad5c571cbe6b2379a8e92f6518074779d70c777ff3d8ed134c3edbf062405e4",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt#L80"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt",
+    "symbol": "internal fun CardDetailHost",
+    "line": 60,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "e4a297140e65bd921c6997c3c13d9fdefdacaee3b8425543eedb4428e02085b7",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt#L60"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt",
+    "symbol": "internal fun LiftHero",
+    "line": 176,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "84a505d67496f5fcb4e45c8eb8faffb5d17bb191a62ed907f26805e31819544a",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/LiftSheet.kt#L176"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt",
+    "symbol": "internal fun PrimaryButton",
+    "line": 176,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "76290a1f9bcbdf542f9f512550180ec171645b755d1906b2d56f48569a6979b2",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt#L176"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt",
+    "symbol": "internal fun Title",
+    "line": 91,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "76290a1f9bcbdf542f9f512550180ec171645b755d1906b2d56f48569a6979b2",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndWidgets.kt#L91"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Layout.kt",
+    "symbol": "internal fun LauncherLayout",
+    "line": 23,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "8334a925182b14b4ed11e2664161c3b97055d62200354566c18f7a7dcf80e03c",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Layout.kt#L23"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/AppScale.kt",
+    "symbol": "internal fun scaledAppDensity",
+    "line": 8,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "6888c9a84ac150cda6d680a57e599dc849f427690b86b9ade70b802c6d85ceb9",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/AppScale.kt#L8"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/SettingsWidgets.kt",
+    "symbol": "internal fun TabStrip",
+    "line": 167,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "dd067f150b317c8d37608cec556a3e047e413b0954eae96965b9cad85fe9b107",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/SettingsWidgets.kt#L167"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/ColorPickerDialog.kt",
+    "symbol": "internal fun ColorPickerDialog",
+    "line": 62,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "c88cb80d62f6b49eb40fadcda38dbfd395f82062eab313718e0efffadbd7f6cb",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/ColorPickerDialog.kt#L62"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt",
+    "symbol": "internal fun LogoThrobber",
+    "line": 24,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "07fde46bf4d2226d7c9ee3fed17b5f10aadf3c28f3dc169fe48838a39b889441",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Throbber.kt#L24"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "private fun InnerGamerCycle",
+    "line": 211,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L211"
+  },
+  {
+    "path": "app/src/main/res/anim/session_rise.xml",
+    "symbol": "<set",
+    "line": 2,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "97b9eb9a99a8d7ffbf55a712a5c32629668fd153db05aabe7d9629b4cd8b9bab",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_rise.xml#L2"
+  },
+  {
+    "path": "app/src/main/res/anim/session_sink.xml",
+    "symbol": "<set",
+    "line": 2,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "1c658275441b5c84d86aeb95b325881496e56fc3a2412bd6934f630ea8f05ee6",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/res/anim/session_sink.xml#L2"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/SessionActivity.kt",
+    "symbol": "overridePendingTransition(R.anim.session_hold, R.anim.session_sink)",
+    "line": 6289,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "f03e476fe488927b2f1ad38533cef14ae6f11ac2b7a2a9b08f2d0b5391f20f56",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/SessionActivity.kt#L6289"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt",
+    "symbol": "R.anim.session_rise",
+    "line": 769,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "51cbb4f6ba87d697394d9df97354dee9e81c558db355f6e64d3d2a166db17ab6",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/FrontEndActivity.kt#L769"
+  },
+  {
+    "path": "docs/development/themes.md",
+    "symbol": "# Themes",
+    "line": 1,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "ba9a5f0beabefcaee1afc981ad95947edd2c8c25758f4488b5341ea74d5536d3",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/docs/development/themes.md#L1"
+  },
+  {
+    "path": "app/build.gradle",
+    "symbol": "versionName \"0.7.1\"",
+    "line": 135,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "9272a7c1eac7edb8565e8f2b0ec855a3b42e2ec05fb50ecf1ebc57b8598d545b",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/build.gradle#L135"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.background",
+    "line": 116,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L116"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.surface",
+    "line": 116,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L116"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.surfaceVariant",
+    "line": 116,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L116"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.line",
+    "line": 116,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L116"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.line2",
+    "line": 116,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L116"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.onBackground",
+    "line": 117,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L117"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.onSurfaceVariant",
+    "line": 117,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L117"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.primary",
+    "line": 118,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L118"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.primary2",
+    "line": 118,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L118"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.onPrimary",
+    "line": 118,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L118"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.signal",
+    "line": 118,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L118"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.graphite.good",
+    "line": 119,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L119"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.background",
+    "line": 123,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L123"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.surface",
+    "line": 123,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L123"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.surfaceVariant",
+    "line": 123,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L123"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.line",
+    "line": 123,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L123"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.line2",
+    "line": 123,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L123"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.onBackground",
+    "line": 124,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L124"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.onSurfaceVariant",
+    "line": 124,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L124"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.primary",
+    "line": 125,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L125"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.primary2",
+    "line": 125,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L125"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.onPrimary",
+    "line": 125,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L125"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.signal",
+    "line": 125,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L125"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.paper.good",
+    "line": 126,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L126"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.background",
+    "line": 130,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L130"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.surface",
+    "line": 130,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L130"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.surfaceVariant",
+    "line": 130,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L130"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.line",
+    "line": 130,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L130"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.line2",
+    "line": 130,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L130"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.onBackground",
+    "line": 131,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L131"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.onSurfaceVariant",
+    "line": 131,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L131"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.primary",
+    "line": 132,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L132"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.primary2",
+    "line": 132,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L132"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.onPrimary",
+    "line": 132,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L132"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.signal",
+    "line": 132,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L132"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.icon_blue.good",
+    "line": 133,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L133"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.background",
+    "line": 137,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L137"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.surface",
+    "line": 137,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L137"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.surfaceVariant",
+    "line": 137,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L137"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.line",
+    "line": 137,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L137"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.line2",
+    "line": 137,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L137"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.onBackground",
+    "line": 138,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L138"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.onSurfaceVariant",
+    "line": 138,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L138"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.primary",
+    "line": 139,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L139"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.primary2",
+    "line": 139,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L139"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.onPrimary",
+    "line": 139,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L139"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.signal",
+    "line": 139,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L139"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.electric.good",
+    "line": 140,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L140"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.background",
+    "line": 145,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L145"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.surface",
+    "line": 145,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L145"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.surfaceVariant",
+    "line": 145,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L145"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.line",
+    "line": 145,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L145"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.line2",
+    "line": 145,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L145"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.onBackground",
+    "line": 146,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L146"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.onSurfaceVariant",
+    "line": 146,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L146"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.primary",
+    "line": 147,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L147"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.primary2",
+    "line": 147,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L147"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.onPrimary",
+    "line": 147,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L147"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.signal",
+    "line": 147,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L147"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "Themes.white_red.good",
+    "line": 148,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L148"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/ui/Theme.kt",
+    "symbol": "val good: Color, val error:",
+    "line": 41,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "60c2db768dcfcd239685ccf2a96c15cd559e6d3ff5f26f0386da698cf85938c1",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/Theme.kt#L41"
+  },
+  {
+    "path": "app/src/main/java/com/droiddeck/launcher/core/AppUiPrefs.kt",
+    "symbol": "val scales",
+    "line": 9,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "76081401767facc36136a935c3f77de8c2f9a0ecbd0194eb10fc78bc2c035482",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/core/AppUiPrefs.kt#L9"
+  },
+  {
+    "path": ".gitmodules",
+    "symbol": "[submodule",
+    "line": 1,
+    "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+    "sha256": "a45177cb6814faab2efd4578d714d5ffc50b5ed6deb4d88ddb37cd1699c7491e",
+    "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/.gitmodules#L1"
+  }
+]

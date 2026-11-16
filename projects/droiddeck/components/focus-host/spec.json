@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.focus-host",
+  "name": "FocusGlideHost与glideBorder",
+  "project": "droiddeck",
+  "purpose": "整窗口手柄/键盘焦点提示",
+  "structure": "Host管理hot来源栈；Modifier登记LayoutCoordinates/Shape；drawWithContent画统一ring",
+  "parameters": "2dp热边/1dp静边；默认fill.14，focusGlide可设0；远距360dp策略",
+  "states": "首次、方向移动、连按、远距droplet、布局跟随、hidden、跨窗口回退",
+  "api": "glideBorder(hot,shape,hotColor,restColor,hotWidth,restWidth,hotFillAlpha)；Host/Window组合边界",
+  "behavior": "claim/release维护热源；VeilRing遮蔽临时效果，坐标attach校验防读废布局",
+  "migration": "需要窗口坐标系与焦点生命周期，不能把所有控件的border设为同一位置",
+  "minimal_usage": "FocusGlideHost { item(Modifier.focusGlide()) } // 私有项目环境用法",
+  "not_applicable": "跨Activity/Popup直接共享同一个View host",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "symbol": "private fun Modifier.focusGlideOverlay",
+      "line": 189,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L189"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "symbol": "internal fun Modifier.glideBorder",
+      "line": 120,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L120"
+    }
+  ],
+  "related_resources": [
+    "droiddeck.animation.focus-glide"
+  ],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

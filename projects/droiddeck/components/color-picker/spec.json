@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.color-picker",
+  "name": "ColorPickerDialog",
+  "project": "droiddeck",
+  "purpose": "自定义渐变和True Black强调色",
+  "structure": "AppDialog→旧新swatch→触摸色轮→三ValueSlider→hex→OK/Cancel",
+  "parameters": "maxWidth460dp；色轮168dp；ColorCube44dp；Swatch48dp；hue0..360 step5，S/V0..100 step2",
+  "states": "输入合法/非法、触摸调整、controller调整、确认/关闭",
+  "api": "title,initial:Int,onDismiss,onApply(Int)；parseHex仅3/6位，可选#",
+  "behavior": "非法hex禁用OK；色轮是触摸路径，滑杆/hex提供其他输入方式",
+  "migration": "保留原始候选与确认应用分离；Palette校正可改变所见最终颜色，不将picker原值当最终主题值",
+  "minimal_usage": "ColorPickerDialog(\"Primary\",initial,onDismiss={open=false},onApply={ save(it) })",
+  "not_applicable": "需要alpha/8位hex的编辑器，原实现只支持不透明色",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/ColorPickerDialog.kt",
+      "symbol": "internal fun ColorPickerDialog",
+      "line": 62,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "c88cb80d62f6b49eb40fadcda38dbfd395f82062eab313718e0efffadbd7f6cb",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/ColorPickerDialog.kt#L62"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt",
+      "symbol": "internal object ThemeColors",
+      "line": 11,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "8bbc7bda0a90d7141818c4b7df900be5f0c90c32478346472b3f481b4f3a3146",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/ThemeColors.kt#L11"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

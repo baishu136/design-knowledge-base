@@ -10,11 +10,12 @@
 
 | 项目 | 分析版本 | 组件 | 动画 | 核心特征 |
 |---|---|---:|---:|---|
-| [Cherry Mobile](projects/cherry-studio-app/README.md) | 0.5.5 / e6d157d2ea60 | 5 | 6 | 移动自有Token、可中断菜单、手势与Shader |
-| [Mihon](projects/mihon/README.md) | 0.21.3 / 4823ba69ca65 | 4 | 6 | Material主题、沉浸阅读、嵌套滚动面板 |
-| [Cherry Desktop](projects/cherry-studio/README.md) | 2.2.2 / c3263227592a | 4 | 7 | 多栏工作台、Radix生命周期、可取消滚动 |
+| [cherry-studio-app](projects/cherry-studio-app/README.md) | 0.5.5 / e6d157d2ea60 | 5 | 6 | 移动端中性优先、绿色动作强调、红色仅作品牌；移动自有Vercel/Geist Token，并不继续镜像桌面数值。CherryUI统一跨平台组件外壳，局部原生适配和可中断动效。 |
+| [mihon](projects/mihon/README.md) | 0.21.3 / 4823ba69ca65 | 4 | 6 | 以书库与沉浸阅读为中心 |
+| [cherry-studio](projects/cherry-studio/README.md) | 2.2.2 / c3263227592a | 4 | 7 | 内容优先的多栏AI工作台 |
+| [droiddeck](projects/droiddeck/README.md) | 0.7.1 / f65e7a3d436b | 7 | 9 | 面向触摸、鼠标与手柄焦点的游戏启动器 |
 
-7组移植示例中，2个框架无关JavaScript内核经过Node执行验证；4组原生组件片段和1组React/CSS片段未编译或运行。没有原项目实机预览、FPS、GPU耗时或内存数据。详见 [执行报告](EXECUTION-REPORT.md) 和 [验证报告](VALIDATION.md)。
+移植示例分别声明验证范围；框架无关内核的Node测试不等于原生视觉验证。没有原项目实机预览、FPS、GPU耗时或内存数据。详见 [执行报告](EXECUTION-REPORT.md) 和 [验证报告](VALIDATION.md)。
 
 ## 资料层次与可信度
 
@@ -28,9 +29,12 @@ tokens.json保留CSS变量表达式及静态别名替换，不伪称浏览器com
 
 数据作者入口是tools/author.py；tools/build.py只写本知识库，绝不执行上游构建/安装。修改生成文档前先修改作者数据，避免下次重建覆盖手工改动。新增资源的来源与状态在结构化文件中保存。更新版本按 [维护流程](MAINTENANCE.md)。
 
+DroidDeck作者数据独立在tools/author_droiddeck.py，由author.py统一调用。各项目共享生成器，不共享原始设计规则。
+
 ```powershell
 python design-knowledge-base/tools/author.py
 node design-knowledge-base/tools/check-examples.mjs
+node design-knowledge-base/tools/check-droiddeck.mjs
 python design-knowledge-base/tools/publish.py
 python design-knowledge-base/tools/validate.py
 ```

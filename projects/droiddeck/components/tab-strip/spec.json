@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.component.tab-strip",
+  "name": "TabStrip与BumperKey",
+  "project": "droiddeck",
+  "purpose": "手柄LB/RB与触摸横向tab",
+  "structure": "Row：可选LB→可滚动SelectableGroup→tabs→RB",
+  "parameters": "外12dp/内9dp圆角，padding3dp，gap6dp；字compact12/常规14sp，键帽触摸盒44dp",
+  "states": "on/hot/focused，溢出后tight padding16→10，选中bringIntoView",
+  "api": "tabs,selected,onSelect,focusRequesters,bumpers,compact",
+  "behavior": "Role.Tab/selected语义，环绕索引；tab不会由ChipGlide统一动画，本文件使用直接背景+glideBorder",
+  "migration": "保留可达选中项与空列表约束；不要仅复制LB/RB标签",
+  "minimal_usage": "TabStrip(listOf(\"Games\",\"Setup\"),selected,{ selected=it })",
+  "not_applicable": "tabs为空却启用模运算bumpers",
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/SettingsWidgets.kt",
+      "symbol": "internal fun TabStrip",
+      "line": 167,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "dd067f150b317c8d37608cec556a3e047e413b0954eae96965b9cad85fe9b107",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/SettingsWidgets.kt#L167"
+    }
+  ],
+  "related_resources": [],
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "license": "GPL-3.0"
+}

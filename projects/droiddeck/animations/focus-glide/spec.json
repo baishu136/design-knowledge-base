@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.focus-glide",
+  "name": "保留速度的焦点环追随",
+  "project": "droiddeck",
+  "category": "focus",
+  "effect": "四边分别追逐新控件，前缘先走、尾缘延后；远距离可收成圆点再展开。",
+  "applicable": "手柄/键盘主导的设置、游戏启动器和TV界面",
+  "not_applicable": "无焦点模型的纯触摸页面或未经测量的跨窗口坐标共享",
+  "trigger": "glide.current/moves/hidden变化，窗口中的焦点或hot对象切换",
+  "start_state": {
+    "edges": "current rect",
+    "velocity": "retained per edge"
+  },
+  "end_state": {
+    "edges": "focused control bounds",
+    "velocity": 0
+  },
+  "timing": {
+    "duration_ms": null,
+    "delay_ms": {
+      "trailing_edge": 30,
+      "no_source_grace": 60
+    },
+    "easing": null,
+    "spring": {
+      "lead": {
+        "dampingRatio": 0.62,
+        "stiffness": 700
+      },
+      "trail": {
+        "dampingRatio": 0.78,
+        "stiffness": 360
+      },
+      "cross": {
+        "dampingRatio": 0.7,
+        "stiffness": 520
+      },
+      "held": {
+        "dampingRatio": 0.9,
+        "stiffness": 900
+      },
+      "follow": {
+        "dampingRatio": 1,
+        "stiffness": 2400
+      }
+    },
+    "repeat": false
+  },
+  "properties": {
+    "integration_substep_ms": 4,
+    "frame_dt_cap_ms": 100,
+    "settled_position_px": 0.3,
+    "settled_speed_px_per_s": 3,
+    "repeat_window_ms": 180,
+    "far_distance_dp": 360,
+    "fill_alpha": 0.14,
+    "base_width_dp": 2,
+    "bounds_tracking_max_ms": 2000
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "edges": "current rect",
+      "velocity": "retained per edge"
+    },
+    "to": {
+      "edges": "focused control bounds",
+      "velocity": 0
+    }
+  },
+  "synchronization": "go写目标/弹簧参数和startAt；单帧协程将dt=min(frameDelta,.1)/max(scale,.01)，用h<=.004秒半隐式Euler：u+=(-k*(x-target)-2*zeta*sqrt(k)*u)*h，x+=u*h。保留vel数组，目标改变不排队。初入先长出3dp再收边。非连续按键且距离>360dp走droplet：90ms收成6dp半径点、220..380ms飞行，在progress>=.78改为弹簧展开；不是所有移动都走此分支。",
+  "interruption": "collectLatest替换观察任务；jobs数组分别取消边/圆角/solid/求解器任务。hidden或Motion.scale=0取消并snap；源或窗口失效不读取detach布局。bounds追踪450ms后至少稳定120ms或达到2s停止轮询。",
+  "gesture": null,
+  "accessibility": "可见焦点与手柄导航是核心；scale0仍显示正确最终焦点，不是完全去除ring。跨View则回退静态border。没有TalkBack/大字体实测。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "symbol": "private fun Modifier.focusGlideOverlay",
+      "line": 189,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L189"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt",
+      "symbol": "internal fun Modifier.glideBorder",
+      "line": 120,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "3f99d37717bb6dceb6cd8006721dc5cf6f1322c99106ea1c4311c00e52aa03d9",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FocusGlide.kt#L120"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "drawWithContent重绘局部ring，避免改变目标组件布局；四轨4ms子步在极低scale下步数会增多，尤其dt cap在除scale之前。多层Job、窗口坐标跟踪和离屏内容仍有开销；没有FPS/CPU测量。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}

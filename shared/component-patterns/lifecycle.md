@@ -8,3 +8,5 @@
 - Progress：未知进度和确定0%应分别建模；Mihon源码用0分支是具体设计，迁移可改为显式mode并标adapted。
 
 来源：[Mobile组件](../../projects/cherry-studio-app/README.md)、[Mihon组件](../../projects/mihon/README.md)、[Desktop组件](../../projects/cherry-studio/README.md)。
+
+DroidDeck补充：[FocusHost](../../projects/droiddeck/components/focus-host/README.md)把多个控件的热边框交给同窗口Host统一绘制，跨View回退静态border。迁移要保留focus/hover/selected三种不同状态，不把装饰选中chip等同键盘焦点。其[TabStrip](../../projects/droiddeck/components/tab-strip/README.md)并未直接消费ChipGlide，不能将相似效果误记为同一组件依赖。

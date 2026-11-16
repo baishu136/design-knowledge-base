@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "droiddeck.animation.page-flood",
+  "name": "卡片至详情容器过渡",
+  "project": "droiddeck",
+  "category": "container-transform",
+  "effect": "卡片原点手绘扩张到页面或目标Rect，内容在边缘完成后显现。",
+  "applicable": "有可信原点和身份匹配的卡片详情",
+  "not_applicable": "把过期原点或不同窗口坐标直接lerp",
+  "trigger": "CardDetailHost open变化与PageOrigin/StoresMotion mark",
+  "start_state": {
+    "edges": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tile_alpha": 1,
+    "content_alpha": 0
+  },
+  "end_state": {
+    "edges": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "tile_alpha": 0,
+    "content_alpha": 1
+  },
+  "timing": {
+    "duration_ms": {
+      "target_content_in": 240,
+      "target_tile_out": 220,
+      "ordinary_content_in": 320,
+      "ordinary_tile_out": 360,
+      "exit_content": 140,
+      "retention": 900
+    },
+    "delay_ms": {
+      "target_lookup_timeout": 300,
+      "ordinary_edge_max": 150,
+      "ordinary_tile": 60
+    },
+    "easing": {
+      "tween_cubic": [
+        0.2,
+        0.8,
+        0.2,
+        1
+      ]
+    },
+    "spring": {
+      "ordinary_enter_ratio": 0.5,
+      "ordinary_enter_stiffness": "lerp(150,260,lead)",
+      "target_enter": {
+        "dampingRatio": 0.85,
+        "stiffness": 320
+      }
+    },
+    "repeat": null
+  },
+  "properties": {
+    "ordinary_grid_scale": [
+      1,
+      0.95
+    ],
+    "content_offset_dp": 14,
+    "ordinary_edges_ready": 0.995,
+    "target_edges_ready": 0.9,
+    "page_origin_ttl_ms": 1000,
+    "offscreen_fade_dp": 14
+  },
+  "transform_origin": null,
+  "keyframes_or_sequence": {
+    "domain": "per-track normalized progress",
+    "from": {
+      "edges": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tile_alpha": 1,
+      "content_alpha": 0
+    },
+    "to": {
+      "edges": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tile_alpha": 0,
+      "content_alpha": 1
+    }
+  },
+  "synchronization": "有onto时最多等300ms取目标并校验可见交叠，四轨spring到目标，内容在各轨>=.9后淡入；普通扩张按distance错峰，四轨>=.995后内容显现。drawTile用cover缩放Painter并clip圆角，尺寸非正跳过。CardDetailHost gridScale480ms、fade320ms+delay80，关闭保留PAGE_RETURN_MS900×scale，配合回流。",
+  "interruption": "effect由size-ready/leaving/sinks驱动；离开或DisposableEffect恢复glide.hidden。关闭open变null后保留旧shown；再开取消原delay。900ms是保留窗口，不是spring精确时长。",
+  "gesture": null,
+  "accessibility": "覆盖详情时grid禁止focus enter、详情focus exit受步骤状态约束；Motion0由snap/延迟缩零处理，未运行验证竞态。",
+  "dependencies": [
+    "Kotlin 2.1.0",
+    "Jetpack Compose BOM 2024.02.00",
+    "Material3",
+    "Compose Canvas",
+    "Android View Animation",
+    "Coil 2.6.0"
+  ],
+  "sources": [
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt",
+      "symbol": "internal fun PageFlood",
+      "line": 80,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "8ad5c571cbe6b2379a8e92f6518074779d70c777ff3d8ed134c3edbf062405e4",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/PageFlood.kt#L80"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt",
+      "symbol": "internal fun CardDetailHost",
+      "line": 60,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "e4a297140e65bd921c6997c3c13d9fdefdacaee3b8425543eedb4428e02085b7",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/CardDetailHost.kt#L60"
+    },
+    {
+      "path": "app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt",
+      "symbol": "internal object Motion",
+      "line": 329,
+      "commit": "f65e7a3d436bee56f32626dc3536708d12e43162",
+      "sha256": "435db7c2611ff377941eaf2ccc3d8fc8a4c7ff5c80b6818b8b459de486d7751f",
+      "url": "https://github.com/Droid-Deck/DroidDeck/blob/f65e7a3d436bee56f32626dc3536708d12e43162/app/src/main/java/com/droiddeck/launcher/ui/FrontEndScreen.kt#L329"
+    }
+  ],
+  "performance": {
+    "kind": "static-analysis",
+    "notes": "CardDetailHost使用Offscreen和DstIn做滚动顶端渐隐；大幅封面放大与双内容树存活增加GPU填充/纹理/内存成本，不能称为零布局共享元素。",
+    "measurements": null,
+    "verification": [
+      "inferred"
+    ]
+  },
+  "verification": [
+    "source-verified"
+  ],
+  "runtime_verified": false,
+  "license": "GPL-3.0",
+  "confidence": {
+    "implementation_facts": "high: directly read fixed source",
+    "runtime_effect": "unverified",
+    "performance": "inferred; measurements required"
+  },
+  "reuse": "见项目 LICENSE-NOTES.md；此规格为分析总结，示例的改编状态逐文件声明。",
+  "unknown_fields_policy": "null 表示源文件没有显式定义或本轮未追溯依赖默认值；不代表 0 或无需处理。",
+  "evidence_assertions": []
+}
